@@ -1,0 +1,28 @@
+{
+    "name": "italumni-workspace",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "live-server --port=3000",
+        "build": "tsc",
+        "build:watch": "tsc -w",
+        "test": "vitest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/annaLucian/ITAlumni-Workspace.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/annaLucian/ITAlumni-Workspace/issues"
+    },
+    "homepage": "https://github.com/annaLucian/ITAlumni-Workspace#readme",
+    "devDependencies": {
+        "live-server": "^1.2.2",
+        "typescript": "^7.0.2",
+        "vitest": "^5.0.5"
+    }
+}
