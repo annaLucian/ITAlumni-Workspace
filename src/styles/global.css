@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --text-primary: #171a1f;
+    --text-secondary: #565e6c;
+    --color-primary: #ce0a86;
+    --color-secundary: #873aaa;
+    --color-terciary: #1d212b;
+    --color-btn-secundary: #fef0f9;
+    --color-border: #dee1e6;
+    --bg-body: #ffffff;
+    --bg-input: #f3f4f6;
+    --bg-card: #d9d9d9;
+    --font-text: 'Source Sans 3', sans-serif;
+
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-text);
+    background-color: var(--bg-body);
+    color: var(--text-primary);
+}
