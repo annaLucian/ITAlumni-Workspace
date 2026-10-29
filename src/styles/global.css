@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Wallpoet&display=swap');
 
 :root {
     --text-primary: #171a1f;
@@ -12,7 +12,7 @@
     --bg-input: #f3f4f6;
     --bg-card: #d9d9d9;
     --font-text: 'Source Sans 3', sans-serif;
-
+    --font-logo: 'Wallpoet', sans-serif;
     --radius-sm: 6px;
     --radius-md: 12px;
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
