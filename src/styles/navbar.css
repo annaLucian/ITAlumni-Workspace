@@ -1,3 +1,22 @@
+/* .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+} */
+
+.header__container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 40vh;
+}
+
+.header {
+    width: 100%;
+    padding: 1rem 0;
+}
+
 .header__menu,
 .header__nav--right {
     display: none;
@@ -25,4 +44,93 @@
 
 .header__logo-img {
     width: 45px;
+}
+
+@media (min-width: 768px) {
+    .header__logo-img {
+        width: 4.5rem;
+    }
+    .header__logo-text {
+        font-size: 7rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0;
+    }
+
+    .header {
+        border-block: 1px solid #cccccc33;
+        margin-top: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .header__menu,
+    .header__nav--right {
+        display: block;
+    }
+
+    .header__container {
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .header__logo-text {
+        font-size: 1.6rem;
+    }
+
+    .header__logo-img {
+        width: 1rem;
+    }
+    .header__nav {
+        display: flex;
+    }
+
+    .header__menu {
+        display: flex;
+        gap: 4rem;
+        list-style: none;
+    }
+
+    .header__link {
+        text-decoration: none;
+        color: var(--text-secondary);
+        padding: 1rem;
+    }
+
+    .header__nav--left {
+        gap: 6rem;
+        align-items: center;
+    }
+
+    .header__nav--right {
+        gap: 2rem;
+    }
+
+    .btn__header {
+        text-decoration: none;
+        padding: 0.6rem 2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1rem;
+        border-radius: var(--radius-sm);
+    }
+
+    .btn--outline {
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
+        padding: 0 3rem;
+    }
+
+    .btn--gradient {
+        color: var(--bg-body);
+        background: linear-gradient(to right, var(--color-secundary), var(--color-primary));
+    }
 }

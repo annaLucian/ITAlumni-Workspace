@@ -9,27 +9,31 @@
     </head>
     <body>
         <header class="header">
-            <nav class="header__nav header__nav--left">
-                <div class="header__logo">
-                    <img src="./public/assets/logo/logo-alumni.svg" alt="ITAlumni logo" class="header__logo-img" />
-                    <p class="header__logo-text">LUMNI</p>
-                </div>
-                <ul class="header__menu">
-                    <li class="header__item"><a href="#inici" class="header__link">Inici</a></li>
-                    <li class="header__item"><a href="#xarxa" class="header__link">Xarxa</a></li>
-                    <li class="header__item"><a href="#feina" class="header__link"></a>Oportunitats de feina</li>
-                </ul>
-            </nav>
-            <nav class="header__nav header__nav--right">
-                <a href="#register" class="btn btn--outline">
-                    <img src="./public/assets/icons/icon-email-nav.svg" alt="" class="btn__icon" />
-                    Apunta’t</a
-                >
-                <a href="#feedback" class="btn btn--gradient">
-                    <img src="./public/assets/icons/icon-user-nav.svg" alt="" class="btn__icon" />
-                    Com et veuen?</a
-                >
-            </nav>
+            <div class="header__container">
+                <nav class="header__nav header__nav--left">
+                    <div class="header__logo">
+                        <img src="./public/assets/logo/logo-alumni.svg" alt="ITAlumni logo" class="header__logo-img" />
+                        <span class="header__logo-text">LUMNI</span>
+                    </div>
+                    <ul class="header__menu">
+                        <li class="header__item"><a href="#inici" class="header__link">Inici</a></li>
+                        <li class="header__item"><a href="#xarxa" class="header__link">Xarxa</a></li>
+                        <li class="header__item">
+                            <a href="#feina" class="header__link">Oportunitats de feina</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header__nav header__nav--right">
+                    <a href="#register" class="btn__header btn--outline">
+                        <img src="./public/assets/icons/icon-email-nav.svg" alt="" class="btn__icon" />
+                        Apunta’t</a
+                    >
+                    <a href="#feedback" class="btn__header btn--gradient">
+                        <img src="./public/assets/icons/icon-user-nav.svg" alt="" class="btn__icon" />
+                        Com et veuen?</a
+                    >
+                </nav>
+            </div>
         </header>
         <main class="app"></main>
         <script type="module" src="./dist/main.js"></script>
