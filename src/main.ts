@@ -1,5 +1,5 @@
 console.log('hoola');
-console.log('como estas holy');
+console.log('🚀 ¡main.ts cargado correctamente!');
 
 type User = {
     name: string;

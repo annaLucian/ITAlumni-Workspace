@@ -4,14 +4,34 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ITAlumni</title>
-        <link
-            rel="shortcut icon"
-            href="https://itacademy.barcelonactiva.cat/pluginfile.php/1/theme_remui/faviconurl/1790746665/favicon.png"
-        />
+        <link rel="icon" type="image/png" href="./public/assets/favicon.png" />
         <link rel="stylesheet" href="./src/styles/global.css" />
     </head>
     <body>
-        <h1>Benvingut, Alumni</h1>
+        <header class="header">
+            <nav class="header__nav header__nav--left">
+                <div class="header__logo">
+                    <img src="./public/assets/logo/logo-alumni.svg" alt="ITAlumni logo" class="header__logo-img" />
+                    <p class="header__logo-text">LUMNI</p>
+                </div>
+                <ul class="header__menu">
+                    <li class="header__item"><a href="#inici" class="header__link">Inici</a></li>
+                    <li class="header__item"><a href="#xarxa" class="header__link">Xarxa</a></li>
+                    <li class="header__item"><a href="#feina" class="header__link"></a>Oportunitats de feina</li>
+                </ul>
+            </nav>
+            <nav class="header__nav header__nav--right">
+                <a href="#register" class="btn btn--outline">
+                    <img src="./public/assets/icons/icon-email-nav.svg" alt="" class="btn__icon" />
+                    Apunta’t</a
+                >
+                <a href="#feedback" class="btn btn--gradient">
+                    <img src="./public/assets/icons/icon-user-nav.svg" alt="" class="btn__icon" />
+                    Com et veuen?</a
+                >
+            </nav>
+        </header>
+        <main class="app"></main>
         <script type="module" src="./dist/main.js"></script>
     </body>
 </html>

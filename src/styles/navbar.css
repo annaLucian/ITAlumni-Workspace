@@ -1,0 +1,28 @@
+.header__menu,
+.header__nav--right {
+    display: none;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.2rem;
+}
+
+.header__logo-text {
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 400;
+    font-family: var(--font-logo);
+    background: linear-gradient(to right, var(--color-secundary), var(--color-primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.header__logo-img {
+    width: 45px;
+}
