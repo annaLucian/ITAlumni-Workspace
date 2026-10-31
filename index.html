@@ -16,7 +16,9 @@
                         <span class="header__logo-text">LUMNI</span>
                     </div>
                     <ul class="header__menu">
-                        <li class="header__item"><a href="#inici" class="header__link">Inici</a></li>
+                        <li class="header__item">
+                            <a href="#inici" class="header__link header__link--active">Inici</a>
+                        </li>
                         <li class="header__item"><a href="#xarxa" class="header__link">Xarxa</a></li>
                         <li class="header__item">
                             <a href="#feina" class="header__link">Oportunitats de feina</a>
@@ -24,12 +26,12 @@
                     </ul>
                 </nav>
                 <nav class="header__nav header__nav--right" aria-label="Opcions d'usuari">
-                    <a href="#register" class="btn__header btn--outline">
-                        <img src="./public/assets/icons/icon-email-nav.svg" alt="" class="btn__icon" />
+                    <a href="./src/views/register.html" class="btn__header btn--outline">
+                        <img src="./public/assets/icons/home/icon-email-nav.svg" alt="" class="btn__icon" />
                         Apunta’t</a
                     >
                     <a href="#feedback" class="btn__header btn--gradient">
-                        <img src="./public/assets/icons/icon-user-nav.svg" alt="" class="btn__icon" />
+                        <img src="./public/assets/icons/home/icon-user-nav.svg" alt="" class="btn__icon" />
                         Com et veuen?</a
                     >
                 </nav>
@@ -41,20 +43,20 @@
                     <h1 class="hero__title">Benvingut, Alumni</h1>
                     <p class="hero__subtitle">Connectant i empoderant a la nostra comunitat global d’alumnes</p>
                     <div class="hero__action">
-                        <a href="#register" class="btn-hero btn--primary">Uneix-te</a>
+                        <a href="./src/views/register.html" class="btn-hero btn--primary">Uneix-te</a>
                         <a href="#about" class="btn-hero--mobile btn--outline">Mira que fem</a>
                     </div>
                 </div>
                 <div class="hero__media">
                     <figure class="hero__figure">
                         <img
-                            src="./public/assets/images/hero-bg.png"
+                            src="./public/assets/images/home/hero-bg.png"
                             alt="Comunitat d'alumnes reunits en un espai de coworking"
                             class="hero__image"
                         />
                     </figure>
                     <button type="button" class="hero__play-btn" aria-label="Reproduir video de presentació">
-                        <img src="./public/assets/icons/icon-play.svg" alt="" />
+                        <img src="./public/assets/icons/home/icon-play.svg" alt="" />
                     </button>
                 </div>
             </section>
@@ -62,28 +64,28 @@
                 <h2 class="benefits__title">Què guanyes en formar-ne part?</h2>
                 <div class="benefits__container">
                     <article class="benefits__card">
-                        <img src="./public/assets/icons/icon-education.svg" alt="" class="benefits__icon" />
+                        <img src="./public/assets/icons/home/icon-education.svg" alt="" class="benefits__icon" />
                         <p class="benefits__text">
                             Comparteix i no perdis el contacte: Puja els teus moments importants, explica com va tot i
                             queda amb els companys. Una xarxa per estar més a prop.
                         </p>
-                        <a href="#" class="benefits__btn btn--gradient">Apunta't ja</a>
+                        <a href="./src/views/register.html" class="benefits__btn btn--gradient">Apunta't ja</a>
                     </article>
                     <article class="benefits__card">
-                        <img src="./public/assets/icons/icon-chat.svg" alt="" class="benefits__icon" />
+                        <img src="./public/assets/icons/home/icon-chat.svg" alt="" class="benefits__icon" />
                         <p class="benefits__text">
                             Participa en discussions: Intercanvia coneixements, punts de vista i opinions sobre temes
                             que t'interessen.
                         </p>
-                        <a href="#" class="benefits__btn btn--terciary">Apunta't ja</a>
+                        <a href="./src/views/register.html" class="benefits__btn btn--terciary">Apunta't ja</a>
                     </article>
                     <article class="benefits__card">
-                        <img src="./public/assets/icons/icon-connect.svg" alt="" class="benefits__icon" />
+                        <img src="./public/assets/icons/home/icon-connect.svg" alt="" class="benefits__icon" />
                         <p class="benefits__text">
                             Xarxa Alumni: Connecta amb companys de promoció, fes noves amistats i crea records per durar
                             tota la vida
                         </p>
-                        <a href="#" class="benefits__btn btn--terciary">Apunta't ja</a>
+                        <a href="./src/views/register.html" class="benefits__btn btn--terciary">Apunta't ja</a>
                     </article>
                 </div>
             </section>
@@ -94,18 +96,18 @@
                         <article class="testimonials-card">
                             <header class="testimonials-card__header">
                                 <img
-                                    src="./public/assets/images/avatars/avatar-mikel.svg"
+                                    src="./public/assets/images/home/avatars/avatar-mikel.svg"
                                     alt="Foto de perfil de Mikel"
                                     class="testimonials-card__avatar"
                                 />
                                 <div class="testimonials-card__info">
                                     <h3 class="testimonials-card__autor">Mikel</h3>
                                     <div class="testimonials-card__raiting" aria-label="5 de 5 estrelles">
-                                        <img src="./public/assets/icons/icon-star.svg" alt="" />
-                                        <img src="./public/assets/icons/icon-star.svg" alt="" />
-                                        <img src="./public/assets/icons/icon-star.svg" alt="" />
-                                        <img src="./public/assets/icons/icon-star.svg" alt="" />
-                                        <img src="./public/assets/icons/icon-star.svg" alt="" />
+                                        <img src="./public/assets/icons/home/icon-star.svg" alt="" />
+                                        <img src="./public/assets/icons/home/icon-star.svg" alt="" />
+                                        <img src="./public/assets/icons/home/icon-star.svg" alt="" />
+                                        <img src="./public/assets/icons/home/icon-star.svg" alt="" />
+                                        <img src="./public/assets/icons/home/icon-star.svg" alt="" />
                                     </div>
                                 </div>
                             </header>
@@ -117,18 +119,18 @@
                         <article class="testimonials-card">
                             <header class="testimonials-card__header">
                                 <img
-                                    src="./public/assets/images/avatars/avatar-emma.svg"
+                                    src="./public/assets/images/home/avatars/avatar-emma.svg"
                                     alt="Foto de perfil de emma"
                                     class="testimonials-card__avatar"
                                 />
                                 <div class="testimonials-card__info">
                                     <h3 class="testimonials-card__autor">Emma</h3>
                                     <div class="testimonials-card__raiting" aria-label="5 de 5 estrelles">
-                                        <img src="./public/assets/icons/icon-star.svg" alt="" />
-                                        <img src="./public/assets/icons/icon-star.svg" alt="" />
-                                        <img src="./public/assets/icons/icon-star.svg" alt="" />
-                                        <img src="./public/assets/icons/icon-star.svg" alt="" />
-                                        <img src="./public/assets/icons/icon-star.svg" alt="" />
+                                        <img src="./public/assets/icons/home/icon-star.svg" alt="" />
+                                        <img src="./public/assets/icons/home/icon-star.svg" alt="" />
+                                        <img src="./public/assets/icons/home/icon-star.svg" alt="" />
+                                        <img src="./public/assets/icons/home/icon-star.svg" alt="" />
+                                        <img src="./public/assets/icons/home/icon-star.svg" alt="" />
                                     </div>
                                 </div>
                             </header>
@@ -140,18 +142,18 @@
                         <article class="testimonials-card">
                             <header class="testimonials-card__header">
                                 <img
-                                    src="./public/assets/images/avatars/avatar-laia.png"
+                                    src="./public/assets/images/home/avatars/avatar-laia.png"
                                     alt="Foto de perfil de Laia"
                                     class="testimonials-card__avatar"
                                 />
                                 <div class="testimonials-card__info">
                                     <h3 class="testimonials-card__autor">Laia</h3>
                                     <div class="testimonials-card__raiting" aria-label="5 de 5 estrelles">
-                                        <img src="./public/assets/icons/icon-star.svg" alt="" />
-                                        <img src="./public/assets/icons/icon-star.svg" alt="" />
-                                        <img src="./public/assets/icons/icon-star.svg" alt="" />
-                                        <img src="./public/assets/icons/icon-star.svg" alt="" />
-                                        <img src="./public/assets/icons/icon-star.svg" alt="" />
+                                        <img src="./public/assets/icons/home/icon-star.svg" alt="" />
+                                        <img src="./public/assets/icons/home/icon-star.svg" alt="" />
+                                        <img src="./public/assets/icons/home/icon-star.svg" alt="" />
+                                        <img src="./public/assets/icons/home/icon-star.svg" alt="" />
+                                        <img src="./public/assets/icons/home/icon-star.svg" alt="" />
                                     </div>
                                 </div>
                             </header>
@@ -163,10 +165,10 @@
                     </div>
                     <div class="testimonials__controls">
                         <button class="testimonials__btn testimonials__btn--prev" aria-label="Testimoni anterior">
-                            <img src="./public/assets/icons/icon-arrow-left.svg" alt="" />
+                            <img src="./public/assets/icons/home/icon-arrow-left.svg" alt="" />
                         </button>
                         <button class="testimonials__btn testimonials__btn--next" aria-label="Testimoni seguent">
-                            <img src="./public/assets/icons/icon-arrow-right.svg" alt="" />
+                            <img src="./public/assets/icons/home/icon-arrow-right.svg" alt="" />
                         </button>
                     </div>
                 </div>
@@ -177,7 +179,7 @@
                 <h2 class="footer__title">"No et perdis res, subscriu-<br />te!" </h2>
                 <form class="footer__form">
                     <div class="form__group">
-                        <img src="./public/assets/icons/icon-email-footer.svg" alt="" class="form__icon" />
+                        <img src="./public/assets/icons/home/icon-email-footer.svg" alt="" class="form__icon" />
                         <input
                             type="email"
                             autocomplete="email"
@@ -212,7 +214,7 @@
                             <option value="es">Castellano</option>
                             <option value="en">Ingles</option>
                         </select>
-                        <img src="./public/assets/icons/icon-arrow-down.svg" alt="" class="select-arrow" />
+                        <img src="./public/assets/icons/home/icon-arrow-down.svg" alt="" class="select-arrow" />
                     </div>
 
                     <div class="footer__copyright">
@@ -225,7 +227,7 @@
                             rel="nooper noreferrer"
                             aria-label="Facebook s' obre en una finestra nova"
                         >
-                            <img src="./public/assets/icons/icon-fb.svg" alt="Facebook" />
+                            <img src="./public/assets/icons/home/icon-fb.svg" alt="Facebook" />
                         </a>
                         <a
                             href="#"
@@ -233,7 +235,7 @@
                             rel="nooper noreferrer"
                             aria-label="Linkedin s' obre en una finestra nova"
                         >
-                            <img src="./public/assets/icons/icon-linkedin.svg" alt="Linkedin" />
+                            <img src="./public/assets/icons/home/icon-linkedin.svg" alt="Linkedin" />
                         </a>
                         <a
                             href="#"
@@ -241,7 +243,7 @@
                             rel="nooper noreferrer"
                             aria-label="Youtube s' obre en una finestra nova"
                         >
-                            <img src="./public/assets/icons/icon-youtube.svg" alt="Youtube" />
+                            <img src="./public/assets/icons/home/icon-youtube.svg" alt="Youtube" />
                         </a>
                     </div>
                 </div>
