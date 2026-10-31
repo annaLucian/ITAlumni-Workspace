@@ -10,7 +10,7 @@
     <body>
         <header class="header">
             <div class="header__container">
-                <nav class="header__nav header__nav--left">
+                <nav class="header__nav header__nav--left" aria-label="Navegació principal">
                     <div class="header__logo">
                         <img src="./public/assets/logo/logo-alumni.svg" alt="ITAlumni logo" class="header__logo-img" />
                         <span class="header__logo-text">LUMNI</span>
@@ -23,7 +23,7 @@
                         </li>
                     </ul>
                 </nav>
-                <nav class="header__nav header__nav--right">
+                <nav class="header__nav header__nav--right" aria-label="Opcions d'usuari">
                     <a href="#register" class="btn__header btn--outline">
                         <img src="./public/assets/icons/icon-email-nav.svg" alt="" class="btn__icon" />
                         Apunta’t</a
@@ -38,7 +38,7 @@
         <main class="app"></main>
         <footer class="footer">
             <div class="footer__top">
-                <p class="footer__title">"No et perdis res, subscriu-<br />te!" </p>
+                <h2 class="footer__title">"No et perdis res, subscriu-<br />te!" </h2>
                 <form class="footer__form">
                     <div class="form__group">
                         <img src="./public/assets/icons/icon-email-footer.svg" alt="" class="form__icon" />
@@ -60,7 +60,7 @@
                     <span class="footer__brand-text">LUMNI</span>
                 </div>
                 <ul class="footer__menu">
-                    <li><a href="" class="footer__link">Sobre nosaltres</a></li>
+                    <li><a href="#" class="footer__link">Sobre nosaltres</a></li>
                     <li class="footer__item"><a href="#" class="footer__link">Funcionalitats</a></li>
                     <li class="footer__item"><a href="#" class="footer__link">Centre d'ajuda</a></li>
                     <li class="footer__item"><a href="#" class="footer__link">Contacta'ns</a></li>
@@ -83,13 +83,30 @@
                         <p>© 2024 Brand, Inc. • Privadesa • Termes d'ús <br />• Mapa del lloc</p>
                     </div>
                     <div class="footer__socials">
-                        <a href="#" target="_blank"> <img src="./public/assets/icons/icon-fb.svg" alt="Facebook" /></a>
-                        <a href="#" target="_blank"
-                            ><img src="./public/assets/icons/icon-linkedin.svg" alt="Linkedin"
-                        /></a>
-                        <a href="#" target="_blank"
-                            ><img src="./public/assets/icons/icon-youtube.svg" alt="Youtube"
-                        /></a>
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="nooper noreferrer"
+                            aria-label="Facebook s' obre en una finestra nova"
+                        >
+                            <img src="./public/assets/icons/icon-fb.svg" alt="Facebook" />
+                        </a>
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="nooper noreferrer"
+                            aria-label="Linkedin s' obre en una finestra nova"
+                        >
+                            <img src="./public/assets/icons/icon-linkedin.svg" alt="Linkedin" />
+                        </a>
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="nooper noreferrer"
+                            aria-label="Youtube s' obre en una finestra nova"
+                        >
+                            <img src="./public/assets/icons/icon-youtube.svg" alt="Youtube" />
+                        </a>
                     </div>
                 </div>
             </div>
