@@ -53,7 +53,7 @@
     }
     .hero {
         height: auto;
-        margin: 14rem 0;
+        margin: 14rem 0 8rem;
         text-align: center;
     }
     .hero__title {

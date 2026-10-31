@@ -3,6 +3,7 @@
 @import url('./navbar.css');
 @import url('./footer.css');
 @import url('./hero.css');
+@import url('./benefits.css');
 
 :root {
     --text-primary: #171a1f;
