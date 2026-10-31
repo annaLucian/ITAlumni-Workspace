@@ -40,6 +40,8 @@ body {
     background-color: var(--bg-body);
     color: var(--text-primary);
     font-body: 1rem;
+}
+.body--mobile {
     height: 100vh;
 }
 
@@ -56,7 +58,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-    body {
+    .body--mobile {
         height: auto;
     }
 }

@@ -132,6 +132,7 @@
     .btn--gradient {
         color: var(--bg-body);
         background: linear-gradient(to right, var(--color-secundary), var(--color-primary));
+        border: none;
     }
 }
 

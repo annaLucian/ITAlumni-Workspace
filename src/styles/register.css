@@ -1,4 +1,173 @@
-.register-page {
+.register-card,
+.social-register {
     max-width: 80%;
     margin: 0 auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.register-card__header {
+    text-align: center;
+}
+.register-card__title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--text-primary);
+}
+.register-form {
+    width: 100%;
+    margin: 3rem 2rem 2.5rem;
+}
+.register-form__group {
+    width: 100%;
+    background: var(--bg-input);
+    border-radius: 0.3rem;
+    margin-bottom: 1.8rem;
+    display: flex;
+    padding: 0 1.1rem;
+    align-items: center;
+    gap: 1rem;
+}
+.register-form__icon {
+    width: 1.6rem;
+}
+.register-form__input {
+    background: none;
+    border: 0;
+    width: 100%;
+    height: 3.4rem;
+    line-height: 1;
+    font-size: 1.1rem;
+}
+
+.register-form__input::placeholder {
+    color: #bcc1ca;
+}
+
+.register-form__input:focus {
+    border: none;
+    outline: none;
+}
+
+.register-form__checkbox-group {
+    margin: 2rem 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.register-form__checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.3rem;
+    height: 1.3rem;
+    border: 1px solid #c5c9cf;
+    border-radius: 0.1rem;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: inline-grid;
+    place-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.register-form__checkbox:hover {
+    border-color: #e6007e;
+}
+
+.register-form__checkbox:checked {
+    background-color: #e6007e;
+    border-color: #e6007e;
+}
+
+.register-form__checkbox:checked::before {
+    content: '';
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin-bottom: 2px;
+}
+
+.register-form__submit {
+    background: var(--color-primary);
+    border: none;
+    font-size: 1.1rem;
+}
+
+.divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider__line {
+    width: 45%;
+    border: 1px solid #bcc1ca;
+}
+
+.divider__text {
+    text-align: center;
+    width: 10%;
+    font-size: 1.5rem;
+    color: #9095a0;
+}
+.social-register {
+    margin-top: 2rem;
+}
+
+.social-register__list {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.social-register__item {
+    width: 100%;
+}
+
+.btn--social {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+}
+.btn--apple {
+    background: var(--color-btn-secundary);
+    color: #c59e9e;
+}
+.btn--apple img {
+    width: 1.1rem;
+}
+
+.btn--google {
+    background: #fdf2f2;
+    color: #de3b40;
+}
+
+.btn--facebook {
+    background: #f1f8fd;
+    color: #379ae6;
+}
+.register-card__footer {
+    max-width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-card__login-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    padding: 1.5rem;
 }
