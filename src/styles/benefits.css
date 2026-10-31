@@ -12,7 +12,7 @@
     .benefits__title {
         color: var(--text-primary);
         font-weight: 400;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     .benefits__container {
         display: grid;
