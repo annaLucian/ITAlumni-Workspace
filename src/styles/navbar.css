@@ -1,20 +1,14 @@
-/* .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-} */
-
 .header__container {
     display: flex;
     justify-content: center;
     align-items: end;
-    height: 40vh;
+    height: 100%;
 }
 
 .header {
     width: 100%;
     padding: 1rem 0;
+    height: 35%;
 }
 
 .header__menu,
