@@ -71,8 +71,8 @@
     .hero__action {
         display: flex;
         gap: 2rem;
-        margin-bottom: 10rem;
-        width: 50%;
+        margin-bottom: 6rem;
+        width: 35%;
     }
     .btn-hero--mobile {
         font-family: var(--font-text);
@@ -81,11 +81,11 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        padding: 1.5rem 1rem;
+        padding: 0.8rem 1.5rem;
         border-radius: 0.5rem;
     }
     .btn--primary {
-        padding: 1.5rem 1rem;
+        padding: 0.8rem 1.5rem;
         font-size: 1.2rem;
     }
     .hero__media {
@@ -121,10 +121,14 @@
     .hero__subtitle {
         font-size: 1.6rem;
     }
+
     .btn--primary,
     .btn-hero--mobile {
-        padding: 2rem 1rem;
+        padding: 1.2rem 1rem;
         font-size: 1.5rem;
+    }
+    .hero__action {
+        margin-bottom: 10rem;
     }
     .hero__play-btn {
         width: 4rem;
@@ -138,5 +142,8 @@
 @media (min-width: 1600px) {
     .app {
         max-width: 1700px;
+    }
+    .hero__action {
+        width: 30%;
     }
 }
