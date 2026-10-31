@@ -8,6 +8,126 @@
         <link rel="stylesheet" href="../styles/global.css" />
     </head>
     <body>
-        <h1>soy un registro</h1>
+        <main class="register-page">
+            <section class="register-card" aria-labelledby="register-title">
+                <header class="register-card__header">
+                    <h1 id="register-title" class="register-card__title">Crea un compte</h1>
+                </header>
+                <form action="#" method="POST" class="register-form">
+                    <div class="register-form__group">
+                        <label for="first-name" class="visually-hidden">Nom</label>
+                        <img
+                            src="../../public/assets/icons/register/icon-register-user.svg"
+                            alt=""
+                            aria-hidden="true"
+                            class="register-form__icon"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Posa el teu nom"
+                            id="first-name"
+                            name="firstName"
+                            class="register-form__input"
+                            required
+                        />
+                    </div>
+                    <div class="register-form__group">
+                        <label for="last-name" class="visually-hidden">Cognom</label>
+                        <img
+                            src="../../public/assets/icons/register/icon-register-user.svg"
+                            alt=""
+                            aria-hidden="true"
+                            class="register-form__icon"
+                        />
+                        <input
+                            type="text"
+                            id="last-name"
+                            name="lastName"
+                            class="register-form__input"
+                            placeholder="Posa el teu cognom"
+                            required
+                        />
+                    </div>
+                    <div class="register-form__group">
+                        <label for="email" class="visually-hidden">Correu electrònic</label>
+                        <img
+                            src="../../public/assets/icons/register/icon-register-email.svg"
+                            alt=""
+                            aria-hidden="true"
+                            class="register-form__icon"
+                        />
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="register-form__input"
+                            placeholder="El teu correu electrònic"
+                            required
+                        />
+                    </div>
+                    <div class="register-form__group">
+                        <label for="password" class="visually-hidden">Contrasenya</label>
+                        <img
+                            src="../../public/assets/icons/register/icon-register-password.svg"
+                            alt=""
+                            aria-hidden="true"
+                            class="register-form__icon"
+                        />
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            class="register-form__input"
+                            placeholder="Crea una contrasenya"
+                            required
+                        />
+                    </div>
+                    <div class="register-form__checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" class="register-form__checkbox" required />
+                        <label for="terms" class="register-form__checkbox-label">Accepto els Termes i Condicions</label>
+                    </div>
+
+                    <button type="submit" class="btn--primary register-form__submit">Registra’t</button>
+                </form>
+            </section>
+
+            <div class="divider" role="separator" aria-label="O opcions de registre social">
+                <span class="divider__line"></span>
+                <span class="divider__text">o</span>
+                <span class="divider__line"></span>
+            </div>
+
+            <section class="social-register" aria-label="Registre amb xarxes socials">
+                <ul class="social-register__list">
+                    <li class="social-register__item">
+                        <a href="#" class="btn btn--social btn--apple" aria-label="Continua amb Apple">
+                            <img src="../../public/assets/icons/register/icon-apple.svg" alt="" aria-hidden="true" />
+                            <span>Continua amb Apple</span>
+                        </a>
+                    </li>
+                    <li class="social-register__item">
+                        <a href="#" class="btn btn--social btn--google" aria-label="Continua amb Google">
+                            <img src="../../public/assets/icons/register/icon-gmail.svg" alt="" aria-hidden="true" />
+                            <span>Continua amb Google</span>
+                        </a>
+                    </li>
+                    <li class="social-register__item">
+                        <a href="#" class="btn btn--social btn--facebook" aria-label="Continua amb Facebook">
+                            <img
+                                src="../../public/assets/icons/register/icon-register-fb.svg"
+                                alt=""
+                                aria-hidden="true"
+                            />
+                            <span>Continua amb Facebook</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <footer class="register-card__footer">
+                <p>Ja t'has registrat?</p>
+                <a href="./login.html" class="register-card__login-link">Inicia sessió</a>
+                <a href="../../index.html">Home</a>
+            </footer>
+        </main>
     </body>
 </html>
