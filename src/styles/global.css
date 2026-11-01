@@ -40,7 +40,8 @@ body {
 }
 input,
 button,
-a {
+a,
+select {
     font-family: var(--font-text);
 }
 .body--mobile {

@@ -161,8 +161,8 @@
                                     />
                                     <span class="sidebar__text">Nova entrada</span>
                                 </a>
-                                <span class="sidebar__badge sidebar__badge--success" aria-label="Estat: Completat">
-                                    <span aria-hidden="true">✓</span>
+                                <span class="sidebar-job__badge sidebar__badge--success" aria-label="Estat: Completat">
+                                    <span aria-hidden="true">1</span>
                                 </span>
                             </li>
                             <li class="sidebar__item">
@@ -175,7 +175,7 @@
                                     />
                                     <span class="sidebar__text">Sol·licituds de feina</span>
                                 </a>
-                                <span class="sidebar__badge" aria-label="2 sol·licituds actives">2</span>
+                                <span class="sidebar-job__badge" aria-label="2 sol·licituds actives">2</span>
                             </li>
                             <li class="sidebar__item">
                                 <a href="./applications/closed.html" class="sidebar__link">
@@ -187,7 +187,7 @@
                                     />
                                     <span class="sidebar__text">Aplicació tancada</span>
                                 </a>
-                                <span class="sidebar__badge" aria-label="1 aplicació tancada">1</span>
+                                <span class="sidebar-job__badge" aria-label="1 aplicació tancada">1</span>
                             </li>
                         </ul>
                     </div>
@@ -227,71 +227,75 @@
                 </section>
             </section>
         </main>
-        <footer class="bottom-nav">
-            <nav aria-label="Navegació inferior per a mòbil">
-                <ul class="bottom-nav__list">
-                    <li class="bottom-nav__item">
-                        <a href="./dashboard.html" class="bottom-nav__link bottom-nav__link--active">
+        <footer class="footer-dashboard">
+            <nav class="bottom-dashboard-nav" saria-label="Navegació inferior per a mòbil">
+                <ul class="bottom-dashboard-nav__list">
+                    <li class="bottom-dashboard-nav__item">
+                        <a href="./dashboard.html" class="bottom-dashboard-nav__link bottom-nav__link--active">
                             <img
                                 src="/public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-home.svg"
                                 alt=""
                                 aria-hidden="true"
-                                class="bottom-nav__icon"
+                                class="bottom-dashboard-nav__icon"
                             />
-                            <span class="bottom-nav__label">Inici</span>
+                            <span class="bottom-nav-dashboard__label">Inici</span>
                         </a>
                     </li>
-                    <li class="bottom-nav__item">
-                        <a href="./networking.html" class="bottom-nav__link">
+                    <li class="bottom-dashboard-nav__item">
+                        <a href="./networking.html" class="bottom-dashboard-nav__link">
                             <img
                                 src="/public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-networking.svg"
                                 alt=""
                                 aria-hidden="true"
-                                class="bottom-nav__icon"
+                                class="bottom-dashboard-nav__icon"
                             />
-                            <span class="bottom-nav__label">Xarxa</span>
+                            <span class="bottom-dashboard-nav__label">Xarxa</span>
                         </a>
                     </li>
-                    <li class="bottom-nav__item">
-                        <a href="./jobs.html" class="bottom-nav__link">
+                    <li class="bottom-dashboard-nav__item">
+                        <a href="./jobs.html" class="bottom-dashboard-nav__link">
                             <img
                                 src="/public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-job.svg"
                                 alt=""
                                 aria-hidden="true"
-                                class="bottom-nav__icon"
+                                class="bottom-dashboard-nav__icon"
                             />
-                            <span class="bottom-nav__label">Portal de feina</span>
+                            <span class="bottom-dashboard-nav__label">Portal feina</span>
                         </a>
                     </li>
-                    <li class="bottom-nav__item">
-                        <a href="./profile.html" class="bottom-nav__link">
+                    <li class="bottom-dashboard-nav__item">
+                        <a href="./profile.html" class="bottom-dashboard-nav__link">
                             <img
-                                src="./public/assets/icons/dashboard/dashboard-mobile/iconm-dashboard-profile.svg"
+                                src="/public/assets/icons/dashboard/dashboard-mobile/iconm-dashboard-profile.svg"
                                 alt=""
                                 aria-hidden="true"
-                                class="bottom-nav__icon"
+                                class="bottom-dashboard-nav__icon"
                             />
-                            <span class="bottom-nav__label">Perfil</span>
+                            <span class="bottom-dashboard-nav__label">Perfil</span>
                         </a>
                     </li>
                 </ul>
             </nav>
-            <div class="footer__bottom">
-                <div class="footer__bottom-row">
-                    <div class="select-wrapper">
-                        <select class="footer__select" name="language">
+            <div class="footer-dashboard__bottom">
+                <div class="footer-dashboard__bottom-row">
+                    <div class="select-dashboard-wrapper">
+                        <select class="footer-dashboard__select" name="language">
                             <option value="ca">Català</option>
                             <option value="es">Castellano</option>
                             <option value="en">Ingles</option>
                         </select>
-                        <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" class="select-arrow" />
+                        <img
+                            src="/public/assets/icons/home/icon-arrow-down.svg"
+                            alt=""
+                            class="select-dashboard-arrow"
+                        />
                     </div>
 
-                    <div class="footer__copyright">
+                    <div class="footer-dashboard__copyright">
                         <p>© 2024 Brand, Inc. • Privadesa • Termes d'ús <br />• Mapa del lloc</p>
                     </div>
-                    <div class="footer__policy">
-                        <a href="./privacy.html" class="footer__link"> Privacy Policy </a>
+                    <div class="footer-dashboard__policy">
+                        <a href="./privacy.html" class="footer-dashborad__link"> Privacy Policy </a>
                     </div>
                 </div>
             </div>

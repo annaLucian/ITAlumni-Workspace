@@ -1,0 +1,125 @@
+.footer-dashboard__bottom {
+    display: none;
+}
+.footer-dashboard {
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 16%);
+    padding: 1rem 0;
+}
+.bottom-dashboard-nav {
+    width: 90%;
+    margin: 0 auto 1rem;
+}
+
+.bottom-dashboard-nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-dashboard-nav__link {
+    display: flex;
+    flex-direction: column;
+    color: #6b727e;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.5rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.bottom-dashboard-nav__icon {
+    width: 2.2rem;
+}
+
+.bottom-nav__link--active {
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+    .bottom-dashboard-nav {
+        width: 85%;
+    }
+
+    .bottom-dashboard-nav__link {
+        font-size: 1.1rem;
+    }
+    .bottom-dashboard-nav__icon {
+        width: 2.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-dashboard {
+        padding-top: 3rem;
+    }
+    .bottom-dashboard-nav {
+        display: none;
+    }
+    .footer-dashboard__bottom {
+        display: block;
+    }
+
+    .footer-dashboard__bottom {
+        width: 95%;
+        margin: 1.5rem auto;
+        border-top: 1px solid #949494;
+        padding-top: 2rem;
+    }
+    .footer-dashboard__bottom-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .select-dashboard-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+
+    .footer-dashboard__select {
+        background: none;
+        color: #565e6c;
+        padding: 0.5rem 1rem;
+        font-family: var(--font-text);
+        border-radius: 0.3rem;
+        border: 1px solid #565e6c;
+        appearance: none;
+        padding-right: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .select-dashboard-arrow {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        transition: transform 0.3s ease;
+        filter: invert(1);
+    }
+
+    .footer-dashboard__select:focus ~ .select-arrow {
+        transform: translateY(-50%) rotate(180deg);
+    }
+    .footer-dashboard__select option {
+        background-color: #d5d7dd;
+        padding: 0.5rem;
+        border: none;
+    }
+
+    .footer-dashboard__copyright {
+        text-align: center;
+        font-weight: 400;
+        line-height: 1.6rem;
+        font-size: 1rem;
+    }
+    .footer-dashborad__link {
+        color: var(--color-primary);
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1400px) {
+    .footer-dashboard__bottom {
+        width: 95%;
+    }
+}
