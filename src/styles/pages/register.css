@@ -97,6 +97,7 @@
     background: var(--color-primary);
     border: none;
     font-size: 1.1rem;
+    cursor: pointer;
 }
 
 .divider {
@@ -237,7 +238,7 @@
         font-size: 1.2rem;
     }
     .register-page {
-        background-image: url('../../public/assets/images/register/bg-register.png');
+        background-image: url('../../../public/assets/images/register/bg-register.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
