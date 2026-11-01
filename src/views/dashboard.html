@@ -4,68 +4,66 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Inici | ITAlumni</title>
-        <link rel="icon" type="image/png" href="../../public/assets/favicon.png" />
+        <link rel="icon" type="image/png" href="/public/assets/favicon.png" />
+        <link rel="stylesheet" href="../styles/global.css" />
     </head>
     <body class="dashboard-page">
         <header class="dashboard-header">
+            <div class="dasboard-header--mobile"></div>
             <nav class="dashboard-header__nav" aria-label="navegació principal">
                 <div class="dashboard-header__brand">
                     <img
-                        src="../../public/assets/icons/dashboard/logo-dashboard.svg"
+                        src="/public/assets/icons/dashboard/logo-dashboard.svg"
                         alt="logo ITAlumni"
                         class="dashboard-header__logo"
                     />
                     <span class="dashboard-header__title">Alumni Connect</span>
                 </div>
                 <ul class="dashboard-header__menu">
-                    <li class="dashboard-header__menu-item">
-                        <a
-                            href="./dashboard.html"
-                            class="dashboard-header__menu-link dashboard-header__menu-link--active"
-                            >Inici</a
-                        >
+                    <li class="dashboard-header__menu-item--mobile">
+                        <a href="./dashboard.html" class="dashboard-header__menu-link">Inici</a>
                     </li>
                     <li class="dashboard-header__menu-item">
-                        <a href="./networking.html" class="dashboard-header__menu-link">Xarxa</a>
+                        <a
+                            href="./networking.html"
+                            class="dashboard-header__menu-link dashboard-header__menu-link--active"
+                            >Xarxa</a
+                        >
                     </li>
                     <li class="dashboard-header__menu-item">
                         <a href="./jobs.html" class="dashboard-header__menu-link">Oportunitats de feina</a>
                     </li>
                 </ul>
             </nav>
-            <nav class="dashboard-header_actions" aria-label="Opcions d' usuari">
-                <div>
-                    <button type="button" class="dashboard-header__action-btn" aria-label="Obrir cerca">
+            <nav class="dashboard-header_wraper" aria-label="Opcions d' usuari">
+                <div class="dasboard-header-actions">
+                    <button type="button" class="dashboard-header__action-btn--desktop" aria-label="Obrir cerca">
+                        <img src="/public/assets/icons/dashboard/icon-dashboard-search.svg" alt="" aria-hidden="true" />
+                    </button>
+                    <button type="button" class="dashboard-header__action-btn--desktop" aria-label="Notificacions">
                         <img
-                            src="../../public/assets/icons/dashboard/icon-dashboard-search.svg"
+                            src="/public/assets/icons/dashboard/icon-dashboard-notification.svg"
                             alt=""
                             aria-hidden="true"
                         />
                     </button>
-                    <button type="button" class="dashboard-header__action-btn" aria-label="Notificacions">
+                    <button type="button" class="dashboard-header__action-btn--desktop" aria-label="Configuració">
                         <img
-                            src="../../public/assets/icons/dashboard/icon-dashboard-notification.svg"
-                            alt=""
-                            aria-hidden="true"
-                        />
-                    </button>
-                    <button type="button" class="dashboard-header__action-btn" aria-label="Configuració">
-                        <img
-                            src="../../public/assets/icons/dashboard/icon-dashboard-setting.svg"
+                            src="/public/assets/icons/dashboard/icon-dashboard-setting.svg"
                             alt=""
                             aria-hidden="true"
                         />
                     </button>
                     <button type="button" class="dashboard-header__action-btn" aria-label="Accessibilitat">
                         <img
-                            src="../../public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-access.svg"
+                            src="/public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-access.svg"
                             alt=""
                             aria-hidden="true"
                         />
                     </button>
                     <button type="button" class="dashboard-header__profile-btn" aria-label="Perfil d'usuari">
                         <img
-                            src="../../public/assets/images/dashboard/dashboard-avatar.svg"
+                            src="/public/assets/images/dashboard/dashboard-avatar.svg"
                             alt=""
                             aria-hidden="true"
                             class="dashboard-header__avatar"
@@ -78,7 +76,7 @@
             <section class="dashboard-welcome" aria-labelledby="welcome-heading">
                 <div class="dashboard-search">
                     <img
-                        src="../../public/assets/icons/dashboard/icon-dashboard-search.svg"
+                        src="/public/assets/icons/dashboard/icon-dashboard-search.svg"
                         alt=""
                         aria-hidden="true"
                         class="dashboard-search__icon"
@@ -100,7 +98,7 @@
                     <article class="dashboard-card">
                         <div class="dashboard-card__media">
                             <img
-                                src="../../public/assets/images/dashboard/dashboard-networking.jpg"
+                                src="/public/assets/images/dashboard/dashboard-networking.jpg"
                                 alt=""
                                 aria-hidden="true"
                                 class="dashboard-card__image"
@@ -115,7 +113,7 @@
                     <article class="dashboard-card">
                         <div class="dashboard-card__media">
                             <img
-                                src="../../public/assets/images/dashboard/dashboard-job.jpg"
+                                src="/public/assets/images/dashboard/dashboard-job.jpg"
                                 alt=""
                                 aria-hidden="true"
                                 class="dashboard-card__image"
@@ -132,7 +130,7 @@
                     <article class="dashboard-card">
                         <div class="dashboard-card__media">
                             <img
-                                src="../../public/assets/images/dashboard/dashboard-event.jpg"
+                                src="/public/assets/images/dashboard/dashboard-event.jpg"
                                 alt=""
                                 aria-hidden="true"
                                 class="dashboard-card__image"
@@ -155,7 +153,7 @@
                     <li class="bottom-nav__item">
                         <a href="./dashboard.html" class="bottom-nav__link bottom-nav__link--active">
                             <img
-                                src="../../public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-home.svg"
+                                src="/public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-home.svg"
                                 alt=""
                                 aria-hidden="true"
                                 class="bottom-nav__icon"
@@ -166,7 +164,7 @@
                     <li class="bottom-nav__item">
                         <a href="./networking.html" class="bottom-nav__link">
                             <img
-                                src="../../public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-networking.svg"
+                                src="/public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-networking.svg"
                                 alt=""
                                 aria-hidden="true"
                                 class="bottom-nav__icon"
@@ -177,7 +175,7 @@
                     <li class="bottom-nav__item">
                         <a href="./jobs.html" class="bottom-nav__link">
                             <img
-                                src="../../public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-job.svg"
+                                src="/public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-job.svg"
                                 alt=""
                                 aria-hidden="true"
                                 class="bottom-nav__icon"
@@ -188,7 +186,7 @@
                     <li class="bottom-nav__item">
                         <a href="./profile.html" class="bottom-nav__link">
                             <img
-                                src="../../public/assets/icons/dashboard/dashboard-mobile/iconm-dashboard-profile.svg"
+                                src="./public/assets/icons/dashboard/dashboard-mobile/iconm-dashboard-profile.svg"
                                 alt=""
                                 aria-hidden="true"
                                 class="bottom-nav__icon"
@@ -206,7 +204,7 @@
                             <option value="es">Castellano</option>
                             <option value="en">Ingles</option>
                         </select>
-                        <img src="../../public/assets/icons/home/icon-arrow-down.svg" alt="" class="select-arrow" />
+                        <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" class="select-arrow" />
                     </div>
 
                     <div class="footer__copyright">
