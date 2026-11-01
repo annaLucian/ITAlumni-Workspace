@@ -3,6 +3,7 @@
 @import url('./pages/home/index.css');
 @import url('./pages/register/index.css');
 @import url('./pages/dashboard/index.css');
+@import url('./pages/networking/index.css');
 
 :root {
     --text-primary: #171a1f;

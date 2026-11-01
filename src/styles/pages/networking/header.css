@@ -1,0 +1,155 @@
+.networking-header__brand,
+.networking-header__action-btn--desktop,
+.networking-header__menu-item {
+    display: none;
+}
+.networking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 3rem auto 1rem;
+}
+.networking-header__menu {
+    list-style: none;
+}
+
+.networking-header__menu-item--mobile a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    padding: 1rem 0 1rem 2rem;
+}
+.networking-header-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.networking-header__action-btn,
+.networking-header__profile-btn {
+    background: none;
+    border: none;
+}
+
+.networking-header__avatar {
+    border-radius: 100%;
+}
+.networking-header--mobile {
+    background: none;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .networking-header {
+        width: 85%;
+    }
+    .networking-header-actions {
+        gap: 1.5rem;
+    }
+    .networking-header__avatar {
+        width: 4rem;
+    }
+
+    .networking-header__action-btn img {
+        width: 2.5rem;
+    }
+
+    .networking-header__menu-item--mobile a {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .networking-header__action-btn,
+    .networking-header--mobile {
+        display: none;
+    }
+
+    .networking-header__action-btn--desktop,
+    .networking-header__menu-item {
+        display: block;
+    }
+
+    .networking-header {
+        width: 95%;
+        margin: 1.5rem auto;
+    }
+
+    .networking-header__nav {
+        display: flex;
+        align-items: baseline;
+        gap: 3rem;
+    }
+
+    .networking-header__menu {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .networking-header__brand {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .networking-header__title {
+        font-size: 1.4rem;
+    }
+    .networking-header__menu-link,
+    .networking-header__menu-item--mobile a {
+        color: var(--text-secondary);
+        font-size: 1.1rem;
+        text-decoration: none;
+        padding: 0.8rem 2rem;
+    }
+    .networking-header__menu-item--mobile a {
+        color: var(--color-primary) !important;
+        font-weight: bold;
+        border-bottom: 2px solid var(--color-primary);
+        border-radius: 0.2rem;
+    }
+    .networking-header__action-btn--desktop {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .networking-header__action-btn--desktop img {
+        width: 1.4rem;
+    }
+    .networking-header__avatar {
+        width: 3rem;
+        cursor: pointer;
+    }
+    .networking-header__profile-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        curosr: pointer;
+    }
+    .networking-header__profile-btn::before {
+        content: '⌵';
+        margin-right: 0;
+        font-size: 1.1rem;
+        width: 9px;
+    }
+}
+
+.networking-card__image {
+    width: 50px;
+}
+
+@media (min-width: 1400px) {
+    .networking-header {
+        margin: 2rem auto;
+    }
+}
+
+@media (min-width: 1600px) {
+    .networking-header {
+        margin: 2.5rem auto;
+    }
+}
