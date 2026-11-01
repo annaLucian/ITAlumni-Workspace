@@ -44,7 +44,7 @@
 
 @media (min-width: 768px) {
     .dashboard-header {
-        width: 80%;
+        width: 85%;
     }
     .dasboard-header-actions {
         gap: 1.5rem;

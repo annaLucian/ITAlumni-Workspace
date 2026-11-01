@@ -38,6 +38,11 @@ body {
     color: var(--text-primary);
     font-body: 1rem;
 }
+input,
+button,
+a {
+    font-family: var(--font-text);
+}
 .body--mobile {
     height: 100vh;
 }
