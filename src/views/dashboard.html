@@ -6,105 +6,217 @@
         <title>Inici | ITAlumni</title>
         <link rel="icon" type="image/png" href="../../public/assets/favicon.png" />
     </head>
-    <body>
-        <header>
-            <nav>
-                <div>
-                    <img src="../../public/assets/icons/dashboard/logo-dashboard.svg" alt="logo ITAlumni" />
-                    <p>Alumni Connect</p>
+    <body class="dashboard-page">
+        <header class="dashboard-header">
+            <nav class="dashboard-header__nav" aria-label="navegació principal">
+                <div class="dashboard-header__brand">
+                    <img
+                        src="../../public/assets/icons/dashboard/logo-dashboard.svg"
+                        alt="logo ITAlumni"
+                        class="dashboard-header__logo"
+                    />
+                    <span class="dashboard-header__title">Alumni Connect</span>
                 </div>
-                <ul>
-                    <li><a href="#">Inici</a></li>
-                    <li><a href="#">Xarxa</a></li>
-                    <li><a href="#">Oportunitats de feina</a></li>
+                <ul class="dashboard-header__menu">
+                    <li class="dashboard-header__menu-item">
+                        <a
+                            href="./dashboard.html"
+                            class="dashboard-header__menu-link dashboard-header__menu-link--active"
+                            >Inici</a
+                        >
+                    </li>
+                    <li class="dashboard-header__menu-item">
+                        <a href="./networking.html" class="dashboard-header__menu-link">Xarxa</a>
+                    </li>
+                    <li class="dashboard-header__menu-item">
+                        <a href="./jobs.html" class="dashboard-header__menu-link">Oportunitats de feina</a>
+                    </li>
                 </ul>
             </nav>
-            <nav>
+            <nav class="dashboard-header_actions" aria-label="Opcions d' usuari">
                 <div>
-                    <button><img src="../../public/assets/icons/dashboard/icon-dashboard-search.svg" alt="" /></button>
-                    <button>
-                        <img src="../../public/assets/icons/dashboard/icon-dashboard-notification.svg" alt="" />
+                    <button type="button" class="dashboard-header__action-btn" aria-label="Obrir cerca">
+                        <img
+                            src="../../public/assets/icons/dashboard/icon-dashboard-search.svg"
+                            alt=""
+                            aria-hidden="true"
+                        />
                     </button>
-                    <button><img src="../../public/assets/icons/dashboard/icon-dashboard-setting.svg" alt="" /></button>
-                    <button>
+                    <button type="button" class="dashboard-header__action-btn" aria-label="Notificacions">
+                        <img
+                            src="../../public/assets/icons/dashboard/icon-dashboard-notification.svg"
+                            alt=""
+                            aria-hidden="true"
+                        />
+                    </button>
+                    <button type="button" class="dashboard-header__action-btn" aria-label="Configuració">
+                        <img
+                            src="../../public/assets/icons/dashboard/icon-dashboard-setting.svg"
+                            alt=""
+                            aria-hidden="true"
+                        />
+                    </button>
+                    <button type="button" class="dashboard-header__action-btn" aria-label="Accessibilitat">
                         <img
                             src="../../public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-access.svg"
                             alt=""
+                            aria-hidden="true"
                         />
                     </button>
-                    <button><img src="../../public/assets/images/dashboard/dashboard-avatar.svg" alt="" /></button>
+                    <button type="button" class="dashboard-header__profile-btn" aria-label="Perfil d'usuari">
+                        <img
+                            src="../../public/assets/images/dashboard/dashboard-avatar.svg"
+                            alt=""
+                            aria-hidden="true"
+                            class="dashboard-header__avatar"
+                        />
+                    </button>
                 </div>
             </nav>
         </header>
-        <main>
-            <section>
-                <div>
-                    <img src="../../public/assets/icons/dashboard/icon-dashboard-search.svg" alt="" />
-                    <input type="text" placeholder="Cercar exalumnes..." />
+        <main class="dashboard-main">
+            <section class="dashboard-welcome" aria-labelledby="welcome-heading">
+                <div class="dashboard-search">
+                    <img
+                        src="../../public/assets/icons/dashboard/icon-dashboard-search.svg"
+                        alt=""
+                        aria-hidden="true"
+                        class="dashboard-search__icon"
+                    />
+                    <input
+                        type="search"
+                        class="dashboard-search__input"
+                        placeholder="Cercar exalumnes..."
+                        aria-label="Cercar exalumnes"
+                    />
                 </div>
-                <div>
-                    <h1>Bemvimgut de nou, Anna</h1>
-                    <p>El teu centre d'alumni IT</p>
+                <div class="dashboard-welcome__header">
+                    <h1 id="welcome-heading" class="dashboard-welcome__title">Benvingut de nou, Anna!</h1>
+                    <p class="dashboard-welcome__subtitle">El teu centre d'alumni IT</p>
                 </div>
             </section>
-            <section>
-                <div>
-                    <aside>
-                        <img src="../../public/assets/images/dashboard/dashboard-networking.jpg" alt="" />
-                        <h3>Xarxa</h3>
-                        <p>Connecta amb professionals del teu sector.</p>
-                        <a href="#">Explora</a>
-                    </aside>
-                    <aside>
-                        <img src="../../public/assets/images/dashboard/dashboard-job.jpg" alt="" />
-                        <h3>Oportunitats de feina</h3>
-                        <p>Descobreix ofertes de feina adaptades a les teves habilitats.</p>
-                        <a href="#">Cerca feines</a>
-                    </aside>
-                    <aside>
-                        <img src="../../public/assets/images/dashboard/dashboard-event.jpg" alt="" />
-                        <h3>Esdeveniments Tech</h3>
-                        <p>Descobreix ofertes de feina adaptades a les teves habilitats.</p>
-                        <a href="#">Esdeveniments Tech</a>
-                    </aside>
+            <section class="dashboard-cards" aria-label="Seccions principals">
+                <div class="dashboard-cards__container">
+                    <article class="dashboard-card">
+                        <div class="dashboard-card__media">
+                            <img
+                                src="../../public/assets/images/dashboard/dashboard-networking.jpg"
+                                alt=""
+                                aria-hidden="true"
+                                class="dashboard-card__image"
+                            />
+                        </div>
+                        <div class="dashboard-card__content">
+                            <h2 class="dashboard-card__title">Xarxa</h2>
+                            <p class="dashboard-card__description">Connecta amb professionals del teu sector.</p>
+                            <a href="./networking.html" class="dashboard-card__btn">Explora</a>
+                        </div>
+                    </article>
+                    <article class="dashboard-card">
+                        <div class="dashboard-card__media">
+                            <img
+                                src="../../public/assets/images/dashboard/dashboard-job.jpg"
+                                alt=""
+                                aria-hidden="true"
+                                class="dashboard-card__image"
+                            />
+                        </div>
+                        <div class="dashboard-card__content">
+                            <h2 class="dashboard-card__title">Oportunitats de feina</h2>
+                            <p class="dashboard-card__description">
+                                Descobreix ofertes de feina adaptades a les teves habilitats.
+                            </p>
+                            <a href="./jobs.html" class="dashboard-card__btn">Cerca feines</a>
+                        </div>
+                    </article>
+                    <article class="dashboard-card">
+                        <div class="dashboard-card__media">
+                            <img
+                                src="../../public/assets/images/dashboard/dashboard-event.jpg"
+                                alt=""
+                                aria-hidden="true"
+                                class="dashboard-card__image"
+                            />
+                        </div>
+                        <div class="dashboard-card__content">
+                            <h2 class="dashboard-card__title">Esdeveniments Tech</h2>
+                            <p class="dashboard-card__description">
+                                Descobreix workshops, xerrades i trobades de la comunitat.
+                            </p>
+                            <a href="./events.html" class="dashboard-card__btn">Veure esdeveniments</a>
+                        </div>
+                    </article>
                 </div>
             </section>
         </main>
-        <footer>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img
-                            src="../../public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-home.svg"
-                            alt=""
-                        /><span>Inici</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img
-                            src="../../public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-networking.svg"
-                            alt=""
-                        /><span>Xarxa</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img
-                            src="../../public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-job.svg"
-                            alt=""
-                        /><span>Portal de feina</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img
-                            src="../../public/assets/icons/dashboard/dashboard-mobile/iconm-dashboard-profile.svg"
-                            alt=""
-                        /><span>Perfil</span>
-                    </a>
-                </li>
-            </ul>
+        <footer class="bottom-nav">
+            <nav aria-label="Navegació inferior per a mòbil">
+                <ul class="bottom-nav__list">
+                    <li class="bottom-nav__item">
+                        <a href="./dashboard.html" class="bottom-nav__link bottom-nav__link--active">
+                            <img
+                                src="../../public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-home.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="bottom-nav__icon"
+                            />
+                            <span class="bottom-nav__label">Inici</span>
+                        </a>
+                    </li>
+                    <li class="bottom-nav__item">
+                        <a href="./networking.html" class="bottom-nav__link">
+                            <img
+                                src="../../public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-networking.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="bottom-nav__icon"
+                            />
+                            <span class="bottom-nav__label">Xarxa</span>
+                        </a>
+                    </li>
+                    <li class="bottom-nav__item">
+                        <a href="./jobs.html" class="bottom-nav__link">
+                            <img
+                                src="../../public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-job.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="bottom-nav__icon"
+                            />
+                            <span class="bottom-nav__label">Portal de feina</span>
+                        </a>
+                    </li>
+                    <li class="bottom-nav__item">
+                        <a href="./profile.html" class="bottom-nav__link">
+                            <img
+                                src="../../public/assets/icons/dashboard/dashboard-mobile/iconm-dashboard-profile.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="bottom-nav__icon"
+                            />
+                            <span class="bottom-nav__label">Perfil</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__bottom">
+                <div class="footer__bottom-row">
+                    <div class="select-wrapper">
+                        <select class="footer__select" name="language">
+                            <option value="ca">Català</option>
+                            <option value="es">Castellano</option>
+                            <option value="en">Ingles</option>
+                        </select>
+                        <img src="../../public/assets/icons/home/icon-arrow-down.svg" alt="" class="select-arrow" />
+                    </div>
+
+                    <div class="footer__copyright">
+                        <p>© 2024 Brand, Inc. • Privadesa • Termes d'ús <br />• Mapa del lloc</p>
+                    </div>
+                    <div class="footer__policy">
+                        <a href="./privacy.html" class="footer__link"> Privacy Policy </a>
+                    </div>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
