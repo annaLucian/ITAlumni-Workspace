@@ -76,8 +76,16 @@
         font-size: 1.5rem;
         color: var(--color-primary);
     }
+    .dashboard-welcome__subtitle {
+        color: #b5b5b5;
+        font-weight: 400;
+    }
 }
-
+@media (min-width: 1400px) {
+    .dashboard-search {
+        width: 20%;
+    }
+}
 @media (min-width: 1600px) {
     .dashboard-welcome {
         width: 92%;

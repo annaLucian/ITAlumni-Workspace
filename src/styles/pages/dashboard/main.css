@@ -1,0 +1,204 @@
+.dashboard-content {
+    width: 90%;
+    margin: 3rem auto 1rem;
+}
+
+.sidebar {
+    display: none;
+}
+
+.dashboard-section__title {
+    margin-bottom: 3rem;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+.dashboard-cards__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 2rem;
+    margin: 0 auto 6rem;
+}
+
+.dashboard-card__media {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: var(--radius-sm);
+    background: var(--bg-card);
+}
+.dashboard-card {
+    width: 100%;
+    margin: 0 auto;
+}
+.dashboard-card--xarxa {
+    background-image: url('/public/assets/images/dashboard/dashboard-networking.jpg');
+}
+.dashboard-card--job {
+    background-image: url('/public/assets/images/dashboard/dashboard-job.jpg');
+}
+.dashboard-card--event {
+    background-image: url('/public/assets/images/dashboard/dashboard-event.jpg');
+}
+.dashboard-card--xarxa,
+.dashboard-card--job,
+.dashboard-card--event {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dashboard-card__content {
+    margin-top: 1rem;
+}
+.dashboard-card__title {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+}
+.dashboard-card__description {
+    color: #9095a0;
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+}
+.dashboard-card__btn {
+    text-decoration: none;
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    padding: 0.4rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 0.3rem;
+    font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+    .dashboard-content {
+        width: 85%;
+    }
+    .dashboard-cards__container {
+        gap: 5rem 4rem;
+    }
+
+    .dashboard-card__title {
+        font-size: 1.4rem;
+    }
+    .dashboard-card__description {
+        font-size: 1rem;
+    }
+    .dashboard-card__btn {
+        margin-top: 1rem;
+        padding: 0.8rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 45%;
+    }
+    .dashboard-content {
+        width: 90%;
+        gap: 8rem;
+        display: flex;
+        margin-top: 5rem;
+        justify-content: space-between;
+    }
+    .sidebar__title {
+        font-weight: 400;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .sidebar__list {
+        list-style: none;
+    }
+    .sidebar__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+    .sidebar__link {
+        text-decoration: none;
+        color: #565e6c;
+        font-size: 1.05rem;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    .sidebar__icon {
+        width: 1.8rem;
+    }
+    .dashboard-cards {
+        max-width: 900px;
+    }
+    .dashboard-section__title {
+        color: #616161;
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    .dashboard-card__title {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+    }
+    .dashboard-card__description {
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+    .dashboard-card__btn {
+        margin-top: 1.5rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .sidebar__badge {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40%;
+        background: var(--color-primary);
+        color: white;
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+        margin-left: 3rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sidebar {
+        width: 20%;
+    }
+    .dashboard-cards {
+        margin-top: 0;
+    }
+    .dashboard-cards {
+        max-width: 900px;
+    }
+
+    .dashboard-cards__container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem 6rem;
+    }
+    .dashboard-card__content {
+        margin-top: 2rem;
+    }
+    .dashboard-card__media {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .dashboard-content {
+        width: 92%;
+    }
+    .dashboard-cards {
+        max-width: 1100px;
+    }
+}

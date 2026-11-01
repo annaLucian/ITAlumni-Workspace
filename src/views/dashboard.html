@@ -93,58 +93,138 @@
                     <p class="dashboard-welcome__subtitle">El teu centre d'alumni IT</p>
                 </div>
             </section>
-            <section class="dashboard-cards" aria-label="Seccions principals">
-                <div class="dashboard-cards__container">
-                    <article class="dashboard-card">
-                        <div class="dashboard-card__media">
-                            <img
-                                src="/public/assets/images/dashboard/dashboard-networking.jpg"
-                                alt=""
-                                aria-hidden="true"
-                                class="dashboard-card__image"
-                            />
-                        </div>
-                        <div class="dashboard-card__content">
-                            <h2 class="dashboard-card__title">Xarxa</h2>
-                            <p class="dashboard-card__description">Connecta amb professionals del teu sector.</p>
-                            <a href="./networking.html" class="dashboard-card__btn">Explora</a>
-                        </div>
-                    </article>
-                    <article class="dashboard-card">
-                        <div class="dashboard-card__media">
-                            <img
-                                src="/public/assets/images/dashboard/dashboard-job.jpg"
-                                alt=""
-                                aria-hidden="true"
-                                class="dashboard-card__image"
-                            />
-                        </div>
-                        <div class="dashboard-card__content">
-                            <h2 class="dashboard-card__title">Oportunitats de feina</h2>
-                            <p class="dashboard-card__description">
-                                Descobreix ofertes de feina adaptades a les teves habilitats.
-                            </p>
-                            <a href="./jobs.html" class="dashboard-card__btn">Cerca feines</a>
-                        </div>
-                    </article>
-                    <article class="dashboard-card">
-                        <div class="dashboard-card__media">
-                            <img
-                                src="/public/assets/images/dashboard/dashboard-event.jpg"
-                                alt=""
-                                aria-hidden="true"
-                                class="dashboard-card__image"
-                            />
-                        </div>
-                        <div class="dashboard-card__content">
-                            <h2 class="dashboard-card__title">Esdeveniments Tech</h2>
-                            <p class="dashboard-card__description">
-                                Descobreix workshops, xerrades i trobades de la comunitat.
-                            </p>
-                            <a href="./events.html" class="dashboard-card__btn">Veure esdeveniments</a>
-                        </div>
-                    </article>
-                </div>
+            <section class="dashboard-content" aria-label="Contingut del tauler de control">
+                <aside class="sidebar" aria-label="Navegació i estadístiques personals">
+                    <div class="sidebar__group">
+                        <h4 class="sidebar__title">Les meves connexions</h4>
+                        <ul class="sidebar__list">
+                            <li class="sidebar__item">
+                                <a href="./connections.html" class="sidebar__link">
+                                    <img
+                                        src="/public/assets/icons/dashboard/job-conection.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar__icon"
+                                    />
+                                    <span class="sidebar__text">La meva connexió</span>
+                                </a>
+                                <span class="sidebar__badge" aria-label="11 connexions">11</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="./networking.html" class="sidebar__link">
+                                    <img
+                                        src="/public/assets/icons/dashboard/job-contactes.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar__icon"
+                                    />
+                                    <span class="sidebar__text">Xarxa de contactes</span>
+                                </a>
+                                <span class="sidebar__badge" aria-label="19 contactes">19</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="./portals.html" class="sidebar__link">
+                                    <img
+                                        src="/public/assets/icons/dashboard/job-aplication.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar__icon"
+                                    />
+                                    <span class="sidebar__text">Els meus portals</span>
+                                </a>
+                                <span class="sidebar__badge" aria-label="9 portals">9</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="./profile.html" class="sidebar__link">
+                                    <img
+                                        src="/public/assets/icons/dashboard/job-user-perfil.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar__icon"
+                                    />
+                                    <span class="sidebar__text">El meu perfil</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar__group">
+                        <h4 class="sidebar__title">Estat de les sol·licituds de feina</h4>
+                        <ul class="sidebar__list">
+                            <li class="sidebar__item">
+                                <a href="./applications/new.html" class="sidebar__link">
+                                    <img
+                                        src="/public/assets/icons/dashboard/job-new.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar__icon"
+                                    />
+                                    <span class="sidebar__text">Nova entrada</span>
+                                </a>
+                                <span class="sidebar__badge sidebar__badge--success" aria-label="Estat: Completat">
+                                    <span aria-hidden="true">✓</span>
+                                </span>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="./applications/active.html" class="sidebar__link">
+                                    <img
+                                        src="/public/assets/icons/dashboard/job-open.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar__icon"
+                                    />
+                                    <span class="sidebar__text">Sol·licituds de feina</span>
+                                </a>
+                                <span class="sidebar__badge" aria-label="2 sol·licituds actives">2</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="./applications/closed.html" class="sidebar__link">
+                                    <img
+                                        src="/public/assets/icons/dashboard/job-close.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar__icon"
+                                    />
+                                    <span class="sidebar__text">Aplicació tancada</span>
+                                </a>
+                                <span class="sidebar__badge" aria-label="1 aplicació tancada">1</span>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <section class="dashboard-cards">
+                    <h2 class="dashboard-section__title">Explora ITAlumni</h2>
+                    <div class="dashboard-cards__container">
+                        <article class="dashboard-card">
+                            <div class="dashboard-card__media dashboard-card--xarxa"></div>
+                            <div class="dashboard-card__content">
+                                <h3 class="dashboard-card__title">Xarxa</h3>
+                                <p class="dashboard-card__description">Connecta amb professionals del teu sector.</p>
+                                <a href="./networking.html" class="dashboard-card__btn">Explora</a>
+                            </div>
+                        </article>
+                        <article class="dashboard-card">
+                            <div class="dashboard-card__media dashboard-card--job"></div>
+                            <div class="dashboard-card__content">
+                                <h3 class="dashboard-card__title">Oportunitats de feina</h3>
+                                <p class="dashboard-card__description">
+                                    Descobreix ofertes de feina adaptades a les teves habilitats.
+                                </p>
+                                <a href="./jobs.html" class="dashboard-card__btn">Cerca feines</a>
+                            </div>
+                        </article>
+                        <article class="dashboard-card">
+                            <div class="dashboard-card__media dashboard-card--event"></div>
+                            <div class="dashboard-card__content">
+                                <h3 class="dashboard-card__title">Esdeveniments Tech</h3>
+                                <p class="dashboard-card__description">
+                                    Descobreix workshops, xerrades i trobades de la comunitat.
+                                </p>
+                                <a href="./events.html" class="dashboard-card__btn">Veure esdeveniments</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
             </section>
         </main>
         <footer class="bottom-nav">
