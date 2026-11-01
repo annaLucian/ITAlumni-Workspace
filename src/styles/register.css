@@ -2,7 +2,7 @@
 .social-register {
     max-width: 80%;
     margin: 0 auto;
-    margin-top: 4rem;
+    padding-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,6 +15,9 @@
     font-size: 2.5rem;
     font-weight: 400;
     color: var(--text-primary);
+}
+.register-card__subtitle {
+    display: none;
 }
 .register-form {
     width: 100%;
@@ -171,11 +174,20 @@
     text-decoration: none;
     padding: 1.5rem;
 }
-
+.link--home {
+    padding: 1.5rem 0 1.5rem 1.5rem;
+}
 @media (min-width: 768px) {
     .register-card__title {
-        font-size: 3.5rem;
+        font-size: 3rem;
         margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .register-card__subtitle {
+        display: block;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 400;
     }
     .register-form__input {
         height: 4.5rem;
@@ -221,4 +233,44 @@
     }
 }
 @media (min-width: 1024px) {
+    .register-card__subtitle {
+        font-size: 1.2rem;
+    }
+    .register-page {
+        background-image: url('../../public/assets/images/register/bg-register.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .register-wrapper {
+        max-width: 768px;
+        background: white;
+        margin: 3rem auto;
+        padding: 2rem;
+    }
+    .register-card,
+    .social-register {
+        padding-top: 0;
+    }
+    .divider {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .register-form {
+        margin-bottom: 3rem;
+    }
+    .social-register {
+        margin-top: 3rem;
+    }
+    .register-card__footer {
+        margin: 2rem auto 1rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .register-card,
+    .social-register,
+    .register-card__footer {
+        max-width: 75%;
+    }
 }
