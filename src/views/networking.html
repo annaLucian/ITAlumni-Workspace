@@ -10,7 +10,7 @@
     <body class="networking-page">
         <header class="networking-header">
             <a href="./dashboard.html" class="networking-header--mobile" aria-label="Tornar al perfil">
-                <img src="/public/assets/icons/networkin/arrow-left.svg" alt="" aria-label="true" />
+                <img src="/public/assets/icons/networking/arrow-left.svg" alt="" aria-label="true" />
             </a>
             <nav class="networking-header__nav" aria-label="navegació principal">
                 <div class="networking-header__brand">
@@ -74,5 +74,111 @@
                 </div>
             </nav>
         </header>
+
+        <main class="networking-main">
+            <section class="networking-welcome" aria-labelledby="welcome-heading">
+                <div class="networking-search">
+                    <img
+                        src="/public/assets/icons/dashboard/icon-dashboard-search.svg"
+                        alt=""
+                        aria-hidden="true"
+                        class="networking-search__icon"
+                    />
+                    <input
+                        type="search"
+                        class="networking-search__input"
+                        placeholder="Cercar exalumnes..."
+                        aria-label="Cercar exalumnes"
+                    />
+                </div>
+                <div class="filters" aria-label="Filtres de cerca">
+                    <span class="filters__label">Filters:</span>
+                    <div class="filters__group" role="tablist">
+                        <button type="button" class="filters__btn" role="tab" aria-selected="false">
+                            Recent Activity
+                        </button>
+                        <button type="button" class="filters__btn filters__btn--active" role="tab" aria-selected="true">
+                            Popular
+                        </button>
+                        <button type="button" class="filters__btn" role="tab" aria-selected="false">
+                            Most Connected
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer-networking">
+            <nav class="bottom-networking-nav" saria-label="Navegació inferior per a mòbil">
+                <ul class="bottom-networking-nav__list">
+                    <li class="bottom-networking-nav__item">
+                        <a href="./dashboard.html" class="bottom-networking-nav__link">
+                            <img
+                                src="/public/assets/icons/networking/home.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="bottom-networking-nav__icon"
+                            />
+                            <span class="bottom-nav-networking__label">Inici</span>
+                        </a>
+                    </li>
+                    <li class="bottom-networking-nav__item">
+                        <a href="./networking.html" class="bottom-networking-nav__link bottom-nav__link--active">
+                            <img
+                                src="/public/assets/icons/networking/network.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="bottom-networking-nav__icon"
+                            />
+                            <span class="bottom-networking-nav__label">Xarxa</span>
+                        </a>
+                    </li>
+                    <li class="bottom-networking-nav__item">
+                        <a href="./jobs.html" class="bottom-networking-nav__link">
+                            <img
+                                src="/public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-job.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="bottom-networking-nav__icon"
+                            />
+                            <span class="bottom-networking-nav__label">Portal feina</span>
+                        </a>
+                    </li>
+                    <li class="bottom-networking-nav__item">
+                        <a href="./profile.html" class="bottom-networking-nav__link">
+                            <img
+                                src="/public/assets/icons/dashboard/dashboard-mobile/iconm-dashboard-profile.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="bottom-networking-nav__icon"
+                            />
+                            <span class="bottom-networking-nav__label">Perfil</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-networking__bottom">
+                <div class="footer-networking__bottom-row">
+                    <div class="select-networking-wrapper">
+                        <select class="footer-networking__select" name="language">
+                            <option value="ca">Català</option>
+                            <option value="es">Castellano</option>
+                            <option value="en">Ingles</option>
+                        </select>
+                        <img
+                            src="/public/assets/icons/home/icon-arrow-down.svg"
+                            alt=""
+                            class="select-networking-arrow"
+                        />
+                    </div>
+
+                    <div class="footer-networking__copyright">
+                        <p>© 2024 Brand, Inc. • Privadesa • Termes d'ús <br />• Mapa del lloc</p>
+                    </div>
+                    <div class="footer-networking__policy">
+                        <a href="./privacy.html" class="footer-networking__link"> Privacy Policy </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

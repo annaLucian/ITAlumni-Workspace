@@ -1,0 +1,98 @@
+.filters {
+    display: none;
+}
+
+.networking-welcome {
+    width: 90%;
+    margin: 0 auto 1rem;
+}
+
+.networking-search {
+    background: var(--bg-input);
+    border-radius: 0.4rem;
+    padding: 0 0 0 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.networking-search__input {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    width: 95%;
+    height: 3rem;
+}
+
+.networking-search__input::placeholder {
+    color: #bcc1ca;
+}
+
+.networking-search__input:focus {
+    outline: none;
+}
+
+@media (min-width: 768px) {
+    .networking-welcome {
+        width: 85%;
+        margin-top: 1rem;
+    }
+    .networking-search__icon {
+        width: 1.5rem;
+    }
+    .networking-search__input {
+        height: 4rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .networking-welcome {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 4rem;
+        width: 90%;
+    }
+    .filters {
+        display: flex;
+        align-items: center;
+    }
+    .filters__group {
+        display: flex;
+        gap: 1rem;
+    }
+    .filters__btn {
+        background: none;
+        border: none;
+        font-size: 1.1rem;
+        padding: 1rem;
+        cursor: pointer;
+    }
+    .filters__btn--active {
+        color: var(--color-primary) !important;
+        font-weight: bold;
+        border-bottom: 2px solid var(--color-primary);
+        border-radius: 0.2rem;
+    }
+
+    .networking-search {
+        width: 30%;
+        border: 1px solid #bcc1ca;
+        background: var(--bg-body);
+    }
+    .networking-search__input {
+        height: 3rem;
+        font-size: 1.1rem;
+    }
+}
+@media (min-width: 1400px) {
+    .networking-search {
+        width: 20%;
+    }
+}
+@media (min-width: 1600px) {
+    .networking-welcome {
+        width: 92%;
+    }
+}
