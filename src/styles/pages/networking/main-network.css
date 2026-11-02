@@ -7,7 +7,7 @@
     margin: 3rem auto 6rem;
 }
 .networking-cards {
-    width: 100%;
+    width: 70%;
 }
 .networking-cards__container {
     display: grid;
@@ -109,15 +109,14 @@
     .sidebar-networking {
         display: block;
     }
+    .sidebar-networking {
+        width: 35%;
+    }
     .networking-content {
         width: 90%;
-    }
-    .sidebar-networking {
-        width: 30%;
-    }
-    .networking-content {
         display: flex;
         gap: 8rem;
+        justify-content: space-between;
     }
     .sidebar-networking__group {
         margin-bottom: 3rem;
@@ -154,7 +153,7 @@
         border: 1px solid #a9a9a9;
         text-align: center;
         padding: 1rem;
-        width: 20rem;
+        width: 15rem;
         position: relative;
     }
     .sidebar-networkin__bg {
@@ -164,13 +163,12 @@
         top: 0;
         left: 0;
         border-radius: 0.5rem 0.5rem 0 0;
-        background: #c2b6be;
+        background: #fff1fa;
         z-index: -1;
     }
     .sidebar-networking__avatar {
-        width: 12rem;
+        width: 9rem;
         text-align: center;
-        padding: 1rem;
         border-radius: 100%;
     }
     .sidebar-networking__dismiss {
@@ -179,49 +177,51 @@
         background: #6d6363;
         border: none;
         color: white;
-        width: 2.5rem;
+        width: 1.8rem;
         border-radius: 100%;
-        height: 2.5rem;
+        height: 1.8rem;
         font-size: 1.4rem;
     }
     .sidebar-networking__user-name {
-        font-size: 1.3rem;
-        line-height: 1.9rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.15rem;
+        line-height: 1.9;
     }
     .sidebar-networking__user-role {
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: #565e6c;
         margin-bottom: 0.5rem;
     }
 
     .sidebar-networking__user-location {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         color: #565e6c;
     }
     .sidebar-networking__btn-connect {
         border: none;
-        margin-top: 2rem;
+        margin-top: 1rem;
         color: white;
         background: var(--color-primary);
         display: flex;
         align-items: center;
         gap: 0.3rem;
         justify-content: center;
-        padding: 0.5rem;
+        padding: 0.4rem;
         width: 100%;
         border-radius: 0.5rem;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
     .sidebar-networking__btn-icon {
-        width: 1.5rem;
+        width: 1.1rem;
         filter: invert(1);
     }
     .networking-cards__container {
         grid-template-columns: 1fr 1fr;
+        gap: 4rem 2rem;
+        justify-items: end;
     }
 
     .networking-card {
+        width: 95%;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -249,22 +249,81 @@
         height: 9rem;
     }
     .networking-card__title {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
     .networking-card__description {
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 2rem;
     }
     .networking-card__location {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         margin-top: 0.5rem;
         color: #bebcc0;
     }
     .networking-card__btn {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        width: 99%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 0.8rem 6rem;
         background: linear-gradient(to right, var(--color-secundary), var(--color-primary));
         color: white;
         border: none;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sidebar-networking {
+        width: 20%;
+    }
+    .networking-cards__container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4rem 2rem;
+        justify-items: end;
+    }
+    .sidebar-networking__card {
+        width: 15rem;
+    }
+    .sidebar-networking__avatar {
+        width: 9rem;
+    }
+    .sidebar-networking__user-name {
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
+    }
+    .sidebar-networking__user-role {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+    .sidebar-networking__user-location {
+        font-size: 0.9rem;
+    }
+    .sidebar-networking__btn-connect {
+        padding: 0.4rem;
+        font-size: 1rem;
+    }
+    .sidebar-networking__btn-icon {
+        width: 1.2rem;
+    }
+    .networking-card__description {
+        font-size: 1rem;
+        line-height: 1;
+    }
+    .networking-card__location {
+        font-size: 1rem;
+    }
+    .networking-card__title {
+        font-size: 1.3rem;
+    }
+
+    .networking-card {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .networking-content {
+        width: 92%;
     }
 }
