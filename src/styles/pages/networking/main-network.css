@@ -6,9 +6,7 @@
     width: 90%;
     margin: 3rem auto 6rem;
 }
-.networking-cards {
-    width: 70%;
-}
+
 .networking-cards__container {
     display: grid;
     gap: 2rem;
@@ -18,7 +16,7 @@
     display: flex;
     gap: 1.25rem;
     width: 100%;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     border-radius: 0.5rem;
     box-shadow: 0px 0px 3px rgb(0 0 0 / 13%);
 }
@@ -85,24 +83,31 @@
         margin-top: 4rem;
     }
     .networking-card__media {
-        width: 7rem;
-        height: 7rem;
+        width: 10rem;
+        height: 10rem;
     }
     .networking-card__title {
         margin-bottom: 0.8rem;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
     .networking-card__meta {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         margin-bottom: 1rem;
     }
     .networking-card__description {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         line-height: 1.5rem;
     }
     .networking-card__btn {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         padding: 0.5rem 4rem;
+    }
+    .networking-card {
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+    .networking-cards__container {
+        gap: 3rem;
     }
 }
 @media (min-width: 1024px) {
@@ -318,12 +323,21 @@
     }
 
     .networking-card {
-        width: 80%;
+        width: 95%;
     }
 }
 
 @media (min-width: 1600px) {
     .networking-content {
         width: 92%;
+    }
+    .networking-card {
+        width: auto;
+    }
+    .networking-cards__container {
+        gap: 4rem 4rem;
+    }
+    .networking-cards__container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
