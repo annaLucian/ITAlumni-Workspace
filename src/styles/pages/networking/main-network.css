@@ -235,7 +235,7 @@
         top: 0;
         left: 0;
         border-radius: 0.5rem 0.5rem 0 0;
-        background: linear-gradient(to right, #38405c, #1d2128);
+        background: conic-gradient(from 45deg, red, orange, yellow, green, teal, blue, purple);
         z-index: -1;
     }
     .networking-card__meta {
