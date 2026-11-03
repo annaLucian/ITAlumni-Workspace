@@ -72,75 +72,134 @@
                 </div>
             </nav>
         </header>
-        <footer class="footer-networking">
-            <nav class="bottom-networking-nav" saria-label="Navegació inferior per a mòbil">
-                <ul class="bottom-networking-nav__list">
-                    <li class="bottom-networking-nav__item">
-                        <a href="./dashboard.html" class="bottom-networking-nav__link">
+        <section class="jobs-welcome" aria-labelledby="jobs-welcome-title">
+            <div class="jobs-welcome__search">
+                <img
+                    src="/public/assets/icons/dashboard/icon-dashboard-search.svg"
+                    alt=""
+                    aria-hidden="true"
+                    class="jobs-search__icon"
+                />
+                <input
+                    type="search"
+                    class="jobs-welcome__input"
+                    placeholder="Cercar exalumnes..."
+                    aria-label="Cercar exalumnes"
+                />
+            </div>
+
+            <div class="jobs-welcome__filters" aria-label="Filtres de cerca">
+                <div class="jobs-filters__group" role="tablist">
+                    <button type="button" class="jobs-filters__btn" role="tab" aria-selected="false">
+                        <img src="/public/assets/icons/jobs/icon-jobs-filter.svg" alt="" aria-hidden="true" />
+                        <span class="jobs-filters__text">Indústria</span>
+                        <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" aria-hidden="true" />
+                    </button>
+                    <button type="button" class="jobs-filters__btn" role="tab" aria-selected="true">
+                        <img src="/public/assets/icons/jobs/icon-jobs-filter.svg" alt="" aria-hidden="true" />
+                        <span class="jobs-filters__text">Nivell d'experiència</span>
+                        <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" aria-hidden="true" />
+                    </button>
+                    <button
+                        type="button"
+                        class="jobs-filters__btn jobs-filters__btn--tablet"
+                        role="tab"
+                        aria-selected="false"
+                    >
+                        <span class="jobs-filters__text">Data de publicació</span>
+                        <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" aria-hidden="true" />
+                    </button>
+                    <button
+                        type="button"
+                        class="jobs-filters__btn jobs-filters__btn--desktop"
+                        role="tab"
+                        aria-selected="false"
+                    >
+                        <span class="jobs-filters__text">Menys de 10 sol·licitants</span>
+                    </button>
+                    <button
+                        type="button"
+                        class="jobs-filters__btn jobs-filters__btn--desktop jobs-filters__btn--active"
+                        role="tab"
+                        aria-selected="false"
+                    >
+                        <span class="jobs-filters__text">Més informació</span>
+                        <img
+                            src="/public/assets/icons/jobs/icon-jobs-down.png"
+                            alt=""
+                            aria-hidden="true"
+                            class="job-filters__icon--active"
+                        />
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-jobs">
+            <nav class="bottom-jobs-nav" saria-label="Navegació inferior per a mòbil">
+                <ul class="bottom-jobs-nav__list">
+                    <li class="bottom-jobs-nav__item">
+                        <a href="./dashboard.html" class="bottom-jobs-nav__link">
                             <img
                                 src="/public/assets/icons/networking/home.svg"
                                 alt=""
                                 aria-hidden="true"
-                                class="bottom-networking-nav__icon"
+                                class="bottom-jobs-nav__icon"
                             />
-                            <span class="bottom-nav-networking__label">Inici</span>
+                            <span class="bottom-nav-jobs__label">Inici</span>
                         </a>
                     </li>
-                    <li class="bottom-networking-nav__item">
-                        <a href="./networking.html" class="bottom-networking-nav__link bottom-nav__link">
+                    <li class="bottom-jobs-nav__item">
+                        <a href="./networking.html" class="bottom-jobs-nav__link bottom-nav__link">
                             <img
                                 src="/public/assets/icons/jobs/icon-jobs-networking.svg"
                                 alt=""
                                 aria-hidden="true"
-                                class="bottom-networking-nav__icon"
+                                class="bottom-jobs-nav__icon"
                             />
-                            <span class="bottom-networking-nav__label">Xarxa</span>
+                            <span class="bottom-jobs-nav__label">Xarxa</span>
                         </a>
                     </li>
-                    <li class="bottom-networking-nav__item">
-                        <a href="./jobs.html" class="bottom-networking-nav__link bottom-nav__link--active">
+                    <li class="bottom-jobs-nav__item">
+                        <a href="./jobs.html" class="bottom-jobs-nav__link bottom-nav__link--active">
                             <img
                                 src="/public/assets/icons/jobs/icon-jobs-feina.svg"
                                 alt=""
                                 aria-hidden="true"
-                                class="bottom-networking-nav__icon"
+                                class="bottom-jobs-nav__icon"
                             />
-                            <span class="bottom-networking-nav__label">Portal feina</span>
+                            <span class="bottom-jobs-nav__label">Portal feina</span>
                         </a>
                     </li>
-                    <li class="bottom-networking-nav__item">
-                        <a href="./profile.html" class="bottom-networking-nav__link">
+                    <li class="bottom-jobs-nav__item">
+                        <a href="./profile.html" class="bottom-jobs-nav__link">
                             <img
                                 src="/public/assets/icons/dashboard/dashboard-mobile/iconm-dashboard-profile.svg"
                                 alt=""
                                 aria-hidden="true"
-                                class="bottom-networking-nav__icon"
+                                class="bottom-jobs-nav__icon"
                             />
-                            <span class="bottom-networking-nav__label">Perfil</span>
+                            <span class="bottom-jobs-nav__label">Perfil</span>
                         </a>
                     </li>
                 </ul>
             </nav>
-            <div class="footer-networking__bottom">
-                <div class="footer-networking__bottom-row">
-                    <div class="select-networking-wrapper">
-                        <select class="footer-networking__select" name="language">
+            <div class="footer-jobs__bottom">
+                <div class="footer-jobs__bottom-row">
+                    <div class="select-jobs-wrapper">
+                        <select class="footer-jobs__select" name="language">
                             <option value="ca">Català</option>
                             <option value="es">Castellano</option>
                             <option value="en">Ingles</option>
                         </select>
-                        <img
-                            src="/public/assets/icons/home/icon-arrow-down.svg"
-                            alt=""
-                            class="select-networking-arrow"
-                        />
+                        <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" class="select-jobs-arrow" />
                     </div>
 
-                    <div class="footer-networking__copyright">
+                    <div class="footer-jobs__copyright">
                         <p>© 2024 Brand, Inc. • Privadesa • Termes d'ús <br />• Mapa del lloc</p>
                     </div>
-                    <div class="footer-networking__policy">
-                        <a href="./privacy.html" class="footer-networking__link"> Privacy Policy </a>
+                    <div class="footer-jobs__policy">
+                        <a href="./privacy.html" class="footer-jobs__link"> Privacy Policy </a>
                     </div>
                 </div>
             </div>

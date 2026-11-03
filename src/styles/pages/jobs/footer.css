@@ -1,0 +1,127 @@
+.footer-jobs__bottom {
+    display: none;
+}
+.footer-jobs {
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 16%);
+    padding: 1rem 0;
+}
+.bottom-jobs-nav {
+    width: 90%;
+    margin: 0 auto 1rem;
+}
+
+.bottom-jobs-nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-jobs-nav__link {
+    display: flex;
+    flex-direction: column;
+    color: #6b727e;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.5rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.bottom-jobs-nav__icon {
+    width: 2.2rem;
+}
+
+.bottom-nav__link--active {
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+    .bottom-jobs-nav {
+        width: 85%;
+    }
+
+    .bottom-jobs-nav__link {
+        font-size: 1.1rem;
+    }
+    .bottom-jobs-nav__icon {
+        width: 2.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-jobs {
+        padding-top: 3rem;
+    }
+    .bottom-jobs-nav {
+        display: none;
+    }
+    .footer-jobs__bottom {
+        display: block;
+    }
+
+    .footer-jobs__bottom {
+        width: 95%;
+        margin: 1.5rem auto;
+        border-top: 1px solid #949494;
+        padding-top: 2rem;
+    }
+    .footer-jobs__bottom-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .select-jobs-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+
+    .footer-jobs__select {
+        background: none;
+        color: #565e6c;
+        padding: 0.5rem 1rem;
+        font-family: var(--font-text);
+        border-radius: 0.3rem;
+        border: 1px solid #565e6c;
+        appearance: none;
+        padding-right: 2.5rem;
+        font-size: 1rem;
+    }
+    .footer-jobs__select:focus-visible {
+        outline: none;
+    }
+    .select-jobs-arrow {
+        position: absolute;
+        right: 1rem;
+        top: 40%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        transition: transform 0.3s ease;
+        filter: invert(1);
+    }
+
+    .footer-jobs__select:focus ~ .select-jobs-arrow {
+        transform: translateY(-50%) rotate(180deg);
+    }
+    .footer-jobs__select option {
+        background-color: #d5d7dd;
+        padding: 0.5rem;
+        border: none;
+    }
+
+    .footer-jobs__copyright {
+        text-align: center;
+        font-weight: 400;
+        line-height: 1.6rem;
+        font-size: 1rem;
+    }
+    .footer-jobs__link {
+        color: var(--color-primary);
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1400px) {
+    .footer-jobs__bottom {
+        width: 95%;
+    }
+}
