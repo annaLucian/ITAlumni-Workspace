@@ -72,369 +72,394 @@
                 </div>
             </nav>
         </header>
-        <section class="jobs-welcome" aria-labelledby="jobs-welcome-title">
-            <div class="jobs-welcome__search">
-                <img
-                    src="/public/assets/icons/dashboard/icon-dashboard-search.svg"
-                    alt=""
-                    aria-hidden="true"
-                    class="jobs-search__icon"
-                />
-                <input
-                    type="search"
-                    class="jobs-welcome__input"
-                    placeholder="Cercar exalumnes..."
-                    aria-label="Cercar exalumnes"
-                />
-            </div>
-
-            <div class="jobs-welcome__filters" aria-label="Filtres de cerca">
-                <div class="jobs-filters__group" role="tablist">
-                    <button type="button" class="jobs-filters__btn" role="tab" aria-selected="false">
-                        <img src="/public/assets/icons/jobs/icon-jobs-filter.svg" alt="" aria-hidden="true" />
-                        <span class="jobs-filters__text">Indústria</span>
-                        <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" aria-hidden="true" />
-                    </button>
-                    <button type="button" class="jobs-filters__btn" role="tab" aria-selected="true">
-                        <img src="/public/assets/icons/jobs/icon-jobs-filter.svg" alt="" aria-hidden="true" />
-                        <span class="jobs-filters__text">Nivell d'experiència</span>
-                        <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" aria-hidden="true" />
-                    </button>
-                    <button
-                        type="button"
-                        class="jobs-filters__btn jobs-filters__btn--tablet"
-                        role="tab"
-                        aria-selected="false"
-                    >
-                        <span class="jobs-filters__text">Data de publicació</span>
-                        <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" aria-hidden="true" />
-                    </button>
-                    <button
-                        type="button"
-                        class="jobs-filters__btn jobs-filters__btn--desktop"
-                        role="tab"
-                        aria-selected="false"
-                    >
-                        <span class="jobs-filters__text">Menys de 10 sol·licitants</span>
-                    </button>
-                    <button
-                        type="button"
-                        class="jobs-filters__btn jobs-filters__btn--desktop jobs-filters__btn--active"
-                        role="tab"
-                        aria-selected="false"
-                    >
-                        <span class="jobs-filters__text">Més informació</span>
-                        <img
-                            src="/public/assets/icons/jobs/icon-jobs-down.png"
-                            alt=""
-                            aria-hidden="true"
-                            class="job-filters__icon--active"
-                        />
-                    </button>
+        <main>
+            <section class="jobs-welcome" aria-labelledby="jobs-welcome-title">
+                <div class="jobs-welcome__search">
+                    <img
+                        src="/public/assets/icons/dashboard/icon-dashboard-search.svg"
+                        alt=""
+                        aria-hidden="true"
+                        class="jobs-search__icon"
+                    />
+                    <input
+                        type="search"
+                        class="jobs-welcome__input"
+                        placeholder="Cercar exalumnes..."
+                        aria-label="Cercar exalumnes"
+                    />
                 </div>
-            </div>
-        </section>
-        <section class="jobs-content" aria-label="sidebar-jobs-title">
-            <aside class="sidebar-jobs" aria-label="Suggeriments de feina">
-                <div class="sidebar-jobs__group">
-                    <h2 class="sidebar-jobs-title">Feines basades en les teves preferències</h2>
-                    <ul class="siderbar-jobs__list">
-                        <li class="sidebar-jobs__item">
-                            <article class="sidebar-jobs__card">
-                                <button
-                                    type="button"
-                                    class="siderbar-jobs__dismiss"
-                                    aria-label="Omet la suggerència de feina"
-                                >
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <img
-                                    src="/public/assets/images/jobs/job1.jpg"
-                                    alt="Logotip de l'empresa"
-                                    class="sidebar-jobs__img"
-                                />
-                                <h3 class="sidebar-jobs__title">
-                                    React Developer con proyección a Fullstack
-                                    <img src="/public/assets/icons/jobs/verification.png" alt="" aria-label="true" />
-                                </h3>
-                                <p class="sidebar-jobs__stack">DDB Spain</p>
-                                <p class="sidebar-jobs__location">Barcelona</p>
-                                <span class="sidebar-jobs__checked"
-                                    ><img
+
+                <div class="jobs-welcome__filters" aria-label="Filtres de cerca">
+                    <div class="jobs-filters__group" role="tablist">
+                        <button type="button" class="jobs-filters__btn" role="tab" aria-selected="false">
+                            <img src="/public/assets/icons/jobs/icon-jobs-filter.svg" alt="" aria-hidden="true" />
+                            <span class="jobs-filters__text">Indústria</span>
+                            <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" aria-hidden="true" />
+                        </button>
+                        <button type="button" class="jobs-filters__btn" role="tab" aria-selected="true">
+                            <img src="/public/assets/icons/jobs/icon-jobs-filter.svg" alt="" aria-hidden="true" />
+                            <span class="jobs-filters__text">Nivell d'experiència</span>
+                            <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" aria-hidden="true" />
+                        </button>
+                        <button
+                            type="button"
+                            class="jobs-filters__btn jobs-filters__btn--tablet"
+                            role="tab"
+                            aria-selected="false"
+                        >
+                            <span class="jobs-filters__text">Data de publicació</span>
+                            <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" aria-hidden="true" />
+                        </button>
+                        <button
+                            type="button"
+                            class="jobs-filters__btn jobs-filters__btn--desktop"
+                            role="tab"
+                            aria-selected="false"
+                        >
+                            <span class="jobs-filters__text">Menys de 10 sol·licitants</span>
+                        </button>
+                        <button
+                            type="button"
+                            class="jobs-filters__btn jobs-filters__btn--desktop jobs-filters__btn--active"
+                            role="tab"
+                            aria-selected="false"
+                        >
+                            <span class="jobs-filters__text">Més informació</span>
+                            <img
+                                src="/public/assets/icons/jobs/icon-jobs-down.png"
+                                alt=""
+                                aria-hidden="true"
+                                class="job-filters__icon--active"
+                            />
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="jobs-layout">
+                <aside class="sidebar-jobs" aria-label="Navegació de cerca d'ocupació">
+                    <div class="sidebar-jobs__group">
+                        <h2 class="sidebar-jobs__title">Activitat recent</h2>
+                        <ul class="sidebar-jobs__list">
+                            <li class="sidebar-jobs__item">
+                                <a href="./connections.html" class="sidebar-jobs__link">
+                                    <span class="sidebar-jobs__text">S'ha enviat una nova sol·licitud</span>
+                                    <span class="sidebar-jobs__badge">1</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-jobs__item">
+                                <a href="./connections.html" class="sidebar-jobs__link">
+                                    <span class="sidebar-jobs__text">Feina guardada recentment</span>
+                                    <span class="sidebar-jobs__badge">3</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-jobs__item">
+                                <a href="./connections.html" class="sidebar-jobs__link">
+                                    <span class="sidebar-jobs__text">Nova oferta recomanada</span>
+                                    <span class="sidebar-jobs__badge">1</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-jobs__group">
+                        <h2 class="sidebar-jobs__title">Resum de la cerca</h2>
+                        <ul class="sidebar-jobs__list">
+                            <li class="sidebar-jobs__item">
+                                <a href="./connections.html" class="sidebar-jobs__link">
+                                    <span class="sidebar-jobs__text">Feines guardades</span>
+                                    <img
+                                        src="/public/assets/icons/jobs/icon-jobs-save.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar-jobs__icon"
+                                    />
+                                </a>
+                            </li>
+                            <li class="sidebar-jobs__item">
+                                <a href="./connections.html" class="sidebar-jobs__link">
+                                    <span class="sidebar-jobs__text">Aplicacions</span>
+                                    <img
+                                        src="/public/assets/icons/jobs/icon-jobs-send.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar-jobs__icon"
+                                    />
+                                </a>
+                            </li>
+                            <li class="sidebar-jobs__item">
+                                <a href="./connections.html" class="sidebar-jobs__link">
+                                    <span class="sidebar-jobs__text">Registre d'ocupacions</span>
+                                    <img
+                                        src="/public/assets/icons/jobs/icon-jobs-register.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar-jobs__icon"
+                                    />
+                                </a>
+                            </li>
+                            <li class="sidebar-jobs__item">
+                                <a href="./connections.html" class="sidebar-jobs__link">
+                                    <span class="sidebar-jobs__text">Preferències</span>
+                                    <img
+                                        src="/public/assets/icons/jobs/icon-jobs-setting.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar-jobs__icon"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-jobs__group">
+                        <h2 class="sidebar-jobs__title">Exploració professional</h2>
+                        <ul class="sidebar-jobs__list">
+                            <li class="sidebar-jobs__item">
+                                <a href="./connections.html" class="sidebar-jobs__link">
+                                    <span class="sidebar-jobs__text">Empreses seguides</span>
+                                    <img
+                                        src="/public/assets/icons/jobs/icon-jobs-company.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar-jobs__icon"
+                                    />
+                                </a>
+                            </li>
+                            <li class="sidebar-jobs__item">
+                                <a href="./connections.html" class="sidebar-jobs__link">
+                                    <span class="sidebar-jobs__text">Alertes de cerca</span>
+                                    <img
+                                        src="/public/assets/icons/jobs/icon-jobs-alert.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar-jobs__icon"
+                                    />
+                                </a>
+                            </li>
+                            <li class="sidebar-jobs__item">
+                                <a href="./connections.html" class="sidebar-jobs__link">
+                                    <span class="sidebar-jobs__text">Favorits</span>
+                                    <img
+                                        src="/public/assets/icons/jobs/icon-jobs-favorits.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar-jobs__icon"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <section class="jobs-feed" aria-labelledby="jobs-feed-title">
+                    <div class="jobs-feed__header">
+                        <h2 class="jobs-feed__title" id="jobs-feed-title">Feines basades en les teves preferències</h2>
+                    </div>
+
+                    <div class="jobs-feed__list">
+                        <article class="job-card">
+                            <button type="button" class="job-card__dismiss" aria-label="Omet la suggerència de feina">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <img
+                                src="/public/assets/images/jobs/job1.jpg"
+                                alt="Logotip de l'empresa"
+                                class="job-card__img"
+                            />
+                            <div class="job-card__content">
+                                <h3 class="job-card__title">React Developer con proyección a Fullstack</h3>
+                                <p class="job-card__stack">DDB Spain</p>
+                                <p class="job-card__location">Barcelona</p>
+                                <span class="job-card__checked">
+                                    <img
                                         src="/public/assets/icons/jobs/icon-jobs-cheked.png"
                                         alt=""
-                                        aria-label="true"
+                                        aria-hidden="true"
+                                        class="job-card__checked-icon"
                                     />
-                                    Evaluando aplicacions actives</span
-                                >
-                                <span class="siderbar-jobs__public">Publicat fa 2 dies</span>
+                                    Revisant candidatures
+                                </span>
+                                <span class="job-card__date">Publicat fa 2 dies</span>
                                 <button
                                     type="button"
-                                    class="sidebar-jobs__btn-connect"
-                                    aria-label="Connectar amb Ruth Daniela Aguirre"
+                                    class="job-card__btn-connect"
+                                    aria-label="Sol·licitar React Developer a DDB Spain"
                                 >
                                     Sol·licita ara
                                 </button>
-                            </article>
-                        </li>
-                        <li class="sidebar-jobs__item">
-                            <article class="sidebar-jobs__card">
-                                <button
-                                    type="button"
-                                    class="siderbar-jobs__dismiss"
-                                    aria-label="Omet la suggerència de feina"
-                                >
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <img
-                                    src="/public/assets/images/jobs/job2.jpg"
-                                    alt="Logotip de l'empresa"
-                                    class="sidebar-jobs__img"
-                                />
-                                <h3 class="sidebar-jobs__title">
-                                    Front-End Enginee
-                                    <img src="/public/assets/icons/jobs/verification.png" alt="" aria-label="true" />
-                                </h3>
-                                <p class="sidebar-jobs__stack">Aistech Space</p>
-                                <p class="sidebar-jobs__location">Barcelona (Presencial)</p>
-                                <span class="siderbar-jobs__public">Publicat fa 2 setmanes</span>
-                                <button
-                                    type="button"
-                                    class="sidebar-jobs__btn-connect"
-                                    aria-label="Connectar amb Ruth Daniela Aguirre"
-                                >
-                                    Sol·licita ara
-                                </button>
-                            </article>
-                        </li>
-                        <li class="sidebar-jobs__item">
-                            <article class="sidebar-jobs__card">
-                                <button
-                                    type="button"
-                                    class="siderbar-jobs__dismiss"
-                                    aria-label="Omet la suggerència de feina"
-                                >
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <img
-                                    src="/public/assets/images/jobs/job3.jpg"
-                                    alt="Logotip de l'empresa"
-                                    class="sidebar-jobs__img"
-                                />
-                                <h3 class="sidebar-jobs__title">
-                                    Senior Frontend Developer<img
+                            </div>
+                        </article>
+
+                        <article class="job-card">
+                            <button type="button" class="job-card__dismiss" aria-label="Omet la suggerència de feina">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <img
+                                src="/public/assets/images/jobs/job2.jpg"
+                                alt="Logotip de l'empresa"
+                                class="job-card__img"
+                            />
+                            <div class="job-card__content">
+                                <h3 class="job-card__title">
+                                    Front-End Engineer
+                                    <img
                                         src="/public/assets/icons/jobs/verification.png"
                                         alt=""
-                                        aria-label="true"
+                                        aria-hidden="true"
+                                        class="job-card__verified"
                                     />
                                 </h3>
-                                <p class="sidebar-jobs__stack">Heymondo</p>
-                                <p class="sidebar-jobs__location">Espanya (a distància)</p>
-                                <span class="siderbar-jobs__public">Publicat fa 4 dies</span>
+                                <p class="job-card__stack">Aistech Space</p>
+                                <p class="job-card__location">Barcelona (Presencial)</p>
+                                <span class="job-card__date">Publicat fa 2 setmanes</span>
                                 <button
                                     type="button"
-                                    class="sidebar-jobs__btn-connect"
-                                    aria-label="Connectar amb Ruth Daniela Aguirre"
+                                    class="job-card__btn-connect"
+                                    aria-label="Sol·licitar Front-End Engineer a Aistech Space"
                                 >
                                     Sol·licita ara
                                 </button>
-                            </article>
-                        </li>
-                        <li class="sidebar-jobs__item">
-                            <article class="sidebar-jobs__card">
-                                <button
-                                    type="button"
-                                    class="siderbar-jobs__dismiss"
-                                    aria-label="Omet la suggerència de feina"
-                                >
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <img
-                                    src="/public/assets/images/jobs/job4.jpg"
-                                    alt="Logotip de l'empresa"
-                                    class="sidebar-jobs__img"
-                                />
-                                <h3 class="sidebar-jobs__title">
-                                    Desarrollador Senior React + TypeScript - Trabajo Remoto
-                                    <img src="/public/assets/icons/jobs/verification.png" alt="" aria-label="true" />
+                            </div>
+                        </article>
+
+                        <article class="job-card">
+                            <button type="button" class="job-card__dismiss" aria-label="Omet la suggerència de feina">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <img
+                                src="/public/assets/images/jobs/job3.jpg"
+                                alt="Logotip de l'empresa"
+                                class="job-card__img"
+                            />
+                            <div class="job-card__content">
+                                <h3 class="job-card__title">
+                                    Senior Frontend Developer
+                                    <img
+                                        src="/public/assets/icons/jobs/verification.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="job-card__verified"
+                                    />
                                 </h3>
-                                <p class="sidebar-jobs__stack">BairesDev</p>
-                                <p class="sidebar-jobs__location">Barcelona (a distància)</p>
-                                <span class="siderbar-jobs__public">Publicat fa 24 minuts</span>
-                                <button
-                                    type="button"
-                                    class="sidebar-jobs__btn-connect"
-                                    aria-label="Connectar amb Ruth Daniela Aguirre"
-                                >
-                                    Sol·licita ara
-                                </button>
-                            </article>
-                        </li>
-                        <li class="sidebar-jobs__item">
-                            <article class="sidebar-jobs__card">
-                                <button
-                                    type="button"
-                                    class="siderbar-jobs__dismiss"
-                                    aria-label="Omet la suggerència de feina"
-                                >
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <img
-                                    src="/public/assets/images/jobs/job5.jpg"
-                                    alt="Logotip de l'empresa"
-                                    class="sidebar-jobs__img"
-                                />
-                                <h3 class="sidebar-jobs__title">
-                                    Desarrollador Senior React + TypeScript - Trabajo Remoto
-                                    <img src="/public/assets/icons/jobs/verification.png" alt="" aria-label="true" />
-                                </h3>
-                                <p class="sidebar-jobs__stack">BairesDev</p>
-                                <p class="sidebar-jobs__location">Barcelona (a distància)</p>
-                                <span class="siderbar-jobs__public">Publicat fa 5 dies</span>
-                                <button
-                                    type="button"
-                                    class="sidebar-jobs__btn-connect"
-                                    aria-label="Connectar amb Ruth Daniela Aguirre"
-                                >
-                                    Sol·licita ara
-                                </button>
-                            </article>
-                        </li>
-                        <li class="sidebar-jobs__item">
-                            <article class="sidebar-jobs__card">
-                                <button
-                                    type="button"
-                                    class="siderbar-jobs__dismiss"
-                                    aria-label="Omet la suggerència de feina"
-                                >
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <img
-                                    src="/public/assets/images/jobs/job6.jpg"
-                                    alt="Logotip de l'empresa"
-                                    class="sidebar-jobs__img"
-                                />
-                                <h3 class="sidebar-jobs__title">
-                                    Software Engineer, New Grad - Frontend
-                                    <img src="/public/assets/icons/jobs/verification.png" alt="" aria-label="true" />
-                                </h3>
-                                <p class="sidebar-jobs__stack">Innovamat</p>
-                                <p class="sidebar-jobs__location">Sant Cugat del Vallès (Híbrid)</p>
-                                <span class="sidebar-jobs__checked"
-                                    ><img
+                                <p class="job-card__stack">Heymondo</p>
+                                <p class="job-card__location">Espanya (a distància)</p>
+                                <span class="job-card__date">Publicat fa 4 dies</span>
+                                <span class="job-card__checked">
+                                    <img
                                         src="/public/assets/icons/jobs/icon-jobs-cheked.png"
                                         alt=""
-                                        aria-label="true"
+                                        aria-hidden="true"
+                                        class="job-card__checked-icon"
                                     />
-                                    Evaluando aplicacions actives</span
-                                >
-                                <span class="siderbar-jobs__public">Publicat fa una setmana</span>
+                                    Revisant candidatures
+                                </span>
                                 <button
                                     type="button"
-                                    class="sidebar-jobs__btn-connect"
-                                    aria-label="Connectar amb Ruth Daniela Aguirre"
+                                    class="job-card__btn-connect"
+                                    aria-label="Sol·licitar Senior Frontend Developer a Heymondo"
                                 >
                                     Sol·licita ara
                                 </button>
-                            </article>
-                        </li>
-                    </ul>
-                </div>
-            </aside>
+                            </div>
+                        </article>
 
-            <section class="job-detail" aria-labelledby="job-title-heading">
-                <div class="job-detail__header">
-                    <div class="job-detail__company-info">
-                        <img
-                            src="/public/assets/images/jobs/job1.jpg"
-                            alt="Logotip de DDB Spain"
-                            class="job-detail__logo"
-                        />
-                        <span class="job-detail__company-name" id="job-title-heading">DDB Spain</span>
+                        <article class="job-card">
+                            <button type="button" class="job-card__dismiss" aria-label="Omet la suggerència de feina">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <img
+                                src="/public/assets/images/jobs/job4.jpg"
+                                alt="Logotip de l'empresa"
+                                class="job-card__img"
+                            />
+                            <div class="job-card__content">
+                                <h3 class="job-card__title">
+                                    Desarrollador Senior React + TypeScript - Trabajo Remoto
+                                    <img
+                                        src="/public/assets/icons/jobs/verification.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="job-card__verified"
+                                    />
+                                </h3>
+                                <p class="job-card__stack">BairesDev</p>
+                                <p class="job-card__location">Barcelona (a distància)</p>
+                                <span class="job-card__date">Publicat fa 24 minuts</span>
+                                <button
+                                    type="button"
+                                    class="job-card__btn-connect"
+                                    aria-label="Sol·licitar Desarrollador Senior React a BairesDev"
+                                >
+                                    Sol·licita ara
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="job-card">
+                            <button type="button" class="job-card__dismiss" aria-label="Omet la suggerència de feina">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <img
+                                src="/public/assets/images/jobs/job5.jpg"
+                                alt="Logotip de l'empresa"
+                                class="job-card__img"
+                            />
+                            <div class="job-card__content">
+                                <h3 class="job-card__title">
+                                    Desarrollador Senior React + TypeScript - Trabajo Remoto
+                                    <img
+                                        src="/public/assets/icons/jobs/verification.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="job-card__verified"
+                                    />
+                                </h3>
+                                <p class="job-card__stack">BairesDev</p>
+                                <p class="job-card__location">Barcelona (a distància)</p>
+                                <span class="job-card__date">Publicat fa 5 dies</span>
+                                <button
+                                    type="button"
+                                    class="job-card__btn-connect"
+                                    aria-label="Sol·licitar Desarrollador Senior React a BairesDev"
+                                >
+                                    Sol·licita ara
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="job-card">
+                            <button type="button" class="job-card__dismiss" aria-label="Omet la suggerència de feina">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <img
+                                src="/public/assets/images/jobs/job6.jpg"
+                                alt="Logotip de l'empresa"
+                                class="job-card__img"
+                            />
+                            <div class="job-card__content">
+                                <h3 class="job-card__title">Software Engineer, New Grad - Frontend</h3>
+                                <p class="job-card__stack">Innovamat</p>
+                                <p class="job-card__location">Sant Cugat del Vallès (Híbrid)</p>
+                                <span class="job-card__checked">
+                                    <img
+                                        src="/public/assets/icons/jobs/icon-jobs-cheked.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="job-card__checked-icon"
+                                    />
+                                    Revisant candidatures
+                                </span>
+                                <span class="job-card__date">Publicat fa una setmana</span>
+                                <button
+                                    type="button"
+                                    class="job-card__btn-connect"
+                                    aria-label="Sol·licitar Software Engineer a Innovamat"
+                                >
+                                    Sol·licita ara
+                                </button>
+                            </div>
+                        </article>
                     </div>
-                    <button type="button" class="job-detail__options-btn" aria-label="Més opcions de l'oferta">
-                        <img src="/public/assets/icons/jobs/more-opcion.png" alt="" aria-hidden="true" />
-                    </button>
-                </div>
-
-                <div class="job-detail__meta">
-                    <p class="job-detail__location">Barcelona, Catalunya, Espanya</p>
-                    <span class="job-detail__time"><strong>Fa 2 dies</strong></span>
-                </div>
-
-                <div class="job-detail__actions">
-                    <span class="job-detail__badge job-detail__badge--workmode">Híbrid</span>
-                    <span class="job-detail__badge job-detail__badge--type">Dia sencer</span>
-                    <button type="button" class="job-detail__btn job-detail__btn--primary">Sol·licitar</button>
-                    <button type="button" class="job-detail__btn job-detail__btn--secondary">Desa</button>
-                </div>
+                </section>
             </section>
-
-            <section class="job-description" aria-label="Informació detallada de l'ocupació">
-                <div class="job-description__container">
-                    <h1 class="job-description__main-title">Sobre l'ocupació</h1>
-                    <p class="job-description__profile-label">Perfil</p>
-                    <p class="job-description__text">
-                        A TBWA-DDB, busquem un/a desenvolupador/a de React per incorporar-te al nostre equip de
-                        Producció Digital, treballant per a una marca internacional líder en un entorn tècnic modern i
-                        col·laboratiu.
-                    </p>
-
-                    <h2 class="job-description__subtitle">Què faràs?</h2>
-                    <ul class="job-description__list">
-                        <li class="job-description__item">
-                            Desenvolupament d'aplicacions Feature en React dins d'una arquitectura de microfrontends.
-                        </li>
-                        <li class="job-description__item">Integració del frontend amb API i serveis corporatius.</li>
-                        <li class="job-description__item">Manteniment i evolució d'aplicacions en producció.</li>
-                        <li class="job-description__item">
-                            Treballar diàriament amb desenvolupadors de backend (Java / Spring Boot), entenent tot el
-                            flux de treball de l'aplicació.
-                        </li>
-                        <li class="job-description__item">
-                            Oportunitat d'involucrar-se gradualment en tasques de backend i integracions (incloent-hi
-                            Salesforce) si estàs interessat a desenvolupar-te en un rol Full-stack.
-                        </li>
-                        <li class="job-description__item">
-                            Col·laboració amb els equips tècnics de UX, de negoci i internacionals.
-                        </li>
-                        <li class="job-description__item">
-                            Participació en els processos de CI/CD i l'ús d'eines de monitoratge (Sentry, Dynatrace,
-                            etc.).
-                        </li>
-                    </ul>
-
-                    <h2 class="job-description__subtitle">Què busquem?</h2>
-                    <ul class="job-description__list">
-                        <li class="job-description__item">Experiència professional amb React (aprox. 2-4 anys).</li>
-                        <li class="job-description__item">
-                            Domini de JavaScript/TypeScript i dels fonaments del front-end.
-                        </li>
-                        <li class="job-description__item">
-                            Un desenvolupador/a de front-end amb curiositat per tot l'ecosistema.
-                        </li>
-                        <li class="job-description__item">
-                            Atenció al detall, enfocament en la qualitat i mentalitat d'equip.
-                        </li>
-                    </ul>
-
-                    <h2 class="job-description__subtitle">Què oferim?</h2>
-                    <p class="job-description__text">
-                        Un model de treball híbrid: dies a l'oficina combinats com dies de teletreball.
-                    </p>
-                    <p class="job-description__text">
-                        Un entorn de treball creatiu i dinàmic on podràs desenvolupar tot el teu potencial i créixer
-                        tant personalment com professionalment.
-                    </p>
-                    <p class="job-description__text">Un paquet de beneficis i accés a formació contínua.</p>
-                    <p class="job-description__text">
-                        Totes les sol·licituds seran considerades per al lloc de treball, independentment de la raça,
-                        l'orientació sexual o l'edat.
-                    </p>
-                </div>
-            </section>
-        </section>
-
+        </main>
         <footer class="footer-jobs">
             <nav class="bottom-jobs-nav" saria-label="Navegació inferior per a mòbil">
                 <ul class="bottom-jobs-nav__list">
