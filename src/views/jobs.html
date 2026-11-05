@@ -164,47 +164,47 @@
                         <h2 class="sidebar-jobs__title">Resum de la cerca</h2>
                         <ul class="sidebar-jobs__list">
                             <li class="sidebar-jobs__item">
-                                <a href="./connections.html" class="sidebar-jobs__link">
-                                    <span class="sidebar-jobs__text">Feines guardades</span>
+                                <a href="./connections.html" class="sidebar-jobs__link--icon">
                                     <img
                                         src="/public/assets/icons/jobs/icon-jobs-save.png"
                                         alt=""
                                         aria-hidden="true"
                                         class="sidebar-jobs__icon"
                                     />
+                                    <span class="sidebar-jobs__text">Feines guardades</span>
                                 </a>
                             </li>
                             <li class="sidebar-jobs__item">
-                                <a href="./connections.html" class="sidebar-jobs__link">
-                                    <span class="sidebar-jobs__text">Aplicacions</span>
+                                <a href="./connections.html" class="sidebar-jobs__link--icon">
                                     <img
                                         src="/public/assets/icons/jobs/icon-jobs-send.png"
                                         alt=""
                                         aria-hidden="true"
                                         class="sidebar-jobs__icon"
                                     />
+                                    <span class="sidebar-jobs__text">Aplicacions</span>
                                 </a>
                             </li>
                             <li class="sidebar-jobs__item">
-                                <a href="./connections.html" class="sidebar-jobs__link">
-                                    <span class="sidebar-jobs__text">Registre d'ocupacions</span>
+                                <a href="./connections.html" class="sidebar-jobs__link--icon">
                                     <img
                                         src="/public/assets/icons/jobs/icon-jobs-register.png"
                                         alt=""
                                         aria-hidden="true"
                                         class="sidebar-jobs__icon"
                                     />
+                                    <span class="sidebar-jobs__text">Registre d'ocupacions</span>
                                 </a>
                             </li>
                             <li class="sidebar-jobs__item">
-                                <a href="./connections.html" class="sidebar-jobs__link">
-                                    <span class="sidebar-jobs__text">Preferències</span>
+                                <a href="./connections.html" class="sidebar-jobs__link--icon">
                                     <img
                                         src="/public/assets/icons/jobs/icon-jobs-setting.png"
                                         alt=""
                                         aria-hidden="true"
                                         class="sidebar-jobs__icon"
                                     />
+                                    <span class="sidebar-jobs__text">Preferències</span>
                                 </a>
                             </li>
                         </ul>
@@ -213,36 +213,36 @@
                         <h2 class="sidebar-jobs__title">Exploració professional</h2>
                         <ul class="sidebar-jobs__list">
                             <li class="sidebar-jobs__item">
-                                <a href="./connections.html" class="sidebar-jobs__link">
-                                    <span class="sidebar-jobs__text">Empreses seguides</span>
+                                <a href="./connections.html" class="sidebar-jobs__link--icon">
                                     <img
                                         src="/public/assets/icons/jobs/icon-jobs-company.png"
                                         alt=""
                                         aria-hidden="true"
                                         class="sidebar-jobs__icon"
                                     />
+                                    <span class="sidebar-jobs__text">Empreses seguides</span>
                                 </a>
                             </li>
                             <li class="sidebar-jobs__item">
-                                <a href="./connections.html" class="sidebar-jobs__link">
-                                    <span class="sidebar-jobs__text">Alertes de cerca</span>
+                                <a href="./connections.html" class="sidebar-jobs__link--icon">
                                     <img
                                         src="/public/assets/icons/jobs/icon-jobs-alert.png"
                                         alt=""
                                         aria-hidden="true"
                                         class="sidebar-jobs__icon"
                                     />
+                                    <span class="sidebar-jobs__text">Alertes de cerca</span>
                                 </a>
                             </li>
                             <li class="sidebar-jobs__item">
-                                <a href="./connections.html" class="sidebar-jobs__link">
-                                    <span class="sidebar-jobs__text">Favorits</span>
+                                <a href="./connections.html" class="sidebar-jobs__link--icon">
                                     <img
                                         src="/public/assets/icons/jobs/icon-jobs-favorits.png"
                                         alt=""
                                         aria-hidden="true"
                                         class="sidebar-jobs__icon"
                                     />
+                                    <span class="sidebar-jobs__text">Favorits</span>
                                 </a>
                             </li>
                         </ul>
@@ -264,19 +264,29 @@
                                 class="job-card__img"
                             />
                             <div class="job-card__content">
-                                <h3 class="job-card__title">React Developer con proyección a Fullstack</h3>
-                                <p class="job-card__stack">DDB Spain</p>
-                                <p class="job-card__location">Barcelona</p>
-                                <span class="job-card__checked">
-                                    <img
-                                        src="/public/assets/icons/jobs/icon-jobs-cheked.png"
-                                        alt=""
-                                        aria-hidden="true"
-                                        class="job-card__checked-icon"
-                                    />
-                                    Revisant candidatures
-                                </span>
-                                <span class="job-card__date">Publicat fa 2 dies</span>
+                                <div class="job-card__header">
+                                    <h3 class="job-card__title">
+                                        React Developer con proyección a Fullstack
+                                        <img
+                                            src="/public/assets/icons/jobs/verification.png"
+                                            alt=""
+                                            aria-hidden="true"
+                                            class="job-card__verified"
+                                        />
+                                    </h3>
+                                    <p class="job-card__stack">DDB Spain</p>
+                                    <p class="job-card__location">Barcelona</p>
+                                    <span class="job-card__checked">
+                                        <img
+                                            src="/public/assets/icons/jobs/icon-jobs-cheked.png"
+                                            alt=""
+                                            aria-hidden="true"
+                                            class="job-card__checked-icon"
+                                        />
+                                        Revisant candidatures
+                                    </span>
+                                </div>
+
                                 <button
                                     type="button"
                                     class="job-card__btn-connect"
@@ -297,18 +307,21 @@
                                 class="job-card__img"
                             />
                             <div class="job-card__content">
-                                <h3 class="job-card__title">
-                                    Front-End Engineer
-                                    <img
-                                        src="/public/assets/icons/jobs/verification.png"
-                                        alt=""
-                                        aria-hidden="true"
-                                        class="job-card__verified"
-                                    />
-                                </h3>
-                                <p class="job-card__stack">Aistech Space</p>
-                                <p class="job-card__location">Barcelona (Presencial)</p>
-                                <span class="job-card__date">Publicat fa 2 setmanes</span>
+                                <div class="job-card__header">
+                                    <h3 class="job-card__title">
+                                        Front-End Engineer
+                                        <img
+                                            src="/public/assets/icons/jobs/verification.png"
+                                            alt=""
+                                            aria-hidden="true"
+                                            class="job-card__verified"
+                                        />
+                                    </h3>
+                                    <p class="job-card__stack">Aistech Space</p>
+                                    <p class="job-card__location">Barcelona (Presencial)</p>
+                                    <span class="job-card__date">Publicat fa 2 setmanes</span>
+                                </div>
+
                                 <button
                                     type="button"
                                     class="job-card__btn-connect"
@@ -329,27 +342,30 @@
                                 class="job-card__img"
                             />
                             <div class="job-card__content">
-                                <h3 class="job-card__title">
-                                    Senior Frontend Developer
-                                    <img
-                                        src="/public/assets/icons/jobs/verification.png"
-                                        alt=""
-                                        aria-hidden="true"
-                                        class="job-card__verified"
-                                    />
-                                </h3>
-                                <p class="job-card__stack">Heymondo</p>
-                                <p class="job-card__location">Espanya (a distància)</p>
-                                <span class="job-card__date">Publicat fa 4 dies</span>
-                                <span class="job-card__checked">
-                                    <img
-                                        src="/public/assets/icons/jobs/icon-jobs-cheked.png"
-                                        alt=""
-                                        aria-hidden="true"
-                                        class="job-card__checked-icon"
-                                    />
-                                    Revisant candidatures
-                                </span>
+                                <div class="job-card__header">
+                                    <h3 class="job-card__title">
+                                        Senior Frontend Developer
+                                        <img
+                                            src="/public/assets/icons/jobs/verification.png"
+                                            alt=""
+                                            aria-hidden="true"
+                                            class="job-card__verified"
+                                        />
+                                    </h3>
+                                    <p class="job-card__stack">Heymondo</p>
+                                    <p class="job-card__location">Espanya (a distància)</p>
+                                    <span class="job-card__checked">
+                                        <img
+                                            src="/public/assets/icons/jobs/icon-jobs-cheked.png"
+                                            alt=""
+                                            aria-hidden="true"
+                                            class="job-card__checked-icon"
+                                        />
+                                        Revisant candidatures
+                                    </span>
+                                    <span class="job-card__date">Publicat fa 4 dies</span>
+                                </div>
+
                                 <button
                                     type="button"
                                     class="job-card__btn-connect"
@@ -365,23 +381,26 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             <img
-                                src="/public/assets/images/jobs/job4.jpg"
+                                src="/public/assets/images/jobs/job4.avif"
                                 alt="Logotip de l'empresa"
                                 class="job-card__img"
                             />
                             <div class="job-card__content">
-                                <h3 class="job-card__title">
-                                    Desarrollador Senior React + TypeScript - Trabajo Remoto
-                                    <img
-                                        src="/public/assets/icons/jobs/verification.png"
-                                        alt=""
-                                        aria-hidden="true"
-                                        class="job-card__verified"
-                                    />
-                                </h3>
-                                <p class="job-card__stack">BairesDev</p>
-                                <p class="job-card__location">Barcelona (a distància)</p>
-                                <span class="job-card__date">Publicat fa 24 minuts</span>
+                                <div class="job-card__header">
+                                    <h3 class="job-card__title">
+                                        Desarrollador Senior React + TypeScript - Trabajo Remoto
+                                        <img
+                                            src="/public/assets/icons/jobs/verification.png"
+                                            alt=""
+                                            aria-hidden="true"
+                                            class="job-card__verified"
+                                        />
+                                    </h3>
+                                    <p class="job-card__stack">BairesDev</p>
+                                    <p class="job-card__location">Barcelona (a distància)</p>
+                                    <span class="job-card__date">Publicat fa 24 minuts</span>
+                                </div>
+
                                 <button
                                     type="button"
                                     class="job-card__btn-connect"
@@ -402,18 +421,21 @@
                                 class="job-card__img"
                             />
                             <div class="job-card__content">
-                                <h3 class="job-card__title">
-                                    Desarrollador Senior React + TypeScript - Trabajo Remoto
-                                    <img
-                                        src="/public/assets/icons/jobs/verification.png"
-                                        alt=""
-                                        aria-hidden="true"
-                                        class="job-card__verified"
-                                    />
-                                </h3>
-                                <p class="job-card__stack">BairesDev</p>
-                                <p class="job-card__location">Barcelona (a distància)</p>
-                                <span class="job-card__date">Publicat fa 5 dies</span>
+                                <div class="job-card__header">
+                                    <h3 class="job-card__title">
+                                        Desarrollador Senior React + TypeScript - Trabajo Remoto
+                                        <img
+                                            src="/public/assets/icons/jobs/verification.png"
+                                            alt=""
+                                            aria-hidden="true"
+                                            class="job-card__verified"
+                                        />
+                                    </h3>
+                                    <p class="job-card__stack">BairesDev</p>
+                                    <p class="job-card__location">Barcelona (a distància)</p>
+                                    <span class="job-card__date">Publicat fa 5 dies</span>
+                                </div>
+
                                 <button
                                     type="button"
                                     class="job-card__btn-connect"
@@ -434,19 +456,30 @@
                                 class="job-card__img"
                             />
                             <div class="job-card__content">
-                                <h3 class="job-card__title">Software Engineer, New Grad - Frontend</h3>
-                                <p class="job-card__stack">Innovamat</p>
-                                <p class="job-card__location">Sant Cugat del Vallès (Híbrid)</p>
-                                <span class="job-card__checked">
-                                    <img
-                                        src="/public/assets/icons/jobs/icon-jobs-cheked.png"
-                                        alt=""
-                                        aria-hidden="true"
-                                        class="job-card__checked-icon"
-                                    />
-                                    Revisant candidatures
-                                </span>
-                                <span class="job-card__date">Publicat fa una setmana</span>
+                                <div class="job-card__header">
+                                    <h3 class="job-card__title">
+                                        Software Engineer, New Grad - Frontend
+                                        <img
+                                            src="/public/assets/icons/jobs/verification.png"
+                                            alt=""
+                                            aria-hidden="true"
+                                            class="job-card__verified"
+                                        />
+                                    </h3>
+                                    <p class="job-card__stack">Innovamat</p>
+                                    <p class="job-card__location">Sant Cugat del Vallès (Híbrid)</p>
+                                    <span class="job-card__checked">
+                                        <img
+                                            src="/public/assets/icons/jobs/icon-jobs-cheked.png"
+                                            alt=""
+                                            aria-hidden="true"
+                                            class="job-card__checked-icon"
+                                        />
+                                        Revisant candidatures
+                                    </span>
+                                    <span class="job-card__date">Publicat fa una setmana</span>
+                                </div>
+
                                 <button
                                     type="button"
                                     class="job-card__btn-connect"
