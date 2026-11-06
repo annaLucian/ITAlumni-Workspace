@@ -145,12 +145,7 @@
     .events-feed__title {
         display: block;
     }
-    .sidebar-events {
-        width: 25%;
-    }
-    .events-feed {
-        width: 70%;
-    }
+
     .events-card__content {
         display: flex;
         flex-direction: column;
@@ -158,9 +153,9 @@
     }
     .events-layout {
         width: 90%;
-        display: flex;
-        gap: 6rem;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 300px 2fr;
+        gap: 3rem 6rem;
         margin-top: 5rem;
         margin-bottom: 8rem;
     }
@@ -177,13 +172,17 @@
     }
 
     .event-card__title {
-        font-size: 1.1rem;
-        line-height: 1.8rem;
-        margin-bottom: 1rem;
+        font-size: 0.95rem;
+        line-height: 1.3rem;
+        margin-bottom: 0.8rem;
     }
     .event-card__datetime,
     .event-card__organizer {
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+    .event-card__organizer {
+        flex-direction: column;
+        align-items: baseline;
     }
     .event-card__location-icon {
         width: 1.2rem;
@@ -192,18 +191,19 @@
         font-size: 0.95rem;
         margin: 1rem 0;
     }
-
+    .event-card__actions {
+        gap: 0.6rem;
+    }
     .event-card__btn-view {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 0.5rem 2rem;
-        width: 85%;
     }
     .event-card__btn-share img {
-        width: 1.2rem;
+        width: 1rem;
     }
     .event-card__btn-share {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2.2rem;
+        height: 2.2rem;
     }
     .events-feed__title {
         font-size: 1.3rem;
@@ -259,14 +259,8 @@
 }
 
 @media (min-width: 1400px) {
-    .sidebar-events {
-        width: 20%;
-    }
-    .events-feed {
-        width: 80%;
-    }
     .events-layout {
-        gap: 6rem;
+        gap: 4rem;
     }
     .event-card__location-icon {
         width: 1rem;
@@ -290,7 +284,13 @@
     }
     .event-card__datetime,
     .event-card__organizer {
-        font-size: 0.9rem;
+        font-size: 1rem;
+    }
+    .event-card__organizer {
+        flex-direction: row;
+    }
+    .event-dots {
+        display: block;
     }
     .event-card__actions {
         margin-top: 1rem;

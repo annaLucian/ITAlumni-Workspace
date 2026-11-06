@@ -140,4 +140,7 @@
     .jobs-welcome {
         width: 92%;
     }
+    .jobs-welcome__search {
+        width: 22%;
+    }
 }

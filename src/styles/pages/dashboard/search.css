@@ -90,4 +90,7 @@
     .dashboard-welcome {
         width: 92%;
     }
+    .dashboard-search {
+        width: 22%;
+    }
 }

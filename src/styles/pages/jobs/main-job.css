@@ -131,8 +131,8 @@
     .jobs-feed__title {
         display: block;
     }
-    .sidebar-jobs {
-        width: 45%;
+    .job-card {
+        gap: 1.25rem;
     }
     .job-card__content {
         display: flex;
@@ -141,9 +141,10 @@
     }
     .jobs-layout {
         width: 90%;
-        display: flex;
-        gap: 6rem;
-        justify-content: space-between;
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: 300px 2fr;
+        gap: 3rem 6rem;
         margin-top: 5rem;
         margin-bottom: 8rem;
     }
@@ -160,25 +161,25 @@
     }
 
     .job-card__img {
-        width: 5rem;
-        height: 5rem;
+        width: 3rem;
+        height: 3rem;
     }
 
     .job-card__title {
-        font-size: 1.4rem;
-        line-height: 1.8rem;
-        margin-bottom: 1rem;
+        font-size: 1rem;
+        line-height: 1.3rem;
+        margin-bottom: 0.5rem;
     }
     .job-card__checked {
-        font-size: 0.95rem;
+        font-size: 0.85rem;
         margin-bottom: 1.2rem;
     }
     .job-card__verified,
     .job-card__checked-icon {
-        width: 1.4rem;
+        width: 1.2rem;
     }
     .job-card__btn-connect {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 0.5rem 2rem;
     }
 
@@ -208,11 +209,11 @@
         line-height: 1.8rem;
     }
     .job-card__stack {
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-bottom: 0.6rem;
     }
     .job-card__location {
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-bottom: 0.5rem;
     }
     .sidebar-jobs__badge {
@@ -236,16 +237,16 @@
 }
 
 @media (min-width: 1400px) {
-    .sidebar-jobs {
-        width: 30%;
-    }
     .jobs-layout {
-        gap: 8rem;
+        gap: 6rem;
     }
     .jobs-feed__list {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 4rem 2rem;
+        grid-template-columns: repeat(3, 1fr);
         justify-items: end;
+    }
+    .job-card__img {
+        width: 5rem;
+        height: 5rem;
     }
     .job-card__dismiss {
         font-size: 1.8rem;
@@ -291,5 +292,12 @@
 @media (min-width: 1600px) {
     .jobs-layout {
         width: 92%;
+    }
+    .job-card__img {
+        width: 6rem;
+        height: 6rem;
+    }
+    .jobs-feed__list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }

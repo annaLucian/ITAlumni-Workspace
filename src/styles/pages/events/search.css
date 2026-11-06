@@ -156,4 +156,7 @@
     .events-welcome {
         width: 92%;
     }
+    .events-welcome__search {
+        width: 22%;
+    }
 }
