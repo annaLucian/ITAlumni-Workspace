@@ -64,14 +64,29 @@
                             aria-hidden="true"
                         />
                     </button>
-                    <button type="button" class="dashboard-header__profile-btn" aria-label="Perfil d'usuari">
-                        <img
-                            src="/public/assets/images/dashboard/dashboard-avatar.svg"
-                            alt=""
-                            aria-hidden="true"
-                            class="dashboard-header__avatar"
-                        />
-                    </button>
+                    <div class="dashboard-header__user-menu">
+                        <button type="button" class="dashboard-header__profile-btn" aria-label="Perfil d'usuari">
+                            <img
+                                src="/public/assets/images/dashboard/dashboard-avatar.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="dashboard-header__avatar"
+                            />
+                        </button>
+                        <div class="dashboard-header__dropdown">
+                            <a href="./profile.html" class="dashboard-header__dropdown-link">El meu perfil</a>
+                            <a href="./settings.html" class="dashboard-header__dropdown-link">Configuració</a>
+                            <hr class="dashboard-header__dropdown-divider" />
+                            <a href="/" class="dashboard-header__dropdown-link dashboard-header__dropdown-link--logout">
+                                <img
+                                    src="/public/assets/icons/dashboard/icon-dashboard-logout.png"
+                                    alt=""
+                                    aria-hidden="true"
+                                />
+                                Tancar sessió
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </header>

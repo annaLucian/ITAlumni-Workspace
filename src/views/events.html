@@ -30,11 +30,11 @@
                     <li class="events-header__menu-item">
                         <a href="./networking.html" class="events-header__menu-link">Xarxa</a>
                     </li>
-                    <li class="dashboard-header__menu-item">
-                        <a href="./jobs.html" class="dashboard-header__menu-link">Ocupació</a>
+                    <li class="events-header__menu-item">
+                        <a href="./jobs.html" class="events-header__menu-link">Ocupació</a>
                     </li>
-                    <li class="dashboard-header__menu-item--mobile">
-                        <a href="./events.html" class="dashboard-header__menu-link">Esdeveniment</a>
+                    <li class="events-header__menu-item--mobile">
+                        <a href="./events.html" class="events-header__menu-link">Esdeveniment</a>
                     </li>
                 </ul>
             </nav>
@@ -64,14 +64,29 @@
                             aria-hidden="true"
                         />
                     </button>
-                    <button type="button" class="events-header__profile-btn" aria-label="Perfil d'usuari">
-                        <img
-                            src="/public/assets/images/dashboard/dashboard-avatar.svg"
-                            alt=""
-                            aria-hidden="true"
-                            class="events-header__avatar"
-                        />
-                    </button>
+                    <div class="events-header__user-menu">
+                        <button type="button" class="events-header__profile-btn" aria-label="Perfil d'usuari">
+                            <img
+                                src="/public/assets/images/dashboard/dashboard-avatar.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="events-header__avatar"
+                            />
+                        </button>
+                        <div class="events-header__dropdown">
+                            <a href="./profile.html" class="events-header__dropdown-link">El meu perfil</a>
+                            <a href="./settings.html" class="events-header__dropdown-link">Configuració</a>
+                            <hr class="events-header__dropdown-divider" />
+                            <a href="/" class="events-header__dropdown-link events-header__dropdown-link--logout">
+                                <img
+                                    src="/public/assets/icons/dashboard/icon-dashboard-logout.png"
+                                    alt=""
+                                    aria-hidden="true"
+                                />
+                                Tancar sessió
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -87,7 +102,7 @@
                     <input
                         type="search"
                         class="events-welcome__input"
-                        placeholder="Cercar esdeveniments, tallers, webinars..."
+                        placeholder="Cercar esdeveniments..."
                         aria-label="Cercar esdeveniments"
                     />
                 </div>

@@ -131,7 +131,7 @@
     }
 
     .events-welcome__search {
-        width: 40%;
+        width: 30%;
         border: 1px solid #bcc1ca;
         background: var(--bg-body);
     }
@@ -146,7 +146,7 @@
 }
 @media (min-width: 1400px) {
     .events-welcome__search {
-        width: 30%;
+        width: 25%;
     }
     .events-filters__btn--desktop {
         display: flex;

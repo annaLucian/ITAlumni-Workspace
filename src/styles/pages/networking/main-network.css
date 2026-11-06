@@ -83,7 +83,7 @@
 @media (min-width: 768px) {
     .networking-content {
         width: 85%;
-        margin-top: 4rem;
+        margin-top: 2.8rem;
     }
     .networking-card__media {
         width: 10rem;
@@ -126,7 +126,7 @@
     .networking-content {
         width: 90%;
         display: flex;
-        gap: 8rem;
+        gap: 4rem;
         justify-content: space-between;
     }
     .sidebar-networking__group {

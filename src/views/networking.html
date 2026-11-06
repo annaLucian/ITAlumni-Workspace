@@ -66,14 +66,32 @@
                             aria-hidden="true"
                         />
                     </button>
-                    <button type="button" class="networking-header__profile-btn" aria-label="Perfil d'usuari">
-                        <img
-                            src="/public/assets/images/dashboard/dashboard-avatar.svg"
-                            alt=""
-                            aria-hidden="true"
-                            class="networking-header__avatar"
-                        />
-                    </button>
+                    <div class="networking-header__user-menu">
+                        <button type="button" class="networking-header__profile-btn" aria-label="Perfil d'usuari">
+                            <img
+                                src="/public/assets/images/dashboard/dashboard-avatar.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="networking-header__avatar"
+                            />
+                        </button>
+                        <div class="networking-header__dropdown">
+                            <a href="./profile.html" class="networking-header__dropdown-link">El meu perfil</a>
+                            <a href="./settings.html" class="networking-header__dropdown-link">Configuració</a>
+                            <hr class="networking-header__dropdown-divider" />
+                            <a
+                                href="/"
+                                class="networking-header__dropdown-link networking-header__dropdown-link--logout"
+                            >
+                                <img
+                                    src="/public/assets/icons/dashboard/icon-dashboard-logout.png"
+                                    alt=""
+                                    aria-hidden="true"
+                                />
+                                Tancar sessió
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -94,17 +112,52 @@
                         aria-label="Cercar exalumnes"
                     />
                 </div>
-                <div class="filters" aria-label="Filtres de cerca">
-                    <span class="filters__label">Filtres:</span>
-                    <div class="filters__group" role="tablist">
-                        <button type="button" class="filters__btn" role="tab" aria-selected="false">
-                            Activitat recent
+                <div class="networking-welcome__filters" aria-label="Filtres de cerca">
+                    <div class="networking-filters__group" role="tablist">
+                        <button type="button" class="networking-filters__btn" role="tab" aria-selected="false">
+                            <img
+                                src="/public/assets/icons/jobs/icon-jobs-filter.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="filters__icon"
+                            />
+                            <span class="networking-filters__text">Filters</span>
+                            <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" aria-hidden="true" />
                         </button>
-                        <button type="button" class="filters__btn filters__btn--active" role="tab" aria-selected="true">
-                            Popular
+                        <button type="button" class="networking-filters__btn" role="tab" aria-selected="true">
+                            <img
+                                src="/public/assets/icons/networking/popukar-user.png"
+                                alt=""
+                                aria-hidden="true"
+                                class="filter-popular__icon"
+                            />
+                            <span class="networking-filters__text">Usuaris populars</span>
+                            <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" aria-hidden="true" />
                         </button>
-                        <button type="button" class="filters__btn" role="tab" aria-selected="false">
-                            Més connectat
+                        <button
+                            type="button"
+                            class="networking-filters__btn networking-filters__btn--tablet"
+                            role="tab"
+                            aria-selected="false"
+                        >
+                            <span class="networking-filters__text">Més connectat</span>
+                            <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" aria-hidden="true" />
+                        </button>
+                        <button
+                            type="button"
+                            class="networking-filters__btn networking-filters__btn--desktop"
+                            role="tab"
+                            aria-selected="false"
+                        >
+                            <span class="networking-filters__text">Més actius</span>
+                        </button>
+                        <button
+                            type="button"
+                            class="networking-filters__btn networking-filters__btn--desktop networking-filters__btn--active"
+                            role="tab"
+                            aria-selected="false"
+                        >
+                            <span class="networking-filters__text">Tots els filtres</span>
                         </button>
                     </div>
                 </div>
@@ -444,9 +497,9 @@
                                 src="/public/assets/icons/dashboard/calendario.png"
                                 alt=""
                                 aria-hidden="true"
-                                class="bottom-dashboard-nav__icon"
+                                class="bottom-networking-nav__icon"
                             />
-                            <span class="bottom-dashboard-nav__label">Esdeveniment</span>
+                            <span class="bottom-networking-nav__label">Esdeveniment</span>
                         </a>
                     </li>
                 </ul>

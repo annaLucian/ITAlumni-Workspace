@@ -64,14 +64,29 @@
                             aria-hidden="true"
                         />
                     </button>
-                    <button type="button" class="jobs-header__profile-btn" aria-label="Perfil d'usuari">
-                        <img
-                            src="/public/assets/images/dashboard/dashboard-avatar.svg"
-                            alt=""
-                            aria-hidden="true"
-                            class="jobs-header__avatar"
-                        />
-                    </button>
+                    <div class="jobs-header__user-menu">
+                        <button type="button" class="jobs-header__profile-btn" aria-label="Perfil d'usuari">
+                            <img
+                                src="/public/assets/images/dashboard/dashboard-avatar.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="jobs-header__avatar"
+                            />
+                        </button>
+                        <div class="jobs-header__dropdown">
+                            <a href="./profile.html" class="jobs-header__dropdown-link">El meu perfil</a>
+                            <a href="./settings.html" class="jobs-header__dropdown-link">Configuració</a>
+                            <hr class="jobs-header__dropdown-divider" />
+                            <a href="/" class="jobs-header__dropdown-link jobs-header__dropdown-link--logout">
+                                <img
+                                    src="/public/assets/icons/dashboard/icon-dashboard-logout.png"
+                                    alt=""
+                                    aria-hidden="true"
+                                />
+                                Tancar sessió
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </header>
