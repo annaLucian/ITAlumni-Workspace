@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Esdeveniments | ITAlumni</title>
+        <link rel="icon" type="image/png" href="/public/assets/favicon.png" />
+        <link rel="stylesheet" href="../styles/global.css" />
+    </head>
+    <body class="events-page">
+        <header class="events-header">
+            <a href="./dashboard.html" class="events-header--mobile" aria-label="Tornar al perfil">
+                <img src="/public/assets/icons/networking/arrow-left.svg" alt="" aria-label="true" />
+            </a>
+            <nav class="events-header__nav" aria-label="navegació principal">
+                <div class="events-header__brand">
+                    <img
+                        src="/public/assets/icons/dashboard/logo-dashboard.svg"
+                        alt="logo ITAlumni"
+                        class="events-header__logo"
+                    />
+                    <span class="events-header__title">Alumni Connect</span>
+                </div>
+                <ul class="events-header__menu">
+                    <li class="events-header__menu-item">
+                        <a href="./dashboard.html" class="events-header__menu-link events-header__menu-link--active"
+                            >Inici</a
+                        >
+                    </li>
+                    <li class="events-header__menu-item">
+                        <a href="./networking.html" class="events-header__menu-link">Xarxa</a>
+                    </li>
+                    <li class="dashboard-header__menu-item">
+                        <a href="./jobs.html" class="dashboard-header__menu-link">Ocupació</a>
+                    </li>
+                    <li class="dashboard-header__menu-item--mobile">
+                        <a href="./events.html" class="dashboard-header__menu-link">Esdeveniment</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="events-header_wraper" aria-label="Opcions d' usuari">
+                <div class="events-header-actions">
+                    <button type="button" class="events-header__action-btn--desktop" aria-label="Obrir cerca">
+                        <img src="/public/assets/icons/dashboard/icon-dashboard-search.svg" alt="" aria-hidden="true" />
+                    </button>
+                    <button type="button" class="events-header__action-btn--desktop" aria-label="Notificacions">
+                        <img
+                            src="/public/assets/icons/dashboard/icon-dashboard-notification.svg"
+                            alt=""
+                            aria-hidden="true"
+                        />
+                    </button>
+                    <button type="button" class="events-header__action-btn--desktop" aria-label="Configuració">
+                        <img
+                            src="/public/assets/icons/dashboard/icon-dashboard-setting.svg"
+                            alt=""
+                            aria-hidden="true"
+                        />
+                    </button>
+                    <button type="button" class="events-header__action-btn" aria-label="Accessibilitat">
+                        <img
+                            src="/public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-access.svg"
+                            alt=""
+                            aria-hidden="true"
+                        />
+                    </button>
+                    <button type="button" class="events-header__profile-btn" aria-label="Perfil d'usuari">
+                        <img
+                            src="/public/assets/images/dashboard/dashboard-avatar.svg"
+                            alt=""
+                            aria-hidden="true"
+                            class="events-header__avatar"
+                        />
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="events-welcome" aria-label="Cerca i filtres d'esdeveniments">
+                <div class="events-welcome__search">
+                    <img
+                        src="/public/assets/icons/dashboard/icon-dashboard-search.svg"
+                        alt=""
+                        aria-hidden="true"
+                        class="events-search__icon"
+                    />
+                    <input
+                        type="search"
+                        class="events-welcome__input"
+                        placeholder="Cercar esdeveniments, tallers, webinars..."
+                        aria-label="Cercar esdeveniments"
+                    />
+                </div>
+                <div class="events-welcome__filters" aria-label="Filtres d'esdeveniments">
+                    <div class="events-filters__group" role="tablist">
+                        <button type="button" class="events-filters__btn" role="tab" aria-selected="false">
+                            <img src="/public/assets/icons/jobs/icon-jobs-filter.svg" alt="" aria-hidden="true" />
+                            <span class="events-filters__text">Categoria</span>
+                            <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" aria-hidden="true" />
+                        </button>
+
+                        <button
+                            type="button"
+                            class="events-filters__btn events-filters__btn--desktop"
+                            role="tab"
+                            aria-selected="true"
+                        >
+                            <img src="/public/assets/icons/jobs/icon-jobs-filter.svg" alt="" aria-hidden="true" />
+                            <span class="events-filters__text">Modalitat</span>
+                            <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" aria-hidden="true" />
+                        </button>
+
+                        <button
+                            type="button"
+                            class="events-filters__btn events-filters__btn--tablet"
+                            role="tab"
+                            aria-selected="false"
+                        >
+                            <span class="events-filters__text">Data</span>
+                            <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" aria-hidden="true" />
+                        </button>
+
+                        <button
+                            type="button"
+                            class="events-filters__btn events-filters__btn--desktop"
+                            role="tab"
+                            aria-selected="false"
+                        >
+                            <span class="events-filters__text">Gratuïts</span>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="events-filters__btn events-filters__btn--create"
+                            aria-label="Crear un nou esdeveniment"
+                        >
+                            <span class="events-filters__text">Crear un esdeveniment</span>
+                            <img
+                                src="/public/assets/icons/events/icon-event-add.png"
+                                alt=""
+                                aria-hidden="true"
+                                class="events-filters__icon--add"
+                            />
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="events-layout">
+                <aside class="sidebar-events" aria-label="Navegació d'esdeveniments">
+                    <div class="sidebar-events__group">
+                        <h2 class="sidebar-events__title">Els meus esdeveniments</h2>
+                        <ul class="sidebar-events__list">
+                            <li class="sidebar-events__item">
+                                <a href="./events.html" class="sidebar-events__link">
+                                    <span class="sidebar-events__text">Inscripcions meves</span>
+                                    <span class="sidebar-events__badge">2</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-events__item">
+                                <a href="./events.html" class="sidebar-events__link">
+                                    <span class="sidebar-events__text">Esdeveniments guardats</span>
+                                    <span class="sidebar-events__badge">4</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-events__item">
+                                <a href="./events.html" class="sidebar-events__link">
+                                    <span class="sidebar-events__text">Invitacions pendents</span>
+                                    <span class="sidebar-events__badge">1</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-events__group">
+                        <h2 class="sidebar-events__title">Explora per categoria</h2>
+                        <ul class="sidebar-events__list">
+                            <li class="sidebar-events__item">
+                                <a href="./events.html" class="sidebar-events__link--icon">
+                                    <img
+                                        src="/public/assets/icons/events/icon-masterclass.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar-events__icon"
+                                    />
+                                    <span class="sidebar-events__text">Masterclasses i Tech Talks</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-events__item">
+                                <a href="./events.html" class="sidebar-events__link--icon">
+                                    <img
+                                        src="/public/assets/icons/events/icon-talleres.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar-events__icon"
+                                    />
+                                    <span class="sidebar-events__text">Workshops i Tallers</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-events__item">
+                                <a href="./events.html" class="sidebar-events__link--icon">
+                                    <img
+                                        src="/public/assets/icons/events/icon-networking.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar-events__icon"
+                                    />
+                                    <span class="sidebar-events__text">Networking i Afterworks</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-events__item">
+                                <a href="./events.html" class="sidebar-events__link--icon">
+                                    <img
+                                        src="/public/assets/icons/events/icon-fair.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar-events__icon"
+                                    />
+                                    <span class="sidebar-events__text">Fires de l'ocupació</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-events__group">
+                        <h2 class="sidebar-events__title">Gestió d'esdeveniments</h2>
+                        <ul class="sidebar-events__list">
+                            <li class="sidebar-events__item">
+                                <a href="./events.html" class="sidebar-events__link--icon">
+                                    <img
+                                        src="/public/assets/icons/events/icon-create.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar-events__icon"
+                                    />
+                                    <span class="sidebar-events__text">Esdeveniments creats per mi</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-events__item">
+                                <a href="./events.html" class="sidebar-events__link--icon">
+                                    <img
+                                        src="/public/assets/icons/events/icon-asistent.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="sidebar-events__icon"
+                                    />
+                                    <span class="sidebar-events__text">Històric d'assistència</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <section class="events-feed" aria-labelledby="events-feed-title">
+                    <div class="events-feed__header">
+                        <h2 class="events-feed__title" id="events-feed-title">
+                            Esdeveniments basats en les teves preferències
+                        </h2>
+                    </div>
+
+                    <ul class="events-feed__list">
+                        <li class="events-feed__item">
+                            <article class="event-card">
+                                <div class="event-card__media">
+                                    <img
+                                        src="/public/assets/images/events/event1.jpg"
+                                        alt="Banner de show your Working"
+                                        class="event-card__img"
+                                    />
+                                </div>
+                                <div class="event-card__content">
+                                    <span class="event-card__datetime">11 de nov., 17:30–18:30</span>
+                                    <h3 class="event-card__title">
+                                        Game Winning Kickoffs with Celeste | Show Your Working Ep. 2
+                                    </h3>
+                                    <p class="event-card__organizer">
+                                        James Pursey 🚀
+                                        <span>•</span>
+                                        <span class="event-card__location">
+                                            <img
+                                                src="/public/assets/icons/events/icon-video.png"
+                                                alt=""
+                                                aria-hidden="true"
+                                                class="event-card__location-icon"
+                                            />
+                                            En línia
+                                        </span>
+                                    </p>
+                                    <p class="event-card__attendees">85 assistents</p>
+
+                                    <div class="event-card__actions">
+                                        <a href="./event-detail.html" class="event-card__btn-view"
+                                            >Veure l'esdeveniment</a
+                                        >
+                                        <button
+                                            type="button"
+                                            class="event-card__btn-share"
+                                            aria-label="Compartir show your Working"
+                                        >
+                                            <img
+                                                src="/public/assets/icons/events/icon-share.png"
+                                                alt=""
+                                                aria-hidden="true"
+                                            />
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="events-feed__item">
+                            <article class="event-card">
+                                <div class="event-card__media">
+                                    <img
+                                        src="/public/assets/images/events/event2.png"
+                                        alt="Banner Retrospectiva Digital d'Exalumnes"
+                                        class="event-card__img"
+                                    />
+                                </div>
+                                <div class="event-card__content">
+                                    <span class="event-card__datetime">14 de nov., 18:00–20:00</span>
+                                    <h3 class="event-card__title">VERNISSAGE: RETROSPECTIVA DIGITAL D'EXALUMNES</h3>
+                                    <p class="event-card__organizer">
+                                        Galeria d'Art IT Academy 🎨
+                                        <span>•</span>
+                                        <span class="event-card__location">
+                                            <img
+                                                src="/public/assets/icons/events/icon-location.png"
+                                                alt=""
+                                                aria-hidden="true"
+                                                class="event-card__location-icon"
+                                            />
+                                            Barcelona
+                                        </span>
+                                    </p>
+                                    <p class="event-card__attendees">78 assistents</p>
+
+                                    <div class="event-card__actions">
+                                        <a href="./event-detail.html" class="event-card__btn-view"
+                                            >Veure l'esdeveniment</a
+                                        >
+                                        <button
+                                            type="button"
+                                            class="event-card__btn-share"
+                                            aria-label="Compartir Retrospectiva Digital d'Exalumnes"
+                                        >
+                                            <img
+                                                src="/public/assets/icons/events/icon-share.png"
+                                                alt=""
+                                                aria-hidden="true"
+                                            />
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="events-feed__item">
+                            <article class="event-card">
+                                <div class="event-card__media">
+                                    <img
+                                        src="/public/assets/images/events/event3.jpg"
+                                        alt="Banner de Social Media Strategies Masterclass"
+                                        class="event-card__img"
+                                    />
+                                </div>
+                                <div class="event-card__content">
+                                    <span class="event-card__datetime">10 de nov., 18:00–19:00</span>
+                                    <h3 class="event-card__title">SOCIAL MEDIA STRATEGIES MASTERCLASS</h3>
+                                    <p class="event-card__organizer">
+                                        Heather Colledge 🏢
+                                        <span>•</span>
+                                        <span class="event-card__location">
+                                            <img
+                                                src="/public/assets/icons/events/icon-video.png"
+                                                alt=""
+                                                aria-hidden="true"
+                                                class="event-card__location-icon"
+                                            />
+                                            En línia
+                                        </span>
+                                    </p>
+                                    <p class="event-card__attendees">90 assistents</p>
+
+                                    <div class="event-card__actions">
+                                        <a href="./event-detail.html" class="event-card__btn-view"
+                                            >Veure l'esdeveniment</a
+                                        >
+                                        <button
+                                            type="button"
+                                            class="event-card__btn-share"
+                                            aria-label="Compartir SOCIAL MEDIA STRATEGIES MASTERCLASS"
+                                        >
+                                            <img
+                                                src="/public/assets/icons/events/icon-share.png"
+                                                alt=""
+                                                aria-hidden="true"
+                                            />
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="events-feed__item">
+                            <article class="event-card">
+                                <div class="event-card__media">
+                                    <img
+                                        src="/public/assets/images/events/event4.png"
+                                        alt="Banner de assitive tecnnology in education"
+                                        class="event-card__img"
+                                    />
+                                </div>
+                                <div class="event-card__content">
+                                    <span class="event-card__datetime">10 de nov., 16:45–17:30</span>
+                                    <h3 class="event-card__title">
+                                        Low Vision and Blind Students - Explore the Latest Solutions
+                                    </h3>
+                                    <p class="event-card__organizer">
+                                        VisionAid Technologies 👩
+                                        <span>•</span>
+                                        <span class="event-card__location">
+                                            <img
+                                                src="/public/assets/icons/events/icon-video.png"
+                                                alt=""
+                                                aria-hidden="true"
+                                                class="event-card__location-icon"
+                                            />
+                                            En línia
+                                        </span>
+                                    </p>
+                                    <p class="event-card__attendees">48 assistents</p>
+
+                                    <div class="event-card__actions">
+                                        <a href="./event-detail.html" class="event-card__btn-view"
+                                            >Veure l'esdeveniment</a
+                                        >
+                                        <button
+                                            type="button"
+                                            class="event-card__btn-share"
+                                            aria-label="Compartir SOCIAL MEDIA STRATEGIES MASTERCLASS"
+                                        >
+                                            <img
+                                                src="/public/assets/icons/events/icon-share.png"
+                                                alt=""
+                                                aria-hidden="true"
+                                            />
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="events-feed__item">
+                            <article class="event-card">
+                                <div class="event-card__media">
+                                    <img
+                                        src="/public/assets/images/events/event5.png"
+                                        alt="Banner de exam voucher for free"
+                                        class="event-card__img"
+                                    />
+                                </div>
+                                <div class="event-card__content">
+                                    <span class="event-card__datetime">Mañana de 16:30 a 17:00</span>
+                                    <h3 class="event-card__title">
+                                        How to get your exam voucher for FREE & clear the exam in one attempt
+                                    </h3>
+                                    <p class="event-card__organizer">
+                                        Santosh Avalamurthy 👩‍🎨
+                                        <span>•</span>
+                                        <span class="event-card__location">
+                                            <img
+                                                src="/public/assets/icons/events/icon-video.png"
+                                                alt=""
+                                                aria-hidden="true"
+                                                class="event-card__location-icon"
+                                            />
+                                            En línia
+                                        </span>
+                                    </p>
+                                    <p class="event-card__attendees">156 assistents</p>
+
+                                    <div class="event-card__actions">
+                                        <a href="./event-detail.html" class="event-card__btn-view"
+                                            >Veure l'esdeveniment</a
+                                        >
+                                        <button
+                                            type="button"
+                                            class="event-card__btn-share"
+                                            aria-label="Compartir SOCIAL MEDIA STRATEGIES MASTERCLASS"
+                                        >
+                                            <img
+                                                src="/public/assets/icons/events/icon-share.png"
+                                                alt=""
+                                                aria-hidden="true"
+                                            />
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="events-feed__item">
+                            <article class="event-card">
+                                <div class="event-card__media">
+                                    <img
+                                        src="/public/assets/images/events/event6.png"
+                                        alt="Banner de build a website"
+                                        class="event-card__img"
+                                    />
+                                </div>
+                                <div class="event-card__content">
+                                    <span class="event-card__datetime">Mañana de 14:00 a 15:30</span>
+                                    <h3 class="event-card__title">
+                                        Build a Website in 30 Mins! (Using Claude & Lovable)
+                                    </h3>
+                                    <p class="event-card__organizer">
+                                        Simran Pant 💻
+                                        <span>•</span>
+                                        <span class="event-card__location">
+                                            <img
+                                                src="/public/assets/icons/events/icon-video.png"
+                                                alt=""
+                                                aria-hidden="true"
+                                                class="event-card__location-icon"
+                                            />
+                                            En línia
+                                        </span>
+                                    </p>
+                                    <p class="event-card__attendees">566 assistents</p>
+
+                                    <div class="event-card__actions">
+                                        <a href="./event-detail.html" class="event-card__btn-view"
+                                            >Veure l'esdeveniment</a
+                                        >
+                                        <button
+                                            type="button"
+                                            class="event-card__btn-share"
+                                            aria-label="Compartir SOCIAL MEDIA STRATEGIES MASTERCLASS"
+                                        >
+                                            <img
+                                                src="/public/assets/icons/events/icon-share.png"
+                                                alt=""
+                                                aria-hidden="true"
+                                            />
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </main>
+
+        <footer class="footer-events">
+            <nav class="bottom-events-nav" saria-label="Navegació inferior per a mòbil">
+                <ul class="bottom-events-nav__list">
+                    <li class="bottom-events-nav__item">
+                        <a href="./dashboard.html" class="bottom-events-nav__link">
+                            <img
+                                src="/public/assets/icons/networking/home.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="bottom-events-nav__icon"
+                            />
+                            <span class="bottom-nav-events__label">Inici</span>
+                        </a>
+                    </li>
+                    <li class="bottom-events-nav__item">
+                        <a href="./networking.html" class="bottom-events-nav__link">
+                            <img
+                                src="/public/assets/icons/jobs/icon-jobs-networking.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="bottom-events-nav__icon"
+                            />
+                            <span class="bottom-events-nav__label">Xarxa</span>
+                        </a>
+                    </li>
+                    <li class="bottom-events-nav__item">
+                        <a href="./jobs.html" class="bottom-events-nav__link">
+                            <img
+                                src="/public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-job.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="bottom-events-nav__icon"
+                            />
+                            <span class="bottom-events-nav__label">Portal feina</span>
+                        </a>
+                    </li>
+                    <li class="bottom-events-nav__item">
+                        <a href="./events.html" class="bottom-events-nav__link bottom-nav__link--active">
+                            <img
+                                src="/public/assets/icons/events/calendar.png"
+                                alt=""
+                                aria-hidden="true"
+                                class="bottom-dashboard-nav__icon"
+                            />
+                            <span class="bottom-dashboard-nav__label">Esdeveniment</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-events__bottom">
+                <div class="footer-events__bottom-row">
+                    <div class="select-events-wrapper">
+                        <select class="footer-events__select" name="language">
+                            <option value="ca">Català</option>
+                            <option value="es">Castellano</option>
+                            <option value="en">Ingles</option>
+                        </select>
+                        <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" class="select-events-arrow" />
+                    </div>
+
+                    <div class="footer-events__copyright">
+                        <p>© 2024 Brand, Inc. • Privadesa • Termes d'ús <br />• Mapa del lloc</p>
+                    </div>
+                    <div class="footer-events__policy">
+                        <a href="./privacy.html" class="footer-events__link"> Privacy Policy </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -285,10 +285,15 @@
         border: none;
     }
 }
-
+@media (min-width: 1300px) {
+    .networking-cards__container {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: end;
+    }
+}
 @media (min-width: 1400px) {
     .sidebar-networking {
-        width: 30%;
+        width: 25%;
     }
     .networking-cards__container {
         gap: 4rem 1rem;
