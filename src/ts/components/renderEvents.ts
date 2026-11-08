@@ -1,4 +1,4 @@
-import { type Event } from '../models/event.model.js';
+import { type Event } from '../../models/event.model.js';
 
 export const renderEvents = (events: Event[]): void => {
     const containerEvents = document.querySelector('.events-feed__list');

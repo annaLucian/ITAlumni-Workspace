@@ -29,11 +29,8 @@
 
 .event-card__img {
     width: 100%;
+    aspect-ratio: 16 / 9;
 }
-
-/* .event-card__content {
-    flex: 1;
-} */
 
 .event-card__title {
     font-size: 1.1rem;

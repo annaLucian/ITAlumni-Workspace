@@ -1,4 +1,4 @@
-import { type Job } from '../models/job.model.js';
+import { type Job } from '../../models/job.model.js';
 
 export const renderJobs = (jobs: Job[]): void => {
     const containerJob = document.querySelector('.jobs-feed__list');

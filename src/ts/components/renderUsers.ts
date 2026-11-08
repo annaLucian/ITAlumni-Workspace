@@ -1,4 +1,4 @@
-import { type User } from '../models/user.model.js';
+import { type User } from '../../models/user.model.js';
 
 export const renderUsers = (users: User[]): void => {
     const containerCards = document.querySelector('.networking-cards__container');
