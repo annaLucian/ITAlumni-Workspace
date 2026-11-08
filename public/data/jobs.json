@@ -1,0 +1,272 @@
+[
+    {
+        "idJob": "1J",
+        "title": "React Developer con proyección a Fullstack",
+        "company": "DDB Spain",
+        "location": "Barcelona",
+        "companyLogo": "/public/assets/images/mock/jobs/job1.jpg",
+        "postedDate": "Publicat fa 2 setmanes",
+        "isReviewing": false,
+        "isVerified": true
+    },
+    {
+        "idJob": "2J",
+        "title": "Front-End Engineer",
+        "company": "Aistech Space",
+        "location": "Barcelona (Presencial)",
+        "companyLogo": "/public/assets/images/mock/jobs/job2.jpg",
+        "postedDate": "Publicat fa 10 minuts",
+        "isReviewing": true,
+        "isVerified": false
+    },
+    {
+        "idJob": "3J",
+        "title": "Senior Frontend Developer",
+        "company": "Heymondo",
+        "location": "Espanya (a distància)",
+        "companyLogo": "/public/assets/images/mock/jobs/job3.jpg",
+        "postedDate": "Publicat fa 4 dies",
+        "isReviewing": true,
+        "isVerified": true
+    },
+    {
+        "idJob": "4J",
+        "title": "Desarrollador Senior React + TypeScript - Trabajo Remoto",
+        "company": "BairesDev",
+        "location": "Barcelona (a distància)",
+        "companyLogo": "/public/assets/images/mock/jobs/job4.jpg",
+        "postedDate": "Publicat fa 24 minuts",
+        "isReviewing": false,
+        "isVerified": true
+    },
+    {
+        "idJob": " 5J",
+        "title": "Software Engineer, New Grad - Frontend",
+        "company": "Innovamat",
+        "location": "Sant Cugat del Vallès (Híbrid)",
+        "companyLogo": "/public/assets/images/mock/jobs/job5.jpg",
+        "postedDate": "Publicat fa una setmana",
+        " isReviewing": false,
+        " isVerified": false
+    },
+    {
+        "idJob": "6J",
+        "title": "Frontend Developer (React)",
+        "company": "Genki",
+        "location": "Barcelona",
+        "companyLogo": "/public/assets/images/mock/jobs/job6.jpg",
+        "postedDate": "Publicat fa 3 dies",
+        "isReviewing": true,
+        "isVerified": true
+    },
+    {
+        "idJob": "7J",
+        "title": "React Native Developer",
+        "company": "Voodoo",
+        "location": "Barcelona (Híbrid)",
+        "companyLogo": "/public/assets/images/mock/jobs/job7.jpg",
+        "postedDate": "Publicat fa 5 dies",
+        "isReviewing": false,
+        "isVerified": true
+    },
+    {
+        "idJob": "8J",
+        "title": "Junior Frontend Engineer",
+        "company": "Typeform",
+        "location": "Barcelona (a distància)",
+        "companyLogo": "/public/assets/images/mock/jobs/job8.jpg",
+        "postedDate": "Publicat fa 1 setmana",
+        "isReviewing": true,
+        "isVerified": false
+    },
+    {
+        "idJob": "9J",
+        "title": "Full Stack JavaScript Developer",
+        "company": "Hopper",
+        "location": "Barcelona",
+        "companyLogo": "/public/assets/images/mock/jobs/job9.jpg",
+        "postedDate": "Publicat fa 2 hores",
+        "isReviewing": true,
+        "isVerified": true
+    },
+    {
+        "idJob": "10J",
+        "title": "TypeScript & React Specialist",
+        "company": "Cabify",
+        "location": "Madrid (a distància)",
+        "companyLogo": "/public/assets/images/mock/jobs/job10.jpg",
+        "postedDate": "Publicat fa 4 dies",
+        "isReviewing": true,
+        "isVerified": true
+    },
+    {
+        "idJob": "11J",
+        "title": "UI Developer / Creador WordPress & React",
+        "company": "Jungle",
+        "location": "Barcelona (Híbrid)",
+        "companyLogo": "/public/assets/images/mock/jobs/job11.jpg",
+        "postedDate": "Publicat fa 6 dies",
+        "isReviewing": true,
+        "isVerified": false
+    },
+    {
+        "idJob": "12J",
+        "title": "Software Engineer - Web Technologies",
+        "company": "Stripe",
+        "location": "Madrid",
+        "companyLogo": "/public/assets/images/mock/jobs/job12.jpg",
+        "postedDate": "Publicat fa 3 setmanes",
+        "isReviewing": false,
+        "isVerified": true
+    },
+    {
+        "idJob": "13J",
+        "title": "Frontend Architect",
+        "company": "Factorial",
+        "location": "Barcelona",
+        "companyLogo": "/public/assets/images/mock/jobs/job13.jpg",
+        "postedDate": "Publicat fa 1 dia",
+        "isReviewing": true,
+        "isVerified": true
+    },
+    {
+        "idJob": "14J",
+        "title": "React JS Developer",
+        "company": "Sogeti",
+        "location": "Barcelona (a distància)",
+        "companyLogo": "/public/assets/images/mock/jobs/job14.jpg",
+        "postedDate": "Publicat fa 5 hores",
+        "isReviewing": true,
+        "isVerified": true
+    },
+    {
+        "idJob": "15J",
+        "title": "Mid Frontend Developer",
+        "company": "Adevinta",
+        "location": "Barcelona (Híbrid)",
+        "companyLogo": "/public/assets/images/mock/jobs/job15.jpg",
+        "postedDate": "Publicat fa 2 setmanes",
+        "isReviewing": false,
+        "isVerified": true
+    },
+    {
+        "idJob": "16J",
+        "title": "Desarrollador Web Frontend (React/TS)",
+        "company": "Naturgy Tech",
+        "location": "Madrid",
+        "companyLogo": "/public/assets/images/mock/jobs/job16.jpg",
+        "postedDate": "Publicat fa 4 dies",
+        "isReviewing": true,
+        "isVerified": true
+    },
+    {
+        "idJob": "17J",
+        "title": "Junior React Developer",
+        "company": "Privalia",
+        "location": "Barcelona",
+        "companyLogo": "/public/assets/images/mock/jobs/job17.jpg",
+        "postedDate": "Publicat fa 1 mes",
+        "isReviewing": true,
+        "isVerified": true
+    },
+    {
+        "idJob": "18J",
+        "title": "Frontend Web Developer",
+        "company": "Milo",
+        "location": "València (a distància)",
+        "companyLogo": "/public/assets/images/mock/jobs/job18.jpg",
+        "postedDate": "Publicat fa 3 dies",
+        "isReviewing": true,
+        "isVerified": true
+    },
+    {
+        "idJob": "19J",
+        "title": "Senior Web Application Engineer",
+        "company": "Grafana Labs",
+        "location": "Espanya (a distància)",
+        "companyLogo": "/public/assets/images/mock/jobs/job19.jpg",
+        "postedDate": "Publicat fa 12 hores",
+        "isReviewing": true,
+        "isVerified": false
+    },
+    {
+        "idJob": "20J",
+        "title": "React & Node.js Developer",
+        "company": "Telefónica Innova",
+        "location": "Madrid (Híbrid)",
+        "companyLogo": "/public/assets/images/mock/jobs/job20.jpg",
+        "postedDate": "Publicat fa 2 setmanes",
+        "isReviewing": true,
+        "isVerified": true
+    },
+    {
+        "idJob": "21J",
+        "title": "UX/UI Frontend Developer",
+        "company": "Desigual Tech",
+        "location": "Barcelona",
+        "companyLogo": "/public/assets/images/mock/jobs/job21.jpg",
+        "postedDate": "Publicat fa 4 dies",
+        "isReviewing": true,
+        "isVerified": true
+    },
+    {
+        "idJob": "22J",
+        "title": "Frontend Engineer - Design Systems",
+        "company": "Idealista",
+        "location": "Madrid (a distància)",
+        "companyLogo": "/public/assets/images/mock/jobs/job22.jpg",
+        "postedDate": "Publicat fa 1 setmana",
+        "isReviewing": true,
+        "isVerified": true
+    },
+    {
+        "idJob": "23J",
+        "title": "Fullstack JavaScript Engineer",
+        "company": "Cooltra",
+        "location": "Barcelona",
+        "companyLogo": "/public/assets/images/mock/jobs/job23.jpg",
+        "postedDate": "Publicat fa 6 dies",
+        "isReviewing": true,
+        "isVerified": true
+    },
+    {
+        "idJob": "24J",
+        "title": "React Performance Engineer",
+        "company": "King",
+        "location": "Barcelona",
+        "companyLogo": "/public/assets/images/mock/jobs/job24.jpg",
+        "postedDate": "Publicat fa 2 dies",
+        "isReviewing": true,
+        "isVerified": true
+    },
+    {
+        "idJob": "25J",
+        "title": "Junior Web Developer (React Bootcamp)",
+        "company": "PepsiCo",
+        "location": "Barcelona (Híbrid)",
+        "companyLogo": "/public/assets/images/mock/jobs/job25.jpg",
+        "postedDate": "Publicat fa 1 hora",
+        "isReviewing": true,
+        "isVerified": true
+    },
+    {
+        "idJob": "26J",
+        "title": "React & Tailwind UI Developer",
+        "company": "Universia",
+        "location": "Barcelona (a distància)",
+        "companyLogo": "/public/assets/images/mock/jobs/job26.jpg",
+        "postedDate": "Publicat fa 3 dies",
+        "isReviewing": true,
+        "isVerified": true
+    },
+    {
+        "idJob": "27J",
+        "title": "TypeScript Junior Software Engineer",
+        "company": "Globo",
+        "location": "Madrid",
+        "companyLogo": "/public/assets/images/mock/jobs/job27.jpg",
+        "postedDate": "Publicat fa 1 dia",
+        "isReviewing": false,
+        "isVerified": true
+    }
+]
