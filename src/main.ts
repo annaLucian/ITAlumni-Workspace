@@ -1,14 +1,11 @@
-console.log('hoola');
-console.log('🚀 ¡main.ts cargado correctamente!');
-console.log('🚀 ¡main.ts cargadfgdfgo cofgffrrectamente, nuevoooo!');
-console.log('helloooo');
+import { getUsers } from './services/userServices.js';
 
-type User = {
-    name: string;
-    age: number;
+import { renderUsers } from './components/renderUsers.js';
+
+const showUsers = async () => {
+    const users = await getUsers();
+    console.log('!!showUsers', { users });
+    renderUsers(users);
 };
 
-const user: User = {
-    name: 'Lucas',
-    age: 24,
-};
+showUsers();

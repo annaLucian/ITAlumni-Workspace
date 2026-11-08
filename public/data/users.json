@@ -1,0 +1,226 @@
+[
+    {
+        "userId": "1",
+        "name": "John Doe",
+        "occupation": "Director de producte a XYZ Corp.",
+        "location": "San Francisco, CA",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-john-doe.jpg",
+        "promotion": "Promoció del 2010"
+    },
+    {
+        "userId": "2",
+        "name": "Sarah Johnson",
+        "occupation": "Directora de Màrqueting a GreenWave",
+        "location": "New York, NY",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-sarah-johson.jpg",
+        "promotion": "Promoció del 2015"
+    },
+    {
+        "userId": "3",
+        "name": "Michael Brown",
+        "occupation": "Fundador de l'EduLearn Academy",
+        "location": "Chicago, IL",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-michel-brown.jpg",
+        "promotion": "Promoció del 2008"
+    },
+    {
+        "userId": "4",
+        "name": "Emily Davis",
+        "occupation": "Científica investigadora a BioTech Labs",
+        "location": "Barcelona, Espanya",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-emily-davis.jpg",
+        "promotion": "Promoció del 2012"
+    },
+    {
+        "userId": "5",
+        "name": "James Lee",
+        "occupation": "Soci director a Lee & Associates",
+        "location": "Miami, FL",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-james-lee.jpg",
+        "promotion": "Promoció del 2005"
+    },
+    {
+        "userId": "6",
+        "name": "Marc Vila",
+        "occupation": "Desenvolupador Senior Frontend a TechCatalyst",
+        "location": "Girona, Espanya",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-marc-vila.jpg",
+        "promotion": "Promoció del 2018"
+    },
+    {
+        "userId": "7",
+        "name": "Sophie Dubois",
+        "occupation": "Dissenyadora UX/UI a CreativeStudio",
+        "location": "París, França",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-sophie-dubois.jpg",
+        "promotion": "Promoció del 2019"
+    },
+    {
+        "userId": "8",
+        "name": "Lucas Silva",
+        "occupation": "Enginyer de Dades a DataFlow",
+        "location": "Lisboa, Portugal",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-lucas-silva.jpg",
+        "promotion": "Promoció del 2021"
+    },
+    {
+        "userId": "9",
+        "name": "Anna Schmidt",
+        "occupation": "Arquitecta de Software a CloudSystems",
+        "location": "Berlín, Alemanya",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-anna-schmidt.jpg",
+        "promotion": "Promoció del 2011"
+    },
+    {
+        "userId": "10",
+        "name": "Pol Soler",
+        "occupation": "Especialista en Ciberseguretat a SecurIT",
+        "location": "Barcelona, Espanya",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-pol-soler.jpg",
+        "promotion": "Promoció del 2017"
+    },
+    {
+        "userId": "11",
+        "name": "Elena Rossi",
+        "occupation": "Gestora de Projectes a InnovateGroup",
+        "location": "Milà, Itàlia",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-elena-rossi.png",
+        "promotion": "Promoció del 2014"
+    },
+    {
+        "userId": "12",
+        "name": "David Smith",
+        "occupation": "Enginyer de DevOps a NextGen Cloud",
+        "location": "Londres, Regne Unit",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-david-smith.png",
+        "promotion": "Promoció del 2016"
+    },
+    {
+        "userId": "13",
+        "name": "Laia Serra",
+        "occupation": "Consultora de Negocis a GlobalStrategy",
+        "location": "Tarragona, Espanya",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-laia-serra.png",
+        "promotion": "Promoció del 2020"
+    },
+    {
+        "userId": "14",
+        "name": "Lars Jansen",
+        "occupation": "Desenvolupador Backend a FinTech Solutions",
+        "location": "Amsterdam, Països Baixos",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-lars-jansen.png",
+        "promotion": "Promoció del 2013"
+    },
+    {
+        "userId": "15",
+        "name": "Clara Font",
+        "occupation": "Científica de Dades a AI Research Lab",
+        "location": "Zúric, Suïssa",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-clara-font.png",
+        "promotion": "Promoció del 2018"
+    },
+    {
+        "userId": "16",
+        "name": "Alex Turner",
+        "occupation": "Enginyer de Fullstack a StartupX",
+        "location": "Toronto, Canadà",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-alex-turner.jpg",
+        "promotion": "Promoció del 2022"
+    },
+    {
+        "userId": "17",
+        "name": "Marta Pujol",
+        "occupation": "Líder d’Equip de QA a QualityFirst",
+        "location": "Lleida, Espanya",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-marta-pujol.png",
+        "promotion": "Promoció del 2009"
+    },
+    {
+        "userId": "18",
+        "name": "Kenji Sato",
+        "occupation": "Investigador d’IA a FutureTech",
+        "location": "Tòquio, Japó",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-kenji-sato.jpg",
+        "promotion": "Promoció del 2015"
+    },
+    {
+        "userId": "19",
+        "name": "Noa Morales",
+        "occupation": "Especialista en Màrqueting Digital a Brandify",
+        "location": "València, Espanya",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-noa-morales.jpg",
+        "promotion": "Promoció del 2021"
+    },
+    {
+        "userId": "20",
+        "name": "Oliver Brown",
+        "occupation": "Desenvolupador de Videojocs a PixelGames",
+        "location": "Estocolm, Suècia",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-oliver-brown.jpg",
+        "promotion": "Promoció del 2019"
+    },
+    {
+        "userId": "21",
+        "name": "Carla Mas",
+        "occupation": "Directora d’Operacions a LogiCat",
+        "location": "Palma, Espanya",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-carla-mas.png",
+        "promotion": "Promoció del 2007"
+    },
+    {
+        "userId": "22",
+        "name": "Liam Wilson",
+        "occupation": "Enginyer de Sistemes a NetCore Services",
+        "location": "Sídney, Austràlia",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-liam-wilson.jpg",
+        "promotion": "Promoció del 2016"
+    },
+    {
+        "userId": "23",
+        "name": "Jordi Rius",
+        "occupation": "Desenvolupador de Solucions Cloud a SkyTech",
+        "location": "Badalona, Espanya",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-jordi-rius.png",
+        "promotion": "Promoció del 2020"
+    },
+    {
+        "userId": "24",
+        "name": "Amélie Laurent",
+        "occupation": "Especialista en Recursos Humans a PeopleFirst",
+        "location": "Brussel·les, Bèlgica",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-amelie-laurent.png",
+        "promotion": "Promoció del 2013"
+    },
+    {
+        "userId": "25",
+        "name": "Victor Kovač",
+        "occupation": "Enginyer de Seguretat a CyberDef",
+        "location": "Praga, República Txeca",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-victor-kovac.png",
+        "promotion": "Promoció del 2017"
+    },
+    {
+        "userId": "26",
+        "name": "Elena Rostova",
+        "occupation": "Desenvolupadora Frontend a WebFlow",
+        "location": "Madrid, Espanya",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-elena-rostova.jpg",
+        "promotion": "Promoció del 2020"
+    },
+    {
+        "userId": "27",
+        "name": "Marc Dubois",
+        "occupation": "Arquitecte de Núvol a CloudScale",
+        "location": "Lió, França",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-marc-dubois.jpg",
+        "promotion": "Promoció del 2015"
+    },
+    {
+        "userId": "28",
+        "name": "Sofia Silva",
+        "occupation": "Especialista en UX/UI a DesignLab",
+        "location": "Lisboa, Portugal",
+        "avatarUrl": "/public/assets/images/mock/users/avatar-sofia-silva.jpg",
+        "promotion": "Promoció del 2022"
+    }
+]

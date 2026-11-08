@@ -29,27 +29,13 @@
     border-radius: 50%;
     flex-shrink: 0;
 }
-.networking-card__media--user1 {
-    background-image: url('/public/assets/images/networking/avatar-john-doe.jpg');
-}
-.networking-card__media--user2 {
-    background-image: url('/public/assets/images/networking/avatar-sarah-johson.jpg');
-}
-.networking-card__media--user3 {
-    background-image: url('/public/assets/images/networking/avatar-michel-brown.jpg');
-}
-.networking-card__media--user4 {
-    background-image: url('/public/assets/images/networking/avatar-emily-davis.jpg');
-}
-.networking-card__media--user5 {
-    background-image: url('/public/assets/images/networking/avatar-james-lee.jpg');
-}
+
 .networking-card__content {
     flex: 1;
 }
 .networking-card--header {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 .networking-card__location {
     display: none;
@@ -120,6 +106,7 @@
     .networking-card--header {
         flex-direction: column;
         align-items: center;
+        gap: 0.8rem;
     }
     .networking-content {
         width: 90%;
