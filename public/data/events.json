@@ -1,0 +1,236 @@
+[
+    {
+        "idEvent": "1E",
+        "title": "Game Winning Kickoffs with Celeste | Show Your Working Ep. 2",
+        "imgEvent": "/public/assets/images/mock/events/event1.jpg",
+        "organizer": "James Pursey 🚀",
+        "location": "En línia",
+        "datetime": "11 de nov., 17:30–18:30",
+        "attendees": "85 assistents"
+    },
+    {
+        "idEvent": "2E",
+        "title": "VERNISSAGE: RETROSPECTIVA DIGITAL D'EXALUMNES",
+        "imgEvent": "/public/assets/images/mock/events/event2.jpg",
+        "organizer": "Galeria d'Art IT Academy 🎨",
+        "location": "Barcelona",
+        "datetime": "14 de nov., 18:00–20:00",
+        "attendees": "78 assistents"
+    },
+    {
+        "idEvent": "3E",
+        "title": "SOCIAL MEDIA STRATEGIES MASTERCLASS",
+        "imgEvent": "/public/assets/images/mock/events/event3.jpg",
+        "organizer": "Heather Colledge 🏢",
+        "location": "En línia",
+        "datetime": "10 de nov., 18:00–19:00",
+        "attendees": "90 assistents"
+    },
+    {
+        "idEvent": "4E",
+        "title": "Low Vision and Blind Students - Explore the Latest Solutions",
+        "imgEvent": "/public/assets/images/mock/events/event4.jpg",
+        "organizer": "VisionAid Technologies 👩",
+        "location": "En línia",
+        "datetime": "10 de nov., 16:45–17:30",
+        "attendees": "48 assistents"
+    },
+    {
+        "idEvent": "5E",
+        "title": "How to get your exam voucher for FREE & clear the exam in one attempt",
+        "imgEvent": "/public/assets/images/mock/events/event5.jpg",
+        "organizer": "Santosh Avalamurthy 👩‍🎨",
+        "location": "En línia",
+        "datetime": "Mañana de 16:30 a 17:00",
+        "attendees": "156 assistents"
+    },
+    {
+        "idEvent": "6E",
+        "title": "Build a Website in 30 Mins! (Using Claude & Lovable)",
+        "imgEvent": "/public/assets/images/mock/events/event6.jpg",
+        "organizer": "Simran Pant 💻",
+        "location": "En línia",
+        "datetime": "Mañana de 14:00 a 15:30",
+        "attendees": "566 assistents"
+    },
+    {
+        "idEvent": "7E",
+        "title": "Beyond the Codebase: Pivoting to Product Engineer",
+        "imgEvent": "/assets/images/mock/events/event7.png",
+        "organizer": "ForwardShare AchieveOS ⚛️",
+        "location": "En línia",
+        "datetime": "Mañana a las 16:30",
+        "attendees": "142 assistents"
+    },
+    {
+        "idEvent": "8E",
+        "title": "Forward Deployed Architect for Pre-Sales",
+        "imgEvent": "/assets/images/mock/events/event8.png",
+        "organizer": "Daren L. F. 🎨",
+        "location": "En línia",
+        "datetime": "jue, 12 nov 2026, 16:00 - 18:00",
+        "attendees": "94 assistents"
+    },
+    {
+        "idEvent": "9E",
+        "title": "LinkedIn Profile Roast: LIVE Profile Audit",
+        "imgEvent": "/assets/images/mock/events/event9.jpg",
+        "organizer": "Anjali Chawla🛡️",
+        "location": "En línia",
+        "datetime": "lun, 9 nov 2026, 17:00",
+        "attendees": "100 assistents"
+    },
+    {
+        "idEvent": "10E",
+        "title": "Test Your Flows Like a Next-Gen Admin with Katie Villanueva",
+        "imgEvent": "/assets/images/mock/events/event10.jpg",
+        "organizer": "Code With Sally 🍕",
+        "location": "Barcelona",
+        "datetime": "20 de nov., 19:00–21:30",
+        "attendees": "65 assistents"
+    },
+    {
+        "idEvent": "11E",
+        "title": "CI/CD with GitHub Actions | Live B Darija | Free ",
+        "imgEvent": "/assets/images/mock/events/event11.jpg",
+        "organizer": "Marouane GHOULAMI 🚀",
+        "location": "En línia",
+        "datetime": "dom, 8 nov 2026, 20:00",
+        "attendees": "52 assistents"
+    },
+    {
+        "idEvent": "12E",
+        "title": "Tech Night #20 - Meetup in Tabačka Kino",
+        "imgEvent": "/assets/images/mock/events/event12.jpg",
+        "organizer": "Sudolabs ☁️",
+        "location": "En línia",
+        "datetime": "jue, 12 nov 2026, 19:00",
+        "attendees": "88 assistents"
+    },
+    {
+        "idEvent": "13E",
+        "title": "Disseny d'Interfícies Accessibles (A11y) a Figma",
+        "imgEvent": "/assets/images/mock/events/event13.jpg",
+        "organizer": "Sofia Silva 🎨",
+        "location": "Barcelona, CT",
+        "datetime": "23 de nov., 18:00–19:00",
+        "attendees": "71 assistents"
+    },
+    {
+        "idEvent": "14E",
+        "title": "Horizon Deep Tech Summit 2026",
+        "imgEvent": "/assets/images/mock/events/event14.jpg",
+        "organizer": "Futuro Perfecto 💼",
+        "location": "Madrid, MD",
+        "datetime": "25 de nov., 17:30–19:00",
+        "attendees": "210 assistents"
+    },
+    {
+        "idEvent": "15E",
+        "title": "IE Tech Masters Experience Day",
+        "imgEvent": "/assets/images/mock/events/event15.jpg",
+        "organizer": "Recruitment Science, Technology & Data ✨",
+        "location": "En línia",
+        "datetime": "26 de nov., 16:00–17:15",
+        "attendees": "145 assistents"
+    },
+    {
+        "idEvent": "16E",
+        "title": "Madrid Tech Job Fair Spring 2027",
+        "imgEvent": "/assets/images/mock/events/event16.jpg",
+        "organizer": "TechMeetups ⚙️",
+        "location": "Madrid, MD",
+        "datetime": "27 de nov., 18:30–20:00",
+        "attendees": "96 assistents"
+    },
+    {
+        "idEvent": "17E",
+        "title": "Anàlisi de Dades Web per millorar la conversió",
+        "imgEvent": "/assets/images/mock/events/event17.jpg",
+        "organizer": "Club GLOBALS 📊",
+        "location": "En línia",
+        "datetime": "28 de nov., 17:00–18:15",
+        "attendees": "60 assistents"
+    },
+    {
+        "idEvent": "18E",
+        "title": "SIEM",
+        "imgEvent": "/assets/images/mock/events/event18.jpg",
+        "organizer": "Pandora FMS 💻",
+        "location": "En línia",
+        "datetime": "29 de nov., 16:00–17:30",
+        "attendees": "180 assistents"
+    },
+    {
+        "idEvent": "19E",
+        "title": "COMM-TEC DAY 2026",
+        "imgEvent": "/assets/images/mock/events/event19.jpg",
+        "organizer": "Carles Pons 🌐",
+        "location": "En línia",
+        "datetime": "1 de des., 18:00–19:30",
+        "attendees": "82 assistents"
+    },
+    {
+        "idEvent": "20E",
+        "title": "Artificial Intelligence: Rethinking Business Strategy",
+        "imgEvent": "/assets/images/mock/events/event20.jpg",
+        "organizer": "IE Editorial Knowledge 🎨",
+        "location": "En línia",
+        "datetime": "2 de des., 17:00–18:30",
+        "attendees": "115 assistents"
+    },
+    {
+        "idEvent": "21E",
+        "title": "Softwards Premios",
+        "imgEvent": "/assets/images/mock/events/event21.jpg",
+        "organizer": "Softwards 🔒",
+        "location": "En línia",
+        "datetime": "3 de des., 18:30–19:45",
+        "attendees": "104 assistents"
+    },
+    {
+        "idEvent": "22E",
+        "title": "Cara A y Cara B de la IA - V Jornadas Técnicas sector IT",
+        "imgEvent": "/assets/images/mock/events/event22.jpg",
+        "organizer": "CRN Desarrollo Informático⚡",
+        "location": "Barcelona (Híbrid)",
+        "datetime": "5 de des., 10:00–14:00",
+        "attendees": "92 assistents"
+    },
+    {
+        "idEvent": "23E",
+        "title": "Del concepto al MVP: prototipa productos con IA y NoCode",
+        "imgEvent": "/assets/images/mock/events/event23.jpg",
+        "organizer": "Helena Rosselló 🧠",
+        "location": "En línia",
+        "datetime": "9 de des., 17:30–18:45",
+        "attendees": "125 assistents"
+    },
+    {
+        "idEvent": "24E",
+        "title": "Agile management",
+        "imgEvent": "/assets/images/mock/events/event24.jpg",
+        "organizer": "Cursos Femxa 📈",
+        "location": "En línia",
+        "datetime": "10 de des., 16:00–17:00",
+        "attendees": "160 assistents"
+    },
+    {
+        "idEvent": "25E",
+        "title": "Codemotion Madrid 2027",
+        "imgEvent": "/assets/images/mock/events/event25.jpg",
+        "organizer": "Alexandre Martí 🔌",
+        "location": "En línia",
+        "datetime": "12 de des., 17:00–18:30",
+        "attendees": "98 assistents"
+    },
+    {
+        "idEvent": "26E",
+        "title": "Female Founders Day Barcelona 26",
+        "imgEvent": "/assets/images/mock/events/event26.jpg",
+        "organizer": "Female Startup Leaders🎉",
+        "location": "Barcelona",
+        "datetime": "18 de des., 18:00–20:30",
+        "attendees": "140 assistents"
+    }
+]
