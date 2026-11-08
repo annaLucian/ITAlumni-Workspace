@@ -10,7 +10,7 @@
 .dashboard-search {
     background: var(--bg-input);
     border-radius: 0.4rem;
-    padding: 0 0 0 1.3rem;
+    padding: 0 1.3rem;
     display: flex;
     align-items: center;
     gap: 0.6rem;
