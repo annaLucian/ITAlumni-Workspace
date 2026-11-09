@@ -8,7 +8,7 @@ const executeSearch = debounce(async (searchTerm: string) => {
     renderUsers(userFiltered);
 }, 500);
 
-export const search = async (): Promise<User[] | void> => {
+export const searchUser = async (): Promise<User[] | void> => {
     const input = document.querySelector('#input-networking') as HTMLInputElement | null;
 
     if (!input) return;
