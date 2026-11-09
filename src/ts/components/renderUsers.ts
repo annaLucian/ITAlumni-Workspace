@@ -1,20 +1,19 @@
 import { type User } from '../../models/user.model.js';
 
 export const renderUsers = (users: User[]): void => {
-    console.log('numer de usuarios:', users.length);
     const containerCards = document.querySelector('.networking-cards__container');
-
     if (!containerCards) return;
-    containerCards.innerHTML = '';
 
-    // if (!users.length) {
-    //     sectionContent.innerHTML = `<h3 class="no-result">  <img
-    //                                     src="/public/assets/icons/networking/no-results.png"
-    //                                     alt=""
-    //                                     aria-hidden="true"
-    //                                     class="no-result__icon"
-    //                                 />No hay resultados para la busqueda</h3>`;
-    // }
+    containerCards.innerHTML = '';
+    containerCards.classList.toggle('container-result', users.length === 0);
+    if (!users.length) {
+        containerCards.innerHTML = `<h3 class="no-result">  <img
+                                        src="/public/assets/icons/networking/no-results.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="no-result__icon"
+                                    />No hay resultados para la busqueda</h3>`;
+    }
 
     users.forEach((user) => {
         const article = document.createElement('article');

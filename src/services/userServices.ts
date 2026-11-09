@@ -15,12 +15,13 @@ export const getUsers = async (): Promise<User[]> => {
 };
 
 export const getUsersByName = async (search: string): Promise<User[]> => {
-    console.log('funcion que consume el api:', search.length);
     const formatedSearch = search.trim().toLowerCase();
 
     try {
         const users: User[] = await getUsers();
+
         if (formatedSearch === '') return users;
+
         const filteredUser = users.filter((user) => user.name.toLowerCase().trim().includes(formatedSearch));
         return filteredUser;
     } catch (error) {
