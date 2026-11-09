@@ -1,13 +1,16 @@
 import { type User } from '../../models/user.model.js';
+import { getUsersByName } from '../../services/userServices.js';
+import { debounce } from '../utils/debunce.js';
 import { renderUsers } from './renderUsers.js';
 
-export const debunceSearch = (users: User[]): void => {
+export const search = async (): Promise<User[] | void> => {
     const input = document.querySelector('#input-networking') as HTMLInputElement;
 
-    input.addEventListener('keyup', () => {
-        const formatedvalue = input.value.trim().toLowerCase();
-
-        const userFiltered = users.filter((user) => user.name.toLocaleLowerCase().includes(formatedvalue));
-        renderUsers(userFiltered);
-    });
+    input.addEventListener(
+        'keyup',
+        debounce(async () => {
+            const userFiltered = await getUsersByName(input.value);
+            renderUsers(userFiltered);
+        }, 500)
+    );
 };

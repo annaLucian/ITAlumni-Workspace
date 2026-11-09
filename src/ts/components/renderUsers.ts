@@ -1,11 +1,22 @@
 import { type User } from '../../models/user.model.js';
 
 export const renderUsers = (users: User[]): void => {
-    const containerCards = document.querySelector('.networking-cards__container');
+    const sectionContent = document.querySelector('.networking-cards');
 
-    if (!containerCards) return;
+    if (!sectionContent) return;
 
-    containerCards.innerHTML = '';
+    if (!users.length) {
+        sectionContent.innerHTML = `<h3 class="no-result">  <img
+                                        src="/public/assets/icons/networking/no-results.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="no-result__icon"
+                                    />No hay resultados para la busqueda</h3>`;
+    }
+
+    sectionContent.innerHTML = '';
+    const containerCards = document.createElement('div');
+    containerCards.className = 'networking-cards__container';
 
     users.forEach((user) => {
         const article = document.createElement('article');
@@ -27,5 +38,6 @@ export const renderUsers = (users: User[]): void => {
                         `;
 
         containerCards.appendChild(article);
+        sectionContent.appendChild(containerCards);
     });
 };

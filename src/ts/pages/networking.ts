@@ -1,11 +1,11 @@
 import { getUsers } from '../../services/userServices.js';
 import { renderUsers } from '../components/renderUsers.js';
-import { debunceSearch } from '../components/debunceSearch.js';
+import { search } from '../components/search.js';
 
 const showUsers = async () => {
     const users = await getUsers();
     renderUsers(users);
-    debunceSearch(users);
+    search();
 };
 
 showUsers();

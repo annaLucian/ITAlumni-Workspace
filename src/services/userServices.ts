@@ -13,3 +13,17 @@ export const getUsers = async (): Promise<User[]> => {
         return [];
     }
 };
+
+export const getUsersByName = async (search: string): Promise<User[]> => {
+    const formatedSearch = search.trim().toLowerCase();
+    if (formatedSearch === '') return [];
+    try {
+        const users: User[] = await getUsers();
+
+        const filteredUser = users.filter((user) => user.name.toLowerCase().trim().includes(formatedSearch));
+        return filteredUser;
+    } catch (error) {
+        console.error('Error', error);
+        return [];
+    }
+};
