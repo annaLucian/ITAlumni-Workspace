@@ -4,11 +4,13 @@ import { debounce } from '../utils/debunce.js';
 import { renderUsers } from './renderUsers.js';
 
 export const search = async (): Promise<User[] | void> => {
-    const input = document.querySelector('#input-networking') as HTMLInputElement;
+    const input = document.querySelector('#input-networking') as HTMLInputElement | null;
+
+    if (!input) return;
 
     input.addEventListener(
         'keyup',
-        debounce(async () => {
+        debounce(async function () {
             const userFiltered = await getUsersByName(input.value);
             renderUsers(userFiltered);
         }, 500)

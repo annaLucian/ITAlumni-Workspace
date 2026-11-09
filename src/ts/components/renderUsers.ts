@@ -1,22 +1,20 @@
 import { type User } from '../../models/user.model.js';
 
 export const renderUsers = (users: User[]): void => {
-    const sectionContent = document.querySelector('.networking-cards');
+    console.log('numer de usuarios:', users.length);
+    const containerCards = document.querySelector('.networking-cards__container');
 
-    if (!sectionContent) return;
+    if (!containerCards) return;
+    containerCards.innerHTML = '';
 
-    if (!users.length) {
-        sectionContent.innerHTML = `<h3 class="no-result">  <img
-                                        src="/public/assets/icons/networking/no-results.png"
-                                        alt=""
-                                        aria-hidden="true"
-                                        class="no-result__icon"
-                                    />No hay resultados para la busqueda</h3>`;
-    }
-
-    sectionContent.innerHTML = '';
-    const containerCards = document.createElement('div');
-    containerCards.className = 'networking-cards__container';
+    // if (!users.length) {
+    //     sectionContent.innerHTML = `<h3 class="no-result">  <img
+    //                                     src="/public/assets/icons/networking/no-results.png"
+    //                                     alt=""
+    //                                     aria-hidden="true"
+    //                                     class="no-result__icon"
+    //                                 />No hay resultados para la busqueda</h3>`;
+    // }
 
     users.forEach((user) => {
         const article = document.createElement('article');
@@ -38,6 +36,5 @@ export const renderUsers = (users: User[]): void => {
                         `;
 
         containerCards.appendChild(article);
-        sectionContent.appendChild(containerCards);
     });
 };
