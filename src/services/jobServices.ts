@@ -13,3 +13,18 @@ export const getJobs = async () => {
         return [];
     }
 };
+
+export const getJobsByTitle = async (searchTerm: string): Promise<Job[]> => {
+    const formatedSearch = searchTerm.trim().toLowerCase();
+
+    try {
+        const jobs: Job[] = await getJobs();
+        if (formatedSearch === '') return jobs;
+        const filteredJobs = jobs.filter((job) => job.title.toLowerCase().trim().includes(formatedSearch));
+
+        return filteredJobs;
+    } catch (error) {
+        console.log('Error:', error);
+        return [];
+    }
+};

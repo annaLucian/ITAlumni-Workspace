@@ -6,8 +6,18 @@ export const renderJobs = (jobs: Job[]): void => {
 
     containerJob.innerHTML = '';
 
+    containerJob.classList.toggle('container-result', jobs.length === 0);
+
+    if (!jobs.length) {
+        containerJob.innerHTML = `<h3 class="no-result">  <img
+                                        src="/public/assets/icons/jobs/no-results-job.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="no-result__icon"
+                                    />No s'ha trobat cap feina!!</h3>`;
+    }
+
     jobs.forEach((job) => {
-        console.log('hola', job);
         const article = document.createElement('article');
         article.className = 'job-card';
 

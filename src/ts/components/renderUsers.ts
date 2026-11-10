@@ -12,7 +12,7 @@ export const renderUsers = (users: User[]): void => {
                                         alt=""
                                         aria-hidden="true"
                                         class="no-result__icon"
-                                    />No hay resultados para la busqueda</h3>`;
+                                    />No s'han trobat usuaris</h3>`;
     }
 
     users.forEach((user) => {
