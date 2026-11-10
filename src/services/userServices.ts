@@ -22,7 +22,11 @@ export const getUsersByName = async (search: string): Promise<User[]> => {
 
         if (formatedSearch === '') return users;
 
-        const filteredUser = users.filter((user) => user.name.toLowerCase().trim().includes(formatedSearch));
+        const filteredUser = users.filter(
+            (user) =>
+                user.name.toLowerCase().trim().includes(formatedSearch) ||
+                user.location.toLowerCase().trim().includes(formatedSearch)
+        );
         return filteredUser;
     } catch (error) {
         console.error('Error', error);

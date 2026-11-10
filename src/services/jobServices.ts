@@ -20,7 +20,11 @@ export const getJobsByTitle = async (searchTerm: string): Promise<Job[]> => {
     try {
         const jobs: Job[] = await getJobs();
         if (formatedSearch === '') return jobs;
-        const filteredJobs = jobs.filter((job) => job.title.toLowerCase().trim().includes(formatedSearch));
+        const filteredJobs = jobs.filter(
+            (job) =>
+                job.title.toLowerCase().trim().includes(formatedSearch) ||
+                job.location.toLowerCase().trim().includes(formatedSearch)
+        );
 
         return filteredJobs;
     } catch (error) {

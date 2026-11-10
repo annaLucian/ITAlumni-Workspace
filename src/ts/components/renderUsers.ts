@@ -5,13 +5,13 @@ export const renderUsers = (users: User[]): void => {
     if (!containerCards) return;
 
     containerCards.innerHTML = '';
-    containerCards.classList.toggle('container-result', users.length === 0);
+    containerCards.classList.toggle('container-result-networking', users.length === 0);
     if (!users.length) {
-        containerCards.innerHTML = `<h3 class="no-result">  <img
+        containerCards.innerHTML = `<h3 class="no-result-networking">  <img
                                         src="/public/assets/icons/networking/no-results.png"
                                         alt=""
                                         aria-hidden="true"
-                                        class="no-result__icon"
+                                        class="result-networking__icon"
                                     />No s'han trobat usuaris</h3>`;
     }
 
