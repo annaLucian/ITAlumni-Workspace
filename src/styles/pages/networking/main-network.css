@@ -131,6 +131,7 @@
     }
     .networking-card__favorite-icon {
         width: 2rem;
+        height: 2rem;
     }
     .no-result-networking {
         margin: 6rem 0 15rem;
@@ -313,11 +314,15 @@
         border: none;
     }
     .networking-card__favorite {
-        top: 2rem;
+        top: 1rem;
         right: 1rem;
     }
     .networking-card__favorite-icon {
         width: 2rem;
+        height: 2rem;
+        fill: #00000078;
+        stroke: #ffffff;
+        stroke-width: 3px;
     }
     .no-result-networking {
         margin: 0;
