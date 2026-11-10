@@ -6,6 +6,17 @@ export const renderEvents = (events: Event[]): void => {
 
     containerEvents.innerHTML = '';
 
+    containerEvents.classList.toggle('container-event-result', events.length === 0);
+
+    if (!events.length) {
+        containerEvents.innerHTML = `<h3 class="no-result-event">  <img
+                                        src="/public/assets/icons/events/no-results-event.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="no-result-event__icon"
+                                    />No s'ha trobat cap feina!!</h3>`;
+    }
+
     events.forEach((event) => {
         const li = document.createElement('li');
         const article = document.createElement('article');
