@@ -36,7 +36,7 @@ export const renderUsers = (users: User[]): void => {
                                 </div>
                             </div>
 
-                            <a href="./chat.html" class="networking-card__btn" aria-label="Enviar missatge a ${user.name}">Missatge</a>
+                            <a href="#l" class="networking-card__btn" aria-label="Enviar missatge a ${user.name}">Missatge</a>
                         `;
 
         containerCards.appendChild(article);

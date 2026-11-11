@@ -160,6 +160,9 @@
 }
 
 @media (min-width: 768px) {
+    .fav-users-welcome {
+        width: 85%;
+    }
     .fav-users-title-text {
         font-size: 1.5rem;
     }
@@ -214,8 +217,11 @@
     }
     .fav-users-title-box {
         flex-basis: 30%;
+        margin: 0;
     }
-    .fav-users__subtitle-badge,
+    .fav-users__subtitle-badge {
+        display: none;
+    }
     .fav-users-sort-label,
     .fav-users-filter-dropdown {
         font-size: 0.85rem;
@@ -247,6 +253,7 @@
 @media (min-width: 1400px) {
     .fav-users-welcome {
         width: 90%;
+        margin-top: 6rem;
     }
     .fav-users-title-box {
         flex-basis: 30%;
