@@ -6,6 +6,7 @@
 @import url('./pages/networking/index.css');
 @import url('./pages/jobs/index.css');
 @import url('./pages/events/index.css');
+@import url('./pages/favorite-users/index.css');
 
 :root {
     --text-primary: #171a1f;
