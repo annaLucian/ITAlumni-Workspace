@@ -37,8 +37,12 @@
     justify-content: space-around;
     align-items: center;
     gap: 1rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     cursor: pointer;
+}
+.events-filters__btn {
+    text-decoration: none;
+    color: black;
 }
 .events-filters__btn--tablet {
     display: none;

@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Faena preferits | ITAlumni</title>
+        <link rel="icon" type="image/png" href="/public/assets/favicon.png" />
+        <link rel="stylesheet" href="/src/styles/global.css" />
+    </head>
+    <body>
+        <header class="fav-users-header">
+            <a href="./jobs.html" class="fav-users-header--mobile" aria-label="Tornar a la xarxa">
+                <img src="/public/assets/icons/networking/arrow-left.svg" alt="" aria-hidden="true" />
+            </a>
+            <nav class="fav-users-header__nav" aria-label="navegació principal">
+                <div class="fav-users-header__brand">
+                    <img
+                        src="/public/assets/icons/dashboard/logo-dashboard.svg"
+                        alt="logo ITAlumni"
+                        class="fav-users-header__logo"
+                    />
+                    <span class="fav-users-header__title">Alumni Connect</span>
+                </div>
+                <ul class="fav-users-header__menu">
+                    <li class="fav-users-header__menu-item">
+                        <a href="./dashboard.html" class="fav-users-header__menu-link">Inici</a>
+                    </li>
+                    <li class="fav-users-header__menu-item">
+                        <a href="./networking.html" class="fav-users-header__menu-link">Xarxa</a>
+                    </li>
+                    <li class="dashboard-header__menu-item--mobile">
+                        <a href="./jobs.html" class="dashboard-header__menu-link">Ocupació</a>
+                    </li>
+                    <li class="dashboard-header__menu-item">
+                        <a href="./events.html" class="dashboard-header__menu-link">Esdeveniment</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="fav-users-header_wraper" aria-label="Opcions d'usuari">
+                <div class="fav-users-header-actions">
+                    <button type="button" class="fav-users-header__action-btn--desktop" aria-label="Obrir cerca">
+                        <img src="/public/assets/icons/dashboard/icon-dashboard-search.svg" alt="" aria-hidden="true" />
+                    </button>
+                    <button type="button" class="fav-users-header__action-btn--desktop" aria-label="Notificacions">
+                        <img
+                            src="/public/assets/icons/dashboard/icon-dashboard-notification.svg"
+                            alt=""
+                            aria-hidden="true"
+                        />
+                    </button>
+                    <button type="button" class="fav-users-header__action-btn--desktop" aria-label="Configuració">
+                        <img
+                            src="/public/assets/icons/dashboard/icon-dashboard-setting.svg"
+                            alt=""
+                            aria-hidden="true"
+                        />
+                    </button>
+                    <button type="button" class="fav-users-header__action-btn" aria-label="Accessibilitat">
+                        <img
+                            src="/public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-access.svg"
+                            alt=""
+                            aria-hidden="true"
+                        />
+                    </button>
+                    <div class="fav-users-header__user-menu">
+                        <button type="button" class="fav-users-header__profile-btn" aria-label="Perfil d'usuari">
+                            <img
+                                src="/public/assets/images/dashboard/dashboard-avatar.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="fav-users-header__avatar"
+                            />
+                        </button>
+                        <div class="fav-users-header__dropdown">
+                            <a href="./profile.html" class="fav-users-header__dropdown-link">El meu perfil</a>
+                            <a href="./settings.html" class="fav-users-header__dropdown-link">Configuració</a>
+                            <hr class="fav-users-header__dropdown-divider" />
+                            <a href="/" class="fav-users-header__dropdown-link fav-users-header__dropdown-link--logout">
+                                <img
+                                    src="/public/assets/icons/dashboard/icon-dashboard-logout.png"
+                                    alt=""
+                                    aria-hidden="true"
+                                />
+                                Tancar sessió
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="fav-users-welcome" aria-labelledby="welcome-heading">
+                <div class="fav-users-header-container">
+                    <div class="fav-users-title-box">
+                        <div class="fav-user__title-header">
+                            <img
+                                src="/public/assets/icons/icon-favorites-elemtn.png"
+                                alt=""
+                                class="fav-users-heart-icon"
+                            />
+                            <h1 id="welcome-heading" class="fav-users-title-text">Corregudes preferides</h1>
+                        </div>
+                        <p class="fav-users__subtitle-badge">
+                            Faenas: <span class="fav-users-count-badge" id="fav-job-count-badge">0</span>
+                        </p>
+
+                        <div class="fav-users-counter-wrapper--desktop">
+                            <p class="fav-users-subtitle">
+                                Tens <span id="fav-count-badge">0</span> usuaris guardats a la teva llista
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="fav-users-actions">
+                        <div class="fav-users-pills-group" role="tablist">
+                            <button
+                                type="button"
+                                class="fav-users-pill-btn fav-users-pill-btn--active"
+                                role="tab"
+                                aria-selected="true"
+                            >
+                                Tots
+                            </button>
+                            <button type="button" class="fav-users-pill-btn" role="tab" aria-selected="false">
+                                Més actius
+                            </button>
+                        </div>
+
+                        <div class="fav-users-sort-container">
+                            <span class="fav-users-sort-label">Ordenar per:</span>
+                            <select class="fav-users-sort-select" aria-label="Ordenar usuaris favorits">
+                                <option value="" disabled selected>Ordenar ...</option>
+                                <option value="recientes">Més recents</option>
+                                <option value="az">Nom (A-Z)</option>
+                                <option value="actividad">Activitat</option>
+                            </select>
+                            <img
+                                src="/public/assets/icons/home/icon-arrow-down.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="fav-users-sort-arrow"
+                            />
+                        </div>
+
+                        <button type="button" class="fav-users-filter-dropdown" aria-label="Tots els filtres">
+                            <svg
+                                class="fav-users-filter-icon"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
+                                ></path>
+                            </svg>
+                            <span>Tots els filtres</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="fav-users-content fav-jobs-content" aria-label="Secció d'ofertes de feina preferides">
+                <aside class="fav-user-sidebar" aria-label="Gestió i suggeriments de feina">
+                    <div class="fav-user-card">
+                        <h3 class="fav-user-title">Gestionar les meves feines</h3>
+
+                        <ul class="fav-user-menu">
+                            <li class="fav-user-item">
+                                <div class="fav-user-menu-left">
+                                    <svg
+                                        class="fav-user-icon"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"
+                                        />
+                                    </svg>
+                                    <span class="fav-users-link">Feines guardades</span>
+                                </div>
+                                <span class="fav-user-badge" id="fav-jobs-count-badge"></span>
+                            </li>
+
+                            <li class="fav-user-item">
+                                <div class="fav-user-menu-left">
+                                    <svg
+                                        class="fav-user-icon"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                        />
+                                    </svg>
+                                    <span class="fav-users-link">Candidatures enviades</span>
+                                </div>
+                                <span class="fav-user-badge">30</span>
+                            </li>
+
+                            <li class="fav-user-item">
+                                <div class="fav-user-menu-left">
+                                    <svg
+                                        class="fav-user-icon"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                                        />
+                                    </svg>
+                                    <span class="fav-users-link">Alertes d'ocupació</span>
+                                </div>
+                            </li>
+
+                            <li class="fav-user-item">
+                                <div class="fav-user-menu-left">
+                                    <svg
+                                        class="fav-user-icon"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                                        />
+                                    </svg>
+                                    <span class="fav-users-link">Creador de currículums</span>
+                                </div>
+                            </li>
+
+                            <li class="fav-user-item">
+                                <div class="fav-user-menu-left">
+                                    <svg
+                                        class="fav-user-icon"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+                                        />
+                                    </svg>
+                                    <span class="fav-users-link">Preparació d'entrevistes</span>
+                                </div>
+                            </li>
+
+                            <li class="fav-user-item">
+                                <div class="fav-user-menu-left">
+                                    <svg
+                                        class="fav-user-icon"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                                        />
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                                        />
+                                    </svg>
+                                    <span class="fav-users-link">Preferències de feina</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="fav-user-card fav-user-promo-card">
+                        <div class="fav-user-promo-header">
+                            <span class="fav-user-promo-tag">Recomanat per a tu</span>
+                            <button type="button" class="fav-user-options-btn" aria-label="Opcions">•••</button>
+                        </div>
+
+                        <div class="fav-user-promo-body">
+                            <div class="fav-user-promo-avatars">
+                                <div class="fav-user-avatar fav-user-user-avatar">
+                                    <img src="/public/assets/images/dashboard/dashboard-avatar.svg" alt="Avatar Anna" />
+                                </div>
+                                <div class="fav-user-avatar fav-user-company-avatar">
+                                    <img src="/public/assets/icons/jobs/Logotipo-Glovo.png" alt="Logo Glovo" />
+                                </div>
+                            </div>
+
+                            <p class="fav-user-promo-text">
+                                <strong>Anna</strong>, hi ha <strong>8 noves vacants</strong> de
+                                <strong>Frontend Junior</strong> a <strong>Glovo</strong>
+                            </p>
+                            <p class="fav-user-promo-subtext">
+                                Inscriu-te directament amb el teu perfil optimitzat en React, Tailwind i WordPress
+                            </p>
+
+                            <button type="button" class="fav-user-follow-btn">Veure ofertes</button>
+                        </div>
+
+                        <div class="fav-user-promo-body promo--user">
+                            <div class="fav-user-promo-icon-box">
+                                <svg class="fav-user-sparkle-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2l2.4 4.8L19.2 9l-4.8 2.4L12 16.2 9.6 11.4 4.8 9l4.8-2.2L12 2zM5 16l1.2 2.4L8.6 19.6 6.2 20.8 5 23l-1.2-2.2L1.4 19.6l2.4-1.2L5 16zm14 0l1.2 2.4 2.4 1.2-2.4 1.2L19 23l-1.2-2.2-2.4-1.2 2.4-1.2L19 16z"
+                                    />
+                                </svg>
+                            </div>
+
+                            <div class="fav-user-promo-header-flex--user">
+                                <h3 class="fav-user-promo-title">Aconsegueix feina 2 vegades més ràpid</h3>
+                                <p class="fav-user-promo-desc">
+                                    Compara el teu currículum amb cada vacant i destaca com a candidat principal davant
+                                    dels reclutadors.
+                                </p>
+
+                                <button type="button" class="fav-user-promo-cta-btn">Provar Premium per 0 €</button>
+
+                                <p class="fav-user-promo-footer-text">
+                                    Prova gratuïta d'un mes amb assistència les 24 hores. Et farem un recordatori set
+                                    dies abans que acabi el període de prova.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="fav-user-promo-body">
+                            <div class="fav-user-promo-header-flex">
+                                <img
+                                    src="/public/assets/images/dashboard/dashboard-avatar.svg"
+                                    alt="Avatar Anna"
+                                    class="fav-user-promo-avatar"
+                                />
+                                <h3 class="fav-user-promo-title">
+                                    Indica als reclutadors que estàs disponible per treballar
+                                </h3>
+                            </div>
+
+                            <p class="fav-user-promo-desc">
+                                Activar l'estat
+                                <span style="color: #ce0a86"><strong>"Open to Work"</strong></span> augmenta les
+                                probabilitats de rebre missatges d'empreses.
+                            </p>
+
+                            <button type="button" class="fav-user-follow-btn">Configurar disponibilitat</button>
+                        </div>
+                    </div>
+                </aside>
+
+                <section class="jobs-cards" aria-label="Llistat d'ofertes de feina preferides">
+                    <div class="jobs-cards__container"></div>
+                </section>
+            </section>
+        </main>
+        <footer class="footer-fav-users">
+            <nav class="bottom-fav-users-nav" aria-label="Navegació inferior per a mòbil">
+                <ul class="bottom-fav-users-nav__list">
+                    <li class="bottom-fav-users-nav__item">
+                        <a href="./dashboard.html" class="bottom-fav-users-nav__link">
+                            <img
+                                src="/public/assets/icons/networking/home.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="bottom-fav-users-nav__icon"
+                            />
+                            <span class="bottom-fav-users-nav__label">Inici</span>
+                        </a>
+                    </li>
+                    <li class="bottom-fav-users-nav__item">
+                        <a href="./networking.html" class="bottom-fav-users-nav__link">
+                            <img
+                                src="/public/assets/icons/jobs/icon-jobs-networking.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="bottom-fav-users-nav__icon"
+                            />
+                            <span class="bottom-fav-users-nav__label">Xarxa</span>
+                        </a>
+                    </li>
+                    <li class="bottom-fav-users-nav__item">
+                        <a href="./jobs.html" class="bottom-fav-users-nav__link">
+                            <img
+                                src="/public/assets/icons/dashboard/dashboard-mobile/icon-dashboard-job.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="bottom-fav-users-nav__icon"
+                            />
+                            <span class="bottom-fav-users-nav__label">Portal feina</span>
+                        </a>
+                    </li>
+                    <li class="bottom-fav-users-nav__item">
+                        <a href="./events.html" class="bottom-fav-users-nav__link">
+                            <img
+                                src="/public/assets/icons/dashboard/calendario.png"
+                                alt=""
+                                aria-hidden="true"
+                                class="bottom-fav-users-nav__icon"
+                            />
+                            <span class="bottom-fav-users-nav__label">Esdeveniment</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-fav-users__bottom">
+                <div class="footer-fav-users__bottom-row">
+                    <div class="select-fav-users-wrapper">
+                        <select class="footer-fav-users__select" name="language">
+                            <option value="ca">Català</option>
+                            <option value="es">Castellano</option>
+                            <option value="en">Ingles</option>
+                        </select>
+                        <img
+                            src="/public/assets/icons/home/icon-arrow-down.svg"
+                            alt=""
+                            class="select-fav-users-arrow"
+                        />
+                    </div>
+
+                    <div class="footer-fav-users__copyright">
+                        <p>© 2024 Brand, Inc. • Privadesa • Termes d'ús <br />Mapa del lloc</p>
+                    </div>
+                    <div class="footer-fav-users__policy">
+                        <a href="./privacy.html" class="footer-fav-users__link"> Privacy Policy </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

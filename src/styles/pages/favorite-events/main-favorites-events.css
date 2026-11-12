@@ -1,0 +1,208 @@
+.fav-events-sidebar,
+.fav-events-card__bg {
+    display: none;
+}
+
+.fav-events-content {
+    width: 90%;
+    margin: 3rem auto 6rem;
+}
+
+.fav-events-no-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 14rem;
+}
+
+.fav-events-no-result img {
+    width: 30%;
+}
+
+.fav-events-no-result p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .fav-events-content {
+        width: 85%;
+        margin-top: 2.8rem;
+    }
+
+    .fav-events-no-result {
+        margin-bottom: 22rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .fav-events-sidebar {
+        display: block;
+    }
+
+    .fav-events-card--header {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .fav-events-content {
+        width: 95%;
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: 300px 2fr;
+        gap: 3rem 6rem;
+    }
+    .fav-events-company-avatar {
+        margin-bottom: 1rem;
+    }
+    .fav-events-title,
+    .fav-events-promo-tag {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .fav-events-menu {
+        list-style: none;
+    }
+
+    .fav-events-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        justify-content: space-between;
+    }
+
+    .fav-events-icon {
+        width: 1.8rem;
+        stroke: #5d5d5d;
+    }
+
+    .fav-events-link {
+        color: #565e6c;
+        font-size: 1.05rem;
+    }
+
+    .fav-events-menu-left {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .fav-events-badge {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40%;
+        background: var(--color-secundary);
+        color: white;
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+        margin-left: 3rem;
+    }
+
+    #fav-events-count-badge {
+        background: var(--color-primary);
+        font-size: 1rem;
+    }
+
+    .fav-events-promo-card {
+        margin-top: 3rem;
+    }
+
+    .fav-events-promo-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .fav-events-options-btn {
+        margin-bottom: 1rem;
+        background: none;
+        border: none;
+    }
+
+    .fav-events-promo-body {
+        border-radius: 0.5rem;
+        border: 1px solid #a9a9a9;
+        text-align: center;
+        padding: 1rem;
+        width: 20rem;
+        margin-bottom: 3rem;
+    }
+
+    .fav-events-follow-btn,
+    .fav-events-promo-cta-btn {
+        background: none;
+        margin-top: 1rem;
+        color: var(--color-secundary);
+        border: 1px solid var(--color-secundary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.4rem;
+        width: 100%;
+        border-radius: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .fav-events-user-avatar img,
+    .fav-events-promo-avatar {
+        width: 7rem;
+        border-radius: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .fav-events-company-avatar img,
+    .fav-events-sparkle-icon {
+        width: 12rem;
+    }
+
+    .fav-events-sparkle-icon {
+        fill: #9c27b0;
+        width: 3rem;
+    }
+
+    .promo--events {
+        display: flex;
+        gap: 0.5rem;
+        width: 20rem;
+    }
+
+    .fav-events-promo-header-flex--events {
+        text-align: start;
+    }
+
+    .fav-events-promo-title {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .fav-events-promo-cta-btn {
+        margin-bottom: 1rem;
+    }
+
+    .fav-events-no-result img {
+        width: 20%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .fav-events-content {
+        width: 90%;
+        margin-top: 4rem;
+    }
+
+    .fav-events-no-result img {
+        width: 25%;
+    }
+
+    .fav-events-no-result p {
+        font-size: 1.3rem;
+        margin-top: 0.5rem;
+    }
+}

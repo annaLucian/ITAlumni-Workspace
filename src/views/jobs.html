@@ -110,7 +110,12 @@
 
                 <div class="jobs-welcome__filters" aria-label="Filtres de cerca">
                     <div class="jobs-filters__group" role="tablist">
-                        <button type="button" class="jobs-filters__btn" role="tab" aria-selected="false">
+                        <button
+                            type="button"
+                            class="jobs-filters__btn jobs-filters__btn--desktop"
+                            role="tab"
+                            aria-selected="false"
+                        >
                             <img src="/public/assets/icons/jobs/icon-jobs-filter.svg" alt="" aria-hidden="true" />
                             <span class="jobs-filters__text">Indústria</span>
                             <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" aria-hidden="true" />
@@ -129,6 +134,22 @@
                             <span class="jobs-filters__text">Data de publicació</span>
                             <img src="/public/assets/icons/home/icon-arrow-down.svg" alt="" aria-hidden="true" />
                         </button>
+
+                        <a
+                            href="/src/views/favorites-jobs.html"
+                            class="networking-filters__btn networking-btn-fav"
+                            role="tab"
+                            aria-selected="false"
+                        >
+                            <img
+                                src="/public/assets/icons/networking/favorite-user.png"
+                                alt=""
+                                aria-hidden="true"
+                                class="filter-popular__icon"
+                            />
+                            <span class="networking-filters__text">Els meus preferits</span>
+                            <img src="" alt="" aria-hidden="true" />
+                        </a>
                         <button
                             type="button"
                             class="jobs-filters__btn jobs-filters__btn--desktop"
@@ -136,20 +157,6 @@
                             aria-selected="false"
                         >
                             <span class="jobs-filters__text">Menys de 10 sol·licitants</span>
-                        </button>
-                        <button
-                            type="button"
-                            class="jobs-filters__btn jobs-filters__btn--desktop jobs-filters__btn--active"
-                            role="tab"
-                            aria-selected="false"
-                        >
-                            <span class="jobs-filters__text">Més informació</span>
-                            <img
-                                src="/public/assets/icons/jobs/icon-jobs-down.png"
-                                alt=""
-                                aria-hidden="true"
-                                class="job-filters__icon--active"
-                            />
                         </button>
                     </div>
                 </div>
