@@ -1,4 +1,4 @@
-# ITAlumni-Workspace
+<!-- # ITAlumni-Workspace
 
 # 💼 Plataforma de Networking, Feines i Esdeveniments 🌟
 
@@ -73,4 +73,4 @@ Realiza tus cambios y asegúrate de que las pruebas y estilos BEM estén en orde
 🎨 Compañero/a 2
 
 Gracias por visitar nuestro proyecto, donde la magia del código modular, TypeScript y el diseño web cobran vida. 💙✨
-```
+``` -->

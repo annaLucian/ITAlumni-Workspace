@@ -20,6 +20,7 @@ export const renderJobs = (jobs: Job[]): void => {
     jobs.forEach((job) => {
         const article = document.createElement('article');
         article.className = 'job-card';
+        article.dataset.id = job.idJob;
 
         const verifiedBadgeHtml = job.isVerified
             ? `<img src="/public/assets/icons/jobs/verification.png" alt="" aria-hidden="true" class="job-card__verified">`
