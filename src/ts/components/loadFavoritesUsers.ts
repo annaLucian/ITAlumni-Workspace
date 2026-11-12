@@ -2,7 +2,7 @@ import { storageService } from '../utils/storageService.js';
 import { type User } from '../../models/user.model.js';
 import { renderUsers } from './renderUsers.js';
 
-export const loadFavorites = (users: User[], type: string) => {
+export const loadFavoritesUsers = (users: User[], type: string) => {
     const arrayFavoritesId = storageService.getElementsFavorites(type) || [];
     const favoriteUsers = users.filter((user) => arrayFavoritesId.includes(user.userId));
 
@@ -19,7 +19,7 @@ export const loadFavorites = (users: User[], type: string) => {
             renderUsers(favoriteUsers);
         } else {
             containerFav.innerHTML = `<div class="fav-user-no-result">
-            <img src="/public/assets/icons/no-favorites.png"/>
+            <img src="/public/assets/icons/all/no-favorites.png"/>
                     <p>No tienes ningún usuario guardado en favoritos todavía.</p>
                 </div>`;
         }
@@ -45,7 +45,7 @@ export const loadFavorites = (users: User[], type: string) => {
                 const isFavorite = storageService.getElementsFavorites(type).includes(currentId);
                 btnIcon?.classList.toggle('networking_btn-fav--active', isFavorite);
 
-                loadFavorites(users, type);
+                loadFavoritesUsers(users, type);
             }
         };
     });
