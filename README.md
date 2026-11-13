@@ -1,8 +1,8 @@
 # 🚀 ITAlumni-Workspace
 
-<video src="./public/assets/readme/Networking.mp4" controls width="100%"></video>
+![Dawntraoz banner](/public/assets/readme/banner.gif)
 
-¡Bienvenidos a \*\*ITAlumni-Workspace! Este es un espacio web pensado para conectar con otros exalumnos, ver perfiles de networking, descubrir ofertas de trabajo y enterarte de los mejores eventos del sector. Todo de forma rápida, visual y guardando tus favoritos directamente en el navegador. ✨
+¡Bienvenidos a **ITAlumni-Workspace!** Este es un espacio web pensado para conectar con otros exalumnos, ver perfiles de networking, descubrir ofertas de trabajo y enterarte de los mejores eventos del sector. Todo de forma rápida, visual y guardando tus favoritos directamente en el navegador. ✨
 
 ### 🛠️ ¿Qué tecnologías usamos aquí?
 
