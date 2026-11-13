@@ -20,8 +20,8 @@ export const favoritesJobs = () => {
             if (currentCard) {
                 storageService.saveElementFavorite(currentCard, 'jobs-favorites');
 
-                const isFavorite = storageService.getElementsFavorites('jobs-favorites').includes(currentCard);
-                btnIcon?.classList.toggle('job_btn-fav--active', isFavorite);
+                const isFavorits = storageService.getElementsFavorites('jobs-favorites').includes(currentCard);
+                btnIcon?.classList.toggle('job_btn-fav--active', isFavorits);
             }
         };
     });

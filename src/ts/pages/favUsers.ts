@@ -1,4 +1,5 @@
 import { loadFavoritesUsers } from '../components/loadFavoritesUsers.js';
+import { header } from '../components/header.js';
 import { type User } from '../../models/user.model.js';
 import { getUsers } from '../../services/userServices.js';
 
@@ -10,3 +11,5 @@ const favPages = async () => {
 document.addEventListener('DOMContentLoaded', async () => {
     await favPages();
 });
+
+header('fav-users__btn', '.dashboard-header__dropdown');

@@ -67,7 +67,12 @@
                         />
                     </button>
                     <div class="networking-header__user-menu">
-                        <button type="button" class="networking-header__profile-btn" aria-label="Perfil d'usuari">
+                        <button
+                            type="button"
+                            id="networking-header"
+                            class="networking-header__profile-btn"
+                            aria-label="Perfil d'usuari"
+                        >
                             <img
                                 src="/public/assets/images/dashboard/dashboard-avatar.svg"
                                 alt=""
@@ -75,21 +80,51 @@
                                 class="networking-header__avatar"
                             />
                         </button>
-                        <div class="networking-header__dropdown">
-                            <a href="./profile.html" class="networking-header__dropdown-link">El meu perfil</a>
-                            <a href="./settings.html" class="networking-header__dropdown-link">Configuració</a>
-                            <hr class="networking-header__dropdown-divider" />
-                            <a
-                                href="/"
-                                class="networking-header__dropdown-link networking-header__dropdown-link--logout"
-                            >
-                                <img
-                                    src="/public/assets/icons/dashboard/icon-dashboard-logout.png"
-                                    alt=""
-                                    aria-hidden="true"
-                                />
-                                Tancar sessió
-                            </a>
+                        <div class="dashboard-header__dropdown">
+                            <div class="dashboard-header__content">
+                                <div class="dasboard-dropdown__header">
+                                    <img
+                                        src="/public/assets/images/dashboard/dashboard-avatar.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="dashboard-header__avatar"
+                                    />
+                                    <div class="dasboard-dropdown__title">
+                                        <h4>Benvinguda, Anna</h4>
+                                        <button class="dasboard-dropdown__btn">Edita el perfil</button>
+                                    </div>
+                                </div>
+                                <hr class="dashboard-header__dropdown-divider" />
+                                <div class="dashboard-header__dropdown--mindle">
+                                    <a href="./profile.html" class="dashboard-header__dropdown-link">
+                                        <img
+                                            src="/public/assets/icons/dashboard/icon-dashboard-config.png"
+                                            alt=""
+                                            aria-hidden="true"
+                                        />Suport</a
+                                    >
+                                    <a href="./settings.html" class="dashboard-header__dropdown-link">
+                                        <img
+                                            src="/public/assets/icons/dashboard/icon-dashboard-soport.png"
+                                            alt=""
+                                            aria-hidden="true"
+                                        />Configuració</a
+                                    >
+                                </div>
+
+                                <hr class="dashboard-header__dropdown-divider" />
+                                <a
+                                    href="/"
+                                    class="dashboard-header__dropdown-link dashboard-header__dropdown-link--logout"
+                                >
+                                    <img
+                                        src="/public/assets/icons/dashboard/icon-dashboard-logout.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                    />
+                                    Tancar sessió
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

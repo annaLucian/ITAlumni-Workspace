@@ -21,7 +21,7 @@ export const loadFavoritesJobs = (jobs: Job[], type: string) => {
         } else {
             containerFav.innerHTML = `<div class="fav-user-no-result">
                 <img src="/public/assets/icons/all/no-favorites.png"/>
-                        <p>Encara no has afegit cap feina als teus favorits.</p>
+                        <p>Encara no has afegit cap <strong>feina</strong> als teus favorits.</p>
                     </div>`;
         }
     }

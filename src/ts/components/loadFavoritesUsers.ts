@@ -20,7 +20,7 @@ export const loadFavoritesUsers = (users: User[], type: string) => {
         } else {
             containerFav.innerHTML = `<div class="fav-user-no-result">
             <img src="/public/assets/icons/all/no-favorites.png"/>
-                    <p>Encara no has afegit cap usuari als teus favorits.</p>
+                    <p>Encara no has afegit cap <strong>usuari</strong> als teus favorits.</p>
                 </div>`;
         }
     }

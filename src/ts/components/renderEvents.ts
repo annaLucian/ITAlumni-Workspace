@@ -21,6 +21,7 @@ export const renderEvents = (events: Event[]): void => {
         const li = document.createElement('li');
         const article = document.createElement('article');
         article.className = 'event-card';
+        article.dataset.id = event.idEvent;
 
         const locationLower = event.location.toLocaleLowerCase().trim();
         const LocacionIcon = locationLower.includes('línia')
