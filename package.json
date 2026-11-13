@@ -21,6 +21,8 @@
     },
     "homepage": "https://github.com/annaLucian/ITAlumni-Workspace#readme",
     "devDependencies": {
+        "@testing-library/dom": "^10.4.2",
+        "jsdom": "^29.1.1",
         "live-server": "^1.2.2",
         "typescript": "^7.0.2",
         "vitest": "^5.0.5"
