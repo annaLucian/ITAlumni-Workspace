@@ -1,76 +1,72 @@
-<!-- # ITAlumni-Workspace
+# 🚀 ITAlumni-Workspace
 
-# 💼 Plataforma de Networking, Feines i Esdeveniments 🌟
+![Dawntraoz banner](/public/assets/readme/banner.gif)
 
-¡Bienvenido a la plataforma web! Un espacio digital donde la tecnología y el desarrollo profesional se unen para conectar talento, oportunidades laborales y eventos tecnológicos. 🚀 En esta plataforma puedes explorar perfiles de networking, guardar ofertas de empleo y organizar tus próximos eventos favoritos con sincronización instantánea en el navegador. ✨ ¡Explora, guarda y gestiona tus favoritos con un solo clic!
+¡Bienvenidos a \*\*ITAlumni-Workspace! Este es un espacio web pensado para conectar con otros exalumnos, ver perfiles de networking, descubrir ofertas de trabajo y enterarte de los mejores eventos del sector. Todo de forma rápida, visual y guardando tus favoritos directamente en el navegador. ✨
 
-![Imagen de portada del proyecto](./public/assets/images/banner-preview.png)
+### 🛠️ ¿Qué tecnologías usamos aquí?
 
----
+- **Lenguajes** <br><br>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=flat-square"/>
 
-## 🛠️ Tecnologías Empleadas
+- **Estilos**<br><br>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
 
-- **HTML5:** Lenguaje para estructurar el contenido semántico y accesible de cada sección (`fav-users`, `fav-jobs`, `fav-events`).
-- **CSS3:** Añadiendo estilos modulares mediante metodología BEM y diseño 100% responsivo (Grid y Flexbox).
-- **TypeScript / JavaScript:** El motor de la aplicación, manejando la lógica de filtrado, ordenación, eventos del DOM y sincronización recursiva con `localStorage`.
+- **Herramientas & Testing**<br><br>
+  <img src="https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white" /> <img src="https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white" />
 
----
+### 🛠️ ¿Cómo ponerlo en marcha en tu ordenador?
 
-## 📋 Requisitos para el Funcionamiento Actual
+1. Clona este repositorio.
 
-- Visual Studio Code
-- Node.js (v18 o superior)
+```
 
----
+git clone https://github.com/tu-usuario/nombre-del-repositorio.git
 
-## ⚙️ Instalación del Repositorio
+```
 
-1. Clona este repositorio:
+2. Entra a la carpeta del proyecto e instala todo lo necesario:
 
-```bash
-git clone [https://github.com/tu-usuario/nombre-del-repositorio.git](https://github.com/tu-usuario/nombre-del-repositorio.git)
+```
 
-2. Entra en la carpeta del proyecto e instala las dependencias:
 npm install
-3. Levanta el servidor de desarrollo local:
-npm run dev
 
-🎉 ¡Listo y corriendo!
-Ya tienes la aplicación web cargada y lista para explorar usuarios, ofertas de empleo y eventos favoritos.
+```
 
-🧪 Pruebas y Calidad del Código
-¡Realizamos pruebas para asegurar que todo funcione de maravilla y sin errores de tipado!
+3. Arranca el proyecto:
 
-Primero, asegúrate de tener instalado Node.js y el entorno configurado. Puedes comprobar que lo tienes instalado con el comando:
-node -v
-Si aún no has instalado las dependencias de desarrollo, ejecuta:
-npm install
-Ejecuta la compilación y verificación de TypeScript:
-npm run build
-O ejecuta las pruebas unitarias del proyecto:
-npm test
-🎥 Vídeo Demo de la Web
-(Arrastra aquí tu archivo .mp4 directamente en el editor de GitHub para que se incruste el reproductor de vídeo como en la captura)
+    3.1. Arranca el compilador de TypeScript:
 
-https://github.com/tu-usuario/nombre-del-repositorio/assets/demo-video.mp4
+    ```
 
-🖼️ Imágenes de la Web
-🤝 Contribuye con el Proyecto
-Haz un Fork del repositorio.
+    npx tsc --w
 
-Clona tu Fork localmente:
-git clone [https://github.com/tu-usuario/nombre-del-repositorio.git](https://github.com/tu-usuario/nombre-del-repositorio.git)
+    ```
 
-Crea una rama para tus contribuciones (git checkout -b feature/nueva-funcionalidad).
+    3.2. Arranca el servidor de desarrollo local:
 
-Realiza tus cambios y asegúrate de que las pruebas y estilos BEM estén en orden.
+    ```
 
-⭐ Desarrolladores Estelares
-🚀 Tu Nombre
+    npm run dev
 
-💻 Compañero/a 1
+    ```
 
-🎨 Compañero/a 2
+¡Y listo! Ya podrás abrir la web en tu navegador y empezar a explorar. 🌟
 
-Gracias por visitar nuestro proyecto, donde la magia del código modular, TypeScript y el diseño web cobran vida. 💙✨
-``` -->
+### 🛠️ 🧪 Pruebas automáticas (Tests)
+
+Para asegurarnos que el código esté limpio y sin errores. Por eso, tenemos pruebas unitarias para revisar que las tarjetas se pinten bien y que el buscador filtre correctamente a los usuarios.
+
+1. Para ejecutar las pruebas en tu terminal, solo escribe:
+
+    ```
+
+     npm test
+
+    ```
+
+## 💙 Paso a paso
+
+Un proyecto hecho para aprender, practicar desarrollo web moderno, TypeScript y asegurarnos de que cada línea de código legible y profesional. ¡A disfrutar del código! 🚀
